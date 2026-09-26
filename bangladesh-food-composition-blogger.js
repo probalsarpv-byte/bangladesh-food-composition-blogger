@@ -1,5 +1,4 @@
-Bangladesh Food Composition Blogger JavaScript
-Original JS file: bangladesh-food-composition-blogger.js
+
 /*!
  * Bangladesh Food Composition Explorer
  * Data source: Food Composition Table for Bangladesh (2013), INFS/CARS, University of Dhaka.
