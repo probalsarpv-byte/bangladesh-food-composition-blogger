@@ -1,0 +1,4 @@
+User-agent: *
+Allow: /
+
+Sitemap: https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/sitemap.xml
