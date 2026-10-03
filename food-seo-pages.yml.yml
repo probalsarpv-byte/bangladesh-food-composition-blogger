@@ -1,0 +1,675 @@
+name: Build Food SEO Pages
+
+on:
+  workflow_dispatch:
+  push:
+    branches: ["main"]
+    paths:
+      - "bangladesh-food-composition-blogger.js"
+      - ".github/workflows/food-seo-pages.yml"
+
+permissions:
+  contents: write
+
+concurrency:
+  group: food-seo-pages
+  cancel-in-progress: true
+
+jobs:
+  build:
+    runs-on: ubuntu-latest
+
+    steps:
+      - name: Checkout repository
+        uses: actions/checkout@v4
+        with:
+          fetch-depth: 0
+
+      - name: Generate enhanced food SEO pages
+        shell: bash
+        env:
+          BASE_URL: "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger"
+        run: |
+          node <<'NODE'
+          const fs = require("fs");
+          const path = require("path");
+
+          const SOURCE_FILE = "bangladesh-food-composition-blogger.js";
+          const BASE_URL = (process.env.BASE_URL || "").replace(/\/+$/, "");
+          const OUT_DIR = "food";
+
+          if (!fs.existsSync(SOURCE_FILE)) {
+            throw new Error(`Missing ${SOURCE_FILE}`);
+          }
+          if (!BASE_URL) {
+            throw new Error("BASE_URL is empty");
+          }
+
+          const src = fs.readFileSync(SOURCE_FILE, "utf8");
+
+          function extractFoods(source) {
+            const marker = "const FOODS =";
+            const markerPos = source.indexOf(marker);
+            if (markerPos < 0) throw new Error("Could not find const FOODS = ...");
+
+            const start = source.indexOf("[", markerPos);
+            if (start < 0) throw new Error("Could not find FOODS array start");
+
+            let depth = 0;
+            let inString = false;
+            let escape = false;
+
+            for (let i = start; i < source.length; i++) {
+              const ch = source[i];
+
+              if (inString) {
+                if (escape) {
+                  escape = false;
+                } else if (ch === "\\") {
+                  escape = true;
+                } else if (ch === '"') {
+                  inString = false;
+                }
+                continue;
+              }
+
+              if (ch === '"') {
+                inString = true;
+                continue;
+              }
+
+              if (ch === "[") depth++;
+              if (ch === "]") {
+                depth--;
+                if (depth === 0) {
+                  return JSON.parse(source.slice(start, i + 1));
+                }
+              }
+            }
+
+            throw new Error("Could not find FOODS array end");
+          }
+
+          const foods = extractFoods(src);
+          if (!Array.isArray(foods) || foods.length === 0) {
+            throw new Error("FOODS array is empty");
+          }
+
+          function esc(value) {
+            return String(value ?? "")
+              .replace(/&/g, "&amp;")
+              .replace(/</g, "&lt;")
+              .replace(/>/g, "&gt;")
+              .replace(/"/g, "&quot;")
+              .replace(/'/g, "&#39;");
+          }
+
+          function slugify(value) {
+            return String(value || "")
+              .normalize("NFKD")
+              .replace(/[\u0300-\u036f]/g, "")
+              .toLowerCase()
+              .replace(/&/g, " and ")
+              .replace(/[^a-z0-9]+/g, "-")
+              .replace(/^-+|-+$/g, "")
+              .replace(/-{2,}/g, "-");
+          }
+
+          function codeSlug(code) {
+            return String(code || "")
+              .toLowerCase()
+              .replace(/[^a-z0-9]+/g, "-")
+              .replace(/^-+|-+$/g, "");
+          }
+
+          function primaryNameBn(food) {
+            return food.name_bn || food.bangla_name || food.bengali || "";
+          }
+
+          function primaryNameEn(food) {
+            return food.english_name || food.name_en || food.english || "Food";
+          }
+
+          function foodSlug(food) {
+            const base = slugify(primaryNameEn(food)) || "food";
+            return `${base}-${codeSlug(food.code)}`;
+          }
+
+          function num(v) {
+            if (v === null || v === undefined || v === "") return null;
+            if (typeof v === "number" && Number.isFinite(v)) return v;
+            const n = Number(v);
+            return Number.isFinite(n) ? n : null;
+          }
+
+          function display(v) {
+            if (v === null || v === undefined || v === "") return "—";
+            if (typeof v === "number") {
+              if (Number.isInteger(v)) return String(v);
+              return String(Math.round(v * 1000) / 1000);
+            }
+            return String(v);
+          }
+
+          const nutrients = [
+            ["energy_kcal", "Energy", "ক্যালরি", "kcal"],
+            ["protein_g", "Protein", "প্রোটিন", "g"],
+            ["fat_g", "Fat", "ফ্যাট", "g"],
+            ["carb_g", "Carbohydrate", "কার্বোহাইড্রেট", "g"],
+            ["fibre_g", "Dietary fibre", "ডায়েটারি ফাইবার", "g"],
+            ["water_g", "Water", "পানি", "g"],
+            ["calcium_mg", "Calcium", "ক্যালসিয়াম", "mg"],
+            ["iron_mg", "Iron", "আয়রন", "mg"],
+            ["magnesium_mg", "Magnesium", "ম্যাগনেসিয়াম", "mg"],
+            ["phosphorus_mg", "Phosphorus", "ফসফরাস", "mg"],
+            ["potassium_mg", "Potassium", "পটাশিয়াম", "mg"],
+            ["sodium_mg", "Sodium", "সোডিয়াম", "mg"],
+            ["zinc_mg", "Zinc", "জিঙ্ক", "mg"],
+            ["copper_mg", "Copper", "কপার", "mg"],
+            ["vitamin_a_mcg", "Vitamin A", "ভিটামিন A", "µg"],
+            ["retinol_mcg", "Retinol", "রেটিনল", "µg"],
+            ["beta_carotene_mcg", "Beta-carotene", "বিটা-ক্যারোটিন", "µg"],
+            ["vitamin_d_mcg", "Vitamin D", "ভিটামিন D", "µg"],
+            ["vitamin_e_mg", "Vitamin E", "ভিটামিন E", "mg"],
+            ["thiamin_mg", "Thiamin (B1)", "থায়ামিন (B1)", "mg"],
+            ["riboflavin_mg", "Riboflavin (B2)", "রিবোফ্লাভিন (B2)", "mg"],
+            ["niacin_mg", "Niacin (B3)", "নায়াসিন (B3)", "mg"],
+            ["vitamin_b6_mg", "Vitamin B6", "ভিটামিন B6", "mg"],
+            ["folate_mcg", "Folate", "ফোলেট", "µg"],
+            ["vitamin_c_mg", "Vitamin C", "ভিটামিন C", "mg"]
+          ];
+
+          const slugMap = new Map();
+          foods.forEach(food => slugMap.set(food.code, foodSlug(food)));
+
+          const byCategory = new Map();
+          for (const food of foods) {
+            const cat = food.category || "Other";
+            if (!byCategory.has(cat)) byCategory.set(cat, []);
+            byCategory.get(cat).push(food);
+          }
+
+          function compactMetaDescription(food) {
+            const bn = primaryNameBn(food);
+            const en = primaryNameEn(food);
+            const kcal = num(food.energy_kcal);
+            const protein = num(food.protein_g);
+            const carb = num(food.carb_g);
+            const fat = num(food.fat_g);
+
+            const values = [];
+            if (kcal !== null) values.push(`${display(kcal)} kcal`);
+            if (protein !== null) values.push(`${display(protein)} g protein`);
+            if (carb !== null) values.push(`${display(carb)} g carbs`);
+            if (fat !== null) values.push(`${display(fat)} g fat`);
+
+            const names = bn ? `${bn} (${en})` : en;
+            const tail = values.length ? ` Per 100 g: ${values.join(", ")}.` : "";
+            return `${names} nutrition facts from the Bangladesh Food Composition Table.${tail} Vitamins, minerals, source and related foods.`;
+          }
+
+          function pageTitle(food) {
+            const bn = primaryNameBn(food);
+            const en = primaryNameEn(food);
+            return bn
+              ? `${bn} (${en}) Nutrition Facts | Bangladesh Food Database`
+              : `${en} Nutrition Facts | Bangladesh Food Database`;
+          }
+
+          function summaryText(food) {
+            const bn = primaryNameBn(food);
+            const en = primaryNameEn(food);
+            const label = bn || en;
+            const pieces = [];
+            const keys = [
+              ["energy_kcal", "kcal energy"],
+              ["protein_g", "g protein"],
+              ["carb_g", "g carbohydrate"],
+              ["fat_g", "g fat"],
+              ["fibre_g", "g dietary fibre"]
+            ];
+            for (const [key, suffix] of keys) {
+              const value = num(food[key]);
+              if (value !== null) pieces.push(`${display(value)} ${suffix}`);
+            }
+            const profile = pieces.length ? pieces.join(", ") : "the available nutrient values shown below";
+            return `${label}-এর এই food-composition record-এ প্রতি 100 g edible portion অনুযায়ী ${profile} রিপোর্ট করা হয়েছে। নিচে vitamin, mineral, source এবং একই category-এর related foods দেখা যাবে।`;
+          }
+
+          function relatedFoods(food) {
+            const group = byCategory.get(food.category || "Other") || [];
+            if (group.length <= 1) return [];
+            const currentIndex = Math.max(group.findIndex(x => x.code === food.code), 0);
+            const out = [];
+            for (let step = 1; step < group.length && out.length < 8; step++) {
+              const candidate = group[(currentIndex + step) % group.length];
+              if (candidate && candidate.code !== food.code) out.push(candidate);
+            }
+            return out;
+          }
+
+          function nutrientRows(food) {
+            return nutrients
+              .filter(([key]) => food[key] !== undefined && food[key] !== null && food[key] !== "")
+              .map(([key, en, bn, unit]) => `
+                <tr>
+                  <th scope="row">${esc(bn)} <span>${esc(en)}</span></th>
+                  <td>${esc(display(food[key]))} ${esc(unit)}</td>
+                </tr>`)
+              .join("");
+          }
+
+          function quickStat(food, key, bn, unit) {
+            const value = food[key];
+            if (value === undefined || value === null || value === "") return "";
+            return `<div class="stat"><strong>${esc(display(value))}</strong><span>${esc(unit)} ${esc(bn)}</span></div>`;
+          }
+
+          function faqData(food) {
+            const bn = primaryNameBn(food);
+            const en = primaryNameEn(food);
+            const label = bn || en;
+            const kcal = num(food.energy_kcal);
+            const protein = num(food.protein_g);
+            const carb = num(food.carb_g);
+            const fat = num(food.fat_g);
+
+            const qas = [
+              {
+                q: `${label}-এ প্রতি 100 গ্রামে কত ক্যালরি আছে?`,
+                a: kcal !== null
+                  ? `এই database record অনুযায়ী প্রতি 100 g edible portion-এ ${display(kcal)} kcal energy আছে।`
+                  : `এই record-এ energy value নির্দিষ্টভাবে পাওয়া যায়নি।`
+              },
+              {
+                q: `${label}-এ protein কত?`,
+                a: protein !== null
+                  ? `প্রতি 100 g edible portion-এ ${display(protein)} g protein রিপোর্ট করা হয়েছে।`
+                  : `এই record-এ protein value নির্দিষ্টভাবে পাওয়া যায়নি।`
+              },
+              {
+                q: `${label}-এ carbohydrate ও fat কত?`,
+                a: `এই record অনুযায়ী প্রতি 100 g-এ carbohydrate ${carb !== null ? `${display(carb)} g` : "উল্লেখ নেই"} এবং fat ${fat !== null ? `${display(fat)} g` : "উল্লেখ নেই"}।`
+              },
+              {
+                q: `এই nutrition data-এর source কী?`,
+                a: `এই page-এর মূল food-composition data Food Composition Table for Bangladesh (2013), University of Dhaka-সংশ্লিষ্ট source dataset থেকে নেওয়া।`
+              }
+            ];
+            return qas;
+          }
+
+          function pageHtml(food) {
+            const slug = slugMap.get(food.code);
+            const url = `${BASE_URL}/food/${slug}/`;
+            const bn = primaryNameBn(food);
+            const en = primaryNameEn(food);
+            const title = pageTitle(food);
+            const desc = compactMetaDescription(food);
+            const category = food.category || "Food";
+            const scientific = food.scientific ? String(food.scientific).replace(/\s+/g, " ").trim() : "";
+            const related = relatedFoods(food);
+            const faqs = faqData(food);
+            const today = new Date().toISOString().slice(0, 10);
+
+            const relatedHtml = related.map(item => {
+              const itemSlug = slugMap.get(item.code);
+              const itemBn = primaryNameBn(item);
+              const itemEn = primaryNameEn(item);
+              return `<a class="related-card" href="${BASE_URL}/food/${itemSlug}/">
+                <strong>${esc(itemBn || itemEn)}</strong>
+                ${itemBn ? `<span>${esc(itemEn)}</span>` : ""}
+              </a>`;
+            }).join("");
+
+            const faqHtml = faqs.map(item => `
+              <details>
+                <summary>${esc(item.q)}</summary>
+                <p>${esc(item.a)}</p>
+              </details>`).join("");
+
+            const sourcePages = Array.isArray(food.source_pages) && food.source_pages.length
+              ? food.source_pages.join(", ")
+              : "";
+
+            const measured = nutrients
+              .filter(([key]) => food[key] !== undefined && food[key] !== null && food[key] !== "")
+              .map(([key, en, , unit]) => ({
+                "@type": "PropertyValue",
+                "name": en,
+                "value": display(food[key]),
+                "unitText": unit
+              }));
+
+            const jsonLd = {
+              "@context": "https://schema.org",
+              "@graph": [
+                {
+                  "@type": "WebPage",
+                  "@id": `${url}#webpage`,
+                  "url": url,
+                  "name": title,
+                  "description": desc,
+                  "inLanguage": ["bn", "en"],
+                  "dateModified": today,
+                  "isPartOf": {"@id": `${BASE_URL}/#website`},
+                  "breadcrumb": {"@id": `${url}#breadcrumb`},
+                  "mainEntity": {"@id": `${url}#dataset`}
+                },
+                {
+                  "@type": "WebSite",
+                  "@id": `${BASE_URL}/#website`,
+                  "url": `${BASE_URL}/`,
+                  "name": "SHUDDHO Academy - Bangladesh Food Composition Database"
+                },
+                {
+                  "@type": "Dataset",
+                  "@id": `${url}#dataset`,
+                  "name": `${bn ? `${bn} (${en})` : en} food composition record`,
+                  "description": desc,
+                  "url": url,
+                  "inLanguage": ["bn", "en"],
+                  "isPartOf": `${BASE_URL}/food/`,
+                  "creator": {
+                    "@type": "Organization",
+                    "name": "SHUDDHO Academy"
+                  },
+                  "variableMeasured": measured
+                },
+                {
+                  "@type": "BreadcrumbList",
+                  "@id": `${url}#breadcrumb`,
+                  "itemListElement": [
+                    {"@type": "ListItem", "position": 1, "name": "Food Database", "item": `${BASE_URL}/`},
+                    {"@type": "ListItem", "position": 2, "name": "All Foods", "item": `${BASE_URL}/food/`},
+                    {"@type": "ListItem", "position": 3, "name": bn || en, "item": url}
+                  ]
+                },
+                {
+                  "@type": "FAQPage",
+                  "@id": `${url}#faq`,
+                  "mainEntity": faqs.map(item => ({
+                    "@type": "Question",
+                    "name": item.q,
+                    "acceptedAnswer": {"@type": "Answer", "text": item.a}
+                  }))
+                }
+              ]
+            };
+
+            return `<!doctype html>
+          <html lang="bn">
+          <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width,initial-scale=1">
+            <title>${esc(title)}</title>
+            <meta name="description" content="${esc(desc)}">
+            <meta name="robots" content="index,follow,max-image-preview:large,max-snippet:-1,max-video-preview:-1">
+            <link rel="canonical" href="${esc(url)}">
+            <meta property="og:type" content="article">
+            <meta property="og:title" content="${esc(title)}">
+            <meta property="og:description" content="${esc(desc)}">
+            <meta property="og:url" content="${esc(url)}">
+            <meta property="og:site_name" content="SHUDDHO Academy">
+            <meta name="twitter:card" content="summary">
+            <meta name="twitter:title" content="${esc(title)}">
+            <meta name="twitter:description" content="${esc(desc)}">
+            <script type="application/ld+json">${JSON.stringify(jsonLd).replace(/</g, "\\u003c")}</script>
+            <style>
+              :root{--bg:#f7faf8;--card:#fff;--ink:#13251f;--muted:#62756e;--line:#dfe9e4;--brand:#0b6b4b;--soft:#eaf6f0}
+              *{box-sizing:border-box}body{margin:0;background:var(--bg);color:var(--ink);font-family:Arial,"Noto Sans Bengali",sans-serif;line-height:1.68}
+              a{color:var(--brand)}.wrap{width:min(1080px,calc(100% - 28px));margin:auto}
+              .top{padding:18px 0}.top a{text-decoration:none;font-weight:800}.crumb{font-size:14px;color:var(--muted);margin:12px 0 24px}
+              .hero{background:linear-gradient(135deg,#0b6b4b,#0f8a62);color:#fff;border-radius:24px;padding:32px;box-shadow:0 18px 50px rgba(11,107,75,.16)}
+              .eyebrow{font-size:13px;font-weight:800;opacity:.85;text-transform:uppercase;letter-spacing:.04em}.hero h1{font-size:clamp(30px,5vw,54px);line-height:1.12;margin:8px 0}
+              .hero .en{font-size:clamp(18px,2.7vw,28px);opacity:.92;margin:0}.meta{margin-top:14px;font-size:14px;opacity:.9}
+              .stats{display:grid;grid-template-columns:repeat(4,1fr);gap:12px;margin:20px 0}.stat{background:var(--card);border:1px solid var(--line);border-radius:18px;padding:18px}
+              .stat strong{display:block;font-size:26px;color:var(--brand)}.stat span{font-size:13px;color:var(--muted)}
+              .grid{display:grid;grid-template-columns:minmax(0,1fr) 320px;gap:20px;margin:20px 0 40px}.card{background:var(--card);border:1px solid var(--line);border-radius:20px;padding:22px}
+              h2{margin-top:0}.intro{font-size:17px}.note{background:var(--soft);border-radius:14px;padding:14px 16px;color:#315d4c}
+              table{width:100%;border-collapse:collapse}th,td{padding:12px 10px;border-bottom:1px solid var(--line);text-align:left;vertical-align:top}
+              th span{display:block;font-size:12px;color:var(--muted);font-weight:500}td{white-space:nowrap;font-weight:800}
+              .related{display:grid;gap:10px}.related-card{display:block;padding:12px 14px;border:1px solid var(--line);border-radius:14px;text-decoration:none;color:var(--ink)}
+              .related-card span{display:block;font-size:12px;color:var(--muted)}.source{font-size:14px;color:var(--muted)}
+              details{border-top:1px solid var(--line);padding:12px 0}details:first-of-type{border-top:0}summary{cursor:pointer;font-weight:800}
+              .updated{font-size:12px;color:var(--muted);margin-top:10px}footer{border-top:1px solid var(--line);padding:24px 0 40px;color:var(--muted);font-size:13px}
+              @media(max-width:780px){.stats{grid-template-columns:repeat(2,1fr)}.grid{grid-template-columns:1fr}.hero{padding:24px}.card{padding:18px}}
+            </style>
+          </head>
+          <body>
+            <div class="wrap">
+              <div class="top"><a href="${BASE_URL}/">← Bangladesh Food Composition Database</a></div>
+
+              <nav class="crumb" aria-label="Breadcrumb">
+                <a href="${BASE_URL}/">Food Database</a> ›
+                <a href="${BASE_URL}/food/">All Foods</a> ›
+                <span>${esc(bn || en)}</span>
+              </nav>
+
+              <main>
+                <section class="hero">
+                  <div class="eyebrow">${esc(category)}</div>
+                  <h1>${esc(bn || en)}</h1>
+                  ${bn ? `<p class="en">${esc(en)}</p>` : ""}
+                  <div class="meta">
+                    Food code: ${esc(food.code || "")}
+                    ${scientific ? ` • Scientific/source notation: ${esc(scientific)}` : ""}
+                  </div>
+                </section>
+
+                <section class="stats" aria-label="Key nutrition values">
+                  ${quickStat(food,"energy_kcal","ক্যালরি","kcal")}
+                  ${quickStat(food,"protein_g","প্রোটিন","g")}
+                  ${quickStat(food,"carb_g","কার্বোহাইড্রেট","g")}
+                  ${quickStat(food,"fat_g","ফ্যাট","g")}
+                </section>
+
+                <section class="card">
+                  <h2>${esc(bn || en)}: Nutrition overview</h2>
+                  <p class="intro">${esc(summaryText(food))}</p>
+                  <p class="updated">Last generated/updated: ${esc(today)}</p>
+                </section>
+
+                <div class="grid">
+                  <article class="card">
+                    <h2>পুষ্টিগুণ / Nutrition facts</h2>
+                    <p>নিচের পুষ্টিমান প্রতি 100 g edible portion-এর জন্য দেখানো হয়েছে, যদি source record-এ অন্য কিছু উল্লেখ না থাকে।</p>
+                    <table>
+                      <tbody>
+                        ${nutrientRows(food)}
+                      </tbody>
+                    </table>
+                  </article>
+
+                  <aside>
+                    <section class="card">
+                      <h2>Food information</h2>
+                      <p><strong>বাংলা নাম:</strong><br>${esc(bn || "—")}</p>
+                      <p><strong>English name:</strong><br>${esc(en)}</p>
+                      <p><strong>Category:</strong><br>${esc(category)}</p>
+                      ${food.bengali_roman ? `<p><strong>Roman Bangla:</strong><br>${esc(food.bengali_roman)}</p>` : ""}
+                      ${food.edible_portion !== undefined ? `<p><strong>Edible portion:</strong><br>${esc(display(food.edible_portion))}</p>` : ""}
+                    </section>
+
+                    <section class="card" style="margin-top:16px">
+                      <h2>Related foods</h2>
+                      <div class="related">${relatedHtml || "<p>No related entries available.</p>"}</div>
+                    </section>
+                  </aside>
+                </div>
+
+                <section class="card" style="margin-bottom:20px">
+                  <h2>Frequently asked questions</h2>
+                  ${faqHtml}
+                </section>
+
+                <section class="card" style="margin-bottom:28px">
+                  <h2>Source & interpretation</h2>
+                  <p class="source">
+                    Source dataset: Food Composition Table for Bangladesh (2013), Institute of Nutrition and Food Science / Centre for Advanced Research in Sciences, University of Dhaka.
+                    ${sourcePages ? ` Source table pages recorded in this database: ${esc(sourcePages)}.` : ""}
+                    ${food.table_page ? ` Database table page: ${esc(food.table_page)}.` : ""}
+                  </p>
+                  <div class="note">
+                    এই page খাদ্যের পুষ্টিমান জানার reference হিসেবে তৈরি। এটি diagnosis, treatment বা ব্যক্তিগত diet prescription নয়। Variety, preparation, moisture content এবং analytical method অনুযায়ী বাস্তব nutrient value কিছুটা ভিন্ন হতে পারে।
+                  </div>
+                </section>
+              </main>
+
+              <footer>
+                <a href="${BASE_URL}/">Full Food Database</a> ·
+                <a href="${BASE_URL}/food/">All Food Pages</a>
+                <br>SHUDDHO Academy · Bangladesh Food Composition Database
+              </footer>
+            </div>
+          </body>
+          </html>`;
+          }
+
+          fs.rmSync(OUT_DIR, { recursive: true, force: true });
+          fs.mkdirSync(OUT_DIR, { recursive: true });
+
+          const searchIndex = [];
+          for (const food of foods) {
+            const slug = slugMap.get(food.code);
+            const dir = path.join(OUT_DIR, slug);
+            fs.mkdirSync(dir, { recursive: true });
+            fs.writeFileSync(path.join(dir, "index.html"), pageHtml(food), "utf8");
+
+            searchIndex.push({
+              code: food.code,
+              name_bn: primaryNameBn(food),
+              name_en: primaryNameEn(food),
+              roman: food.bengali_roman || "",
+              category: food.category || "",
+              url: `${BASE_URL}/food/${slug}/`
+            });
+          }
+
+          const categoryBlocks = [...byCategory.entries()].map(([category, items], categoryIndex) => {
+            const categoryId = `cat-${categoryIndex + 1}`;
+            const links = items.map(food => {
+              const slug = slugMap.get(food.code);
+              const bn = primaryNameBn(food);
+              const en = primaryNameEn(food);
+              return `<li data-search="${esc(`${bn} ${en} ${food.bengali_roman || ""}`.toLowerCase())}">
+                <a href="${BASE_URL}/food/${slug}/">${esc(bn || en)}${bn ? ` <span>(${esc(en)})</span>` : ""}</a>
+              </li>`;
+            }).join("");
+
+            return `<section id="${categoryId}">
+              <h2>${esc(category)}</h2>
+              <ul>${links}</ul>
+            </section>`;
+          }).join("");
+
+          const categoryNav = [...byCategory.keys()].map((category, i) =>
+            `<a href="#cat-${i + 1}">${esc(category)}</a>`
+          ).join("");
+
+          const directoryJsonLd = {
+            "@context": "https://schema.org",
+            "@type": "CollectionPage",
+            "name": "Bangladesh Food Composition Database - All Foods",
+            "url": `${BASE_URL}/food/`,
+            "description": `Browse ${foods.length} individual food nutrition pages in Bangla and English.`,
+            "isPartOf": {
+              "@type": "WebSite",
+              "name": "SHUDDHO Academy - Bangladesh Food Composition Database",
+              "url": `${BASE_URL}/`
+            }
+          };
+
+          const directoryHtml = `<!doctype html>
+          <html lang="bn">
+          <head>
+            <meta charset="utf-8">
+            <meta name="viewport" content="width=device-width,initial-scale=1">
+            <title>All Foods | Bangladesh Food Composition Database</title>
+            <meta name="description" content="Browse ${foods.length} foods from the Bangladesh Food Composition Database with individual nutrition facts pages in Bangla and English.">
+            <meta name="robots" content="index,follow,max-snippet:-1">
+            <link rel="canonical" href="${BASE_URL}/food/">
+            <script type="application/ld+json">${JSON.stringify(directoryJsonLd).replace(/</g, "\\u003c")}</script>
+            <style>
+              body{margin:0;background:#f7faf8;color:#13251f;font-family:Arial,"Noto Sans Bengali",sans-serif;line-height:1.6}
+              .wrap{width:min(1100px,calc(100% - 28px));margin:auto;padding:28px 0 50px}a{color:#0b6b4b}
+              .hero{background:#0b6b4b;color:#fff;border-radius:22px;padding:28px}.search{margin:18px 0}
+              input{width:100%;padding:14px 16px;border:1px solid #cfded7;border-radius:14px;font-size:16px}
+              .cats{display:flex;gap:8px;overflow:auto;padding:8px 0 4px}.cats a{white-space:nowrap;background:#eaf6f0;padding:8px 12px;border-radius:999px;text-decoration:none;font-size:13px}
+              section{background:#fff;border:1px solid #dfe9e4;border-radius:18px;padding:20px;margin:16px 0}
+              ul{columns:2;gap:28px;padding-left:20px}li{break-inside:avoid;margin:7px 0}li span{color:#62756e;font-size:12px}
+              @media(max-width:700px){ul{columns:1}}
+            </style>
+          </head>
+          <body>
+            <main class="wrap">
+              <p><a href="${BASE_URL}/">← Full Food Database</a></p>
+              <div class="hero">
+                <h1>বাংলাদেশ Food Composition Database – All Foods</h1>
+                <p>${foods.length} individual food nutrition pages · বাংলা + English</p>
+              </div>
+
+              <div class="search">
+                <input id="foodSearch" type="search" placeholder="Search food by Bangla or English name..." aria-label="Search foods">
+              </div>
+              <nav class="cats" aria-label="Food categories">${categoryNav}</nav>
+
+              ${categoryBlocks}
+            </main>
+
+            <script>
+              (function(){
+                const q = document.getElementById("foodSearch");
+                if (!q) return;
+                q.addEventListener("input", function(){
+                  const term = q.value.trim().toLowerCase();
+                  document.querySelectorAll("li[data-search]").forEach(function(li){
+                    li.style.display = !term || li.getAttribute("data-search").includes(term) ? "" : "none";
+                  });
+                });
+              })();
+            </script>
+          </body>
+          </html>`;
+
+          fs.writeFileSync(path.join(OUT_DIR, "index.html"), directoryHtml, "utf8");
+          fs.writeFileSync("food-search-index.json", JSON.stringify(searchIndex, null, 2), "utf8");
+          fs.writeFileSync(".nojekyll", "", "utf8");
+
+          const today = new Date().toISOString().slice(0, 10);
+          const urls = [
+            `${BASE_URL}/`,
+            `${BASE_URL}/food/`,
+            ...foods.map(food => `${BASE_URL}/food/${slugMap.get(food.code)}/`)
+          ];
+
+          const xml = `<?xml version="1.0" encoding="UTF-8"?>\n` +
+            `<urlset xmlns="http://www.sitemaps.org/schemas/sitemap/0.9">\n` +
+            urls.map((url, i) =>
+              `  <url><loc>${esc(url)}</loc><lastmod>${today}</lastmod><changefreq>${i < 2 ? "weekly" : "monthly"}</changefreq></url>`
+            ).join("\n") +
+            `\n</urlset>\n`;
+
+          fs.writeFileSync("sitemap.xml", xml, "utf8");
+
+          const robots = `User-agent: *\nAllow: /\n\nSitemap: ${BASE_URL}/sitemap.xml\n`;
+          fs.writeFileSync("robots.txt", robots, "utf8");
+
+          console.log(`Generated ${foods.length} enhanced individual food pages.`);
+          console.log(`Directory: ${BASE_URL}/food/`);
+          console.log(`Sitemap:   ${BASE_URL}/sitemap.xml`);
+          console.log(`Robots:    ${BASE_URL}/robots.txt`);
+          NODE
+
+      - name: Commit generated SEO pages
+        shell: bash
+        run: |
+          git config user.name "github-actions[bot]"
+          git config user.email "41898282+github-actions[bot]@users.noreply.github.com"
+          git add food sitemap.xml food-search-index.json robots.txt .nojekyll
+          if git diff --cached --quiet; then
+            echo "No generated changes to commit."
+            exit 0
+          fi
+          git commit -m "Enhance food SEO pages"
+          git push
