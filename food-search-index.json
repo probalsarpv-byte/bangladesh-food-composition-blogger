@@ -1,0 +1,3050 @@
+[
+  {
+    "code": "01_0001",
+    "name_bn": "যব, গোটা",
+    "name_en": "Barley, whole-grain, raw",
+    "roman": "Jaab, gota",
+    "category": "Cereals and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/barley-whole-grain-raw-01-0001/"
+  },
+  {
+    "code": "01_0002",
+    "name_bn": "বনরুটি,বান/রোল",
+    "name_en": "Bread, bun/roll",
+    "roman": "bonruti, bun/roll",
+    "category": "Cereals and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/bread-bun-roll-01-0002/"
+  },
+  {
+    "code": "01_0003",
+    "name_bn": "পাউরুটি",
+    "name_en": "Bread, white, for toasting",
+    "roman": "pauruti",
+    "category": "Cereals and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/bread-white-for-toasting-01-0003/"
+  },
+  {
+    "code": "01_0004",
+    "name_bn": "ভুট্টার আটা",
+    "name_en": "Maize/Corn flour, whole, white",
+    "roman": "Bhutta, atta",
+    "category": "Cereals and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/maize-corn-flour-whole-white-01-0004/"
+  },
+  {
+    "code": "01_0005",
+    "name_bn": "ভুট্টা, শুকনা",
+    "name_en": "Maize/Corn, yellow, dried, raw",
+    "roman": "Bhutta, shukna",
+    "category": "Cereals and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/maize-corn-yellow-dried-raw-01-0005/"
+  },
+  {
+    "code": "01_0006",
+    "name_bn": "কাউন",
+    "name_en": "Millet, Foxtail, raw",
+    "roman": "Kaon",
+    "category": "Cereals and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/millet-foxtail-raw-01-0006/"
+  },
+  {
+    "code": "01_0007",
+    "name_bn": "চীনা, গোটা দানা",
+    "name_en": "Millet, Proso, whole-grain, raw",
+    "roman": "Cheena, gota- dana",
+    "category": "Cereals and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/millet-proso-whole-grain-raw-01-0007/"
+  },
+  {
+    "code": "01_0008",
+    "name_bn": "বাজরা, গোটা দানা",
+    "name_en": "Pear millet, whole- grain, raw",
+    "roman": "Bajra, gota-dana",
+    "category": "Cereals and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/pear-millet-whole-grain-raw-01-0008/"
+  },
+  {
+    "code": "01_0009",
+    "name_bn": "পপকর্ন (ভুট্টা)",
+    "name_en": "Popcorn, maize (salt added)",
+    "roman": "popcorn, Bhutta",
+    "category": "Cereals and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/popcorn-maize-salt-added-01-0009/"
+  },
+  {
+    "code": "01_0010",
+    "name_bn": "চিঁড়া",
+    "name_en": "Rice flaked",
+    "roman": "Chira",
+    "category": "Cereals and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/rice-flaked-01-0010/"
+  },
+  {
+    "code": "01_0011",
+    "name_bn": "চিঁড়া, ভেজা",
+    "name_en": "Rice flakes, white grain, water-soaked",
+    "roman": "Chira, veja",
+    "category": "Cereals and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/rice-flakes-white-grain-water-soaked-01-0011/"
+  },
+  {
+    "code": "01_0012",
+    "name_bn": "চাল,BR-28,মাঝারি দানা,সিদ্ধ,কলে ছাঁটা",
+    "name_en": "Rice, BR-28, parboiled, milled, raw",
+    "roman": "Chal, BR-28, majhari dana, siddah, kole chata",
+    "category": "Cereals and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/rice-br-28-parboiled-milled-raw-01-0012/"
+  },
+  {
+    "code": "01_0013",
+    "name_bn": "চাল,BR-11,সিদ্ধ,কলে ছাঁটা",
+    "name_en": "Rice, BR-11, parboiled, milled, raw",
+    "roman": "Chal, BR-11, siddha, kole chata",
+    "category": "Cereals and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/rice-br-11-parboiled-milled-raw-01-0013/"
+  },
+  {
+    "code": "01_0014",
+    "name_bn": "চাল,BR-16,সিদ্ধ,কলে ছাঁটা",
+    "name_en": "Rice, BR-16, parboiled, milled, raw",
+    "roman": "Chal, BR-16, siddha, kole chata",
+    "category": "Cereals and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/rice-br-16-parboiled-milled-raw-01-0014/"
+  },
+  {
+    "code": "01_0015",
+    "name_bn": "চাল,BR-26,সিদ্ধ,কলে ছাঁটা",
+    "name_en": "Rice, BR-26, parboiled, milled, raw",
+    "roman": "Chal, BR-26, siddha, kole chata",
+    "category": "Cereals and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/rice-br-26-parboiled-milled-raw-01-0015/"
+  },
+  {
+    "code": "01_0016",
+    "name_bn": "চাল,BR-3,সিদ্ধ,কলে ছাঁটা",
+    "name_en": "Rice, BR-3, parboiled, milled, raw",
+    "roman": "Chal, BR-3, siddha, kole chata",
+    "category": "Cereals and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/rice-br-3-parboiled-milled-raw-01-0016/"
+  },
+  {
+    "code": "01_0017",
+    "name_bn": "চাল, সিদ্ধ, কলে ছাঁটা, কাঁচা",
+    "name_en": "Rice, BRRI Dhan-30, parboiled, milled, raw",
+    "roman": "Chal, BRRI Dhan- 30, siddha, kole chata",
+    "category": "Cereals and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/rice-brri-dhan-30-parboiled-milled-raw-01-0017/"
+  },
+  {
+    "code": "01_0018",
+    "name_bn": "চাল, সিদ্ধ, কলে ছাঁটা, কাঁচা",
+    "name_en": "Rice, BRRI Dhan-40, parboiled, milled, raw",
+    "roman": "Chal, BRRI Dhan- 40, siddha, kole chata",
+    "category": "Cereals and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/rice-brri-dhan-40-parboiled-milled-raw-01-0018/"
+  },
+  {
+    "code": "01_0019",
+    "name_bn": "চালের কুঁড়া",
+    "name_en": "Rice, bran, raw",
+    "roman": "Chaler kura",
+    "category": "Cereals and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/rice-bran-raw-01-0019/"
+  },
+  {
+    "code": "01_0020",
+    "name_bn": "চাল,সিদ্ধ,ঢেঁকি ছাঁটা",
+    "name_en": "Rice, brown, parboiled, home- pounded, raw",
+    "roman": "Chal, siddha, deki chata",
+    "category": "Cereals and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/rice-brown-parboiled-home-pounded-raw-01-0020/"
+  },
+  {
+    "code": "01_0021",
+    "name_bn": "চাল,লাল,সিদ্ধ,কলে ছাঁটা",
+    "name_en": "Rice, brown, parboiled, milled, raw",
+    "roman": "Chal, lal, siddha, kole chata",
+    "category": "Cereals and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/rice-brown-parboiled-milled-raw-01-0021/"
+  },
+  {
+    "code": "01_0022",
+    "name_bn": "খই",
+    "name_en": "Rice, popped",
+    "roman": "Khoi",
+    "category": "Cereals and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/rice-popped-01-0022/"
+  },
+  {
+    "code": "01_0023",
+    "name_bn": "মুড়ি",
+    "name_en": "Rice, puffed, salted",
+    "roman": "Muri",
+    "category": "Cereals and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/rice-puffed-salted-01-0023/"
+  },
+  {
+    "code": "01_0024",
+    "name_bn": "চাল,আতপ,সুগন্ধি,চিকন দানা,ঢেঁকি ছাঁটা",
+    "name_en": "Rice, white, sunned, aromatic, raw",
+    "roman": "Chal, atap, sugondhi, chikon dana, deki chata",
+    "category": "Cereals and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/rice-white-sunned-aromatic-raw-01-0024/"
+  },
+  {
+    "code": "01_0025",
+    "name_bn": "চাল,আতপ,HYV,কলে ছাঁটা,কাঁচা",
+    "name_en": "Rice, white, sunned, polished, milled, raw",
+    "roman": "Chal, atop, HYV, kole chata, raw",
+    "category": "Cereals and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/rice-white-sunned-polished-milled-raw-01-0025/"
+  },
+  {
+    "code": "01_0026",
+    "name_bn": "সুজি,গম",
+    "name_en": "Semolina, wheat, raw",
+    "roman": "Sooji, gom",
+    "category": "Cereals and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/semolina-wheat-raw-01-0026/"
+  },
+  {
+    "code": "01_0027",
+    "name_bn": "জোয়ার",
+    "name_en": "Sorghum, raw",
+    "roman": "Jowar",
+    "category": "Cereals and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/sorghum-raw-01-0027/"
+  },
+  {
+    "code": "01_0028",
+    "name_bn": "ভুট্টা,কাঁচা",
+    "name_en": "Sweetcorn, yellow, on-the cob, raw",
+    "roman": "Bhutta, kancha",
+    "category": "Cereals and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/sweetcorn-yellow-on-the-cob-raw-01-0028/"
+  },
+  {
+    "code": "01_0029",
+    "name_bn": "সেমাই",
+    "name_en": "Vermicelli, wheat , raw",
+    "roman": "Semai",
+    "category": "Cereals and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/vermicelli-wheat-raw-01-0029/"
+  },
+  {
+    "code": "01_0030",
+    "name_bn": "আটা,সাদা",
+    "name_en": "Wheat flour, brown, whole grain, raw",
+    "roman": "Ata, sada",
+    "category": "Cereals and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/wheat-flour-brown-whole-grain-raw-01-0030/"
+  },
+  {
+    "code": "01_0031",
+    "name_bn": "আটা,সাদা,প্যাকেট",
+    "name_en": "Wheat, flour, white",
+    "roman": "Ata, sada, packet",
+    "category": "Cereals and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/wheat-flour-white-01-0031/"
+  },
+  {
+    "code": "01_0032",
+    "name_bn": "ময়দা",
+    "name_en": "Wheat flour, white, refined",
+    "roman": "Maida",
+    "category": "Cereals and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/wheat-flour-white-refined-01-0032/"
+  },
+  {
+    "code": "01_0033",
+    "name_bn": "গম",
+    "name_en": "Wheat, whole, raw",
+    "roman": "Gom",
+    "category": "Cereals and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/wheat-whole-raw-01-0033/"
+  },
+  {
+    "code": "01_0034",
+    "name_bn": "মিষ্টি বিস্কুট",
+    "name_en": "Biscuit, sweet*",
+    "roman": "misti biscuit",
+    "category": "Cereals and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/biscuit-sweet-01-0034/"
+  },
+  {
+    "code": "01_0035",
+    "name_bn": "খিচুড়ি",
+    "name_en": "Plain Khichuri*",
+    "roman": "Khichuri",
+    "category": "Cereals and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/plain-khichuri-01-0035/"
+  },
+  {
+    "code": "01_0036",
+    "name_bn": "প্লেইন পোলাও",
+    "name_en": "Plain pulao*",
+    "roman": "Plain pulao",
+    "category": "Cereals and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/plain-pulao-01-0036/"
+  },
+  {
+    "code": "01_0037",
+    "name_bn": "চাল, সিদ্ধ, লবণ ছাড়া",
+    "name_en": "Rice, BR-28, boiled* (without salt)",
+    "roman": "Bhat, BR-28, bosa bhat",
+    "category": "Cereals and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/rice-br-28-boiled-without-salt-01-0037/"
+  },
+  {
+    "code": "01_0038",
+    "name_bn": "ঢেঁকি ছাঁটা সিদ্ধ লাল চাল এর ভাত",
+    "name_en": "Rice, brown, home-pounded, boiled* (without salt)",
+    "roman": "Deki chata siddho lal chal er bhat",
+    "category": "Cereals and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/rice-brown-home-pounded-boiled-without-salt-01-0038/"
+  },
+  {
+    "code": "01_0039",
+    "name_bn": "কলে ছাঁটা সিদ্ধ লাল চাল এর ভাত",
+    "name_en": "Rice, brown, parboiled, milled, boiled*(without salt)",
+    "roman": "Kole chata siddha lal chal er bhat",
+    "category": "Cereals and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/rice-brown-parboiled-milled-boiled-without-salt-01-0039/"
+  },
+  {
+    "code": "01_0040",
+    "name_bn": "চাল, আতপ, সুগন্ধি, সাদা, সিদ্ধ",
+    "name_en": "Rice, white, sunned, aromatic, boiled* (without salt)",
+    "roman": "Bhat, Sugondhi, bosa bhat",
+    "category": "Cereals and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/rice-white-sunned-aromatic-boiled-without-salt-01-0040/"
+  },
+  {
+    "code": "01_0041",
+    "name_bn": "চাল, কলে ছাঁটা, আতপ, পালিশ করা, সাদা",
+    "name_en": "Rice, white, sunned, polished, milled, boiled* (without salt)",
+    "roman": "Bhat, Atap, bosa bhat",
+    "category": "Cereals and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/rice-white-sunned-polished-milled-boiled-without-salt-01-0041/"
+  },
+  {
+    "code": "01_0042",
+    "name_bn": "রুটি",
+    "name_en": "Ruti*",
+    "roman": "Ruti",
+    "category": "Cereals and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/ruti-01-0042/"
+  },
+  {
+    "code": "01_0043",
+    "name_bn": "সেমাই সিদ্ধ",
+    "name_en": "Vermicelli, boiled* (without salt)",
+    "roman": "Semai siddha",
+    "category": "Cereals and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/vermicelli-boiled-without-salt-01-0043/"
+  },
+  {
+    "code": "02_0001",
+    "name_bn": "ছোলা ডাল, ভাঙা, খোসা ছাড়ানো, শুকনা, কাঁচা",
+    "name_en": "Bengal gram, dehulled, split v dried, raw",
+    "roman": "hholar dal, anga",
+    "category": "Pulses, legumes and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/bengal-gram-dehulled-split-v-dried-raw-02-0001/"
+  },
+  {
+    "code": "02_0002",
+    "name_bn": "ছোলা,শুকনা",
+    "name_en": "Bengal gram, whole dried, raw",
+    "roman": "hhola, shukna",
+    "category": "Pulses, legumes and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/bengal-gram-whole-dried-raw-02-0002/"
+  },
+  {
+    "code": "02_0003",
+    "name_bn": "মাষকলাই ডাল, খোসা ছাড়ানো, শুকনা, কাঁচা",
+    "name_en": "Black gram, dehulled, dried a raw",
+    "roman": "ashkalai dal, sto",
+    "category": "Pulses, legumes and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/black-gram-dehulled-dried-a-raw-02-0003/"
+  },
+  {
+    "code": "02_0004",
+    "name_bn": "মাষকলাই ডাল, ভাঙা, শুকনা, কাঁচা",
+    "name_en": "Black gram, split dried, raw v",
+    "roman": "askalai dal, anga",
+    "category": "Pulses, legumes and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/black-gram-split-dried-raw-v-02-0004/"
+  },
+  {
+    "code": "02_0005",
+    "name_bn": "মুগ ডাল, ভাঙা, সবুজ, শুকনা, কাঁচা",
+    "name_en": "Green gram, split dried, raw",
+    "roman": "Mung dal, vanga",
+    "category": "Pulses, legumes and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/green-gram-split-dried-raw-02-0005/"
+  },
+  {
+    "code": "02_0006",
+    "name_bn": "মুগকালাই",
+    "name_en": "Green gram, whole, dried, raw",
+    "roman": "Mungkalai",
+    "category": "Pulses, legumes and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/green-gram-whole-dried-raw-02-0006/"
+  },
+  {
+    "code": "02_0007",
+    "name_bn": "খেসারি ডাল, ভাঙা, শুকনা, কাঁচা",
+    "name_en": "Grass pea, split dried, raw",
+    "roman": "Khesari dal, vanga",
+    "category": "Pulses, legumes and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/grass-pea-split-dried-raw-02-0007/"
+  },
+  {
+    "code": "02_0008",
+    "name_bn": "মসুর ডাল, শুকনা, কাঁচা",
+    "name_en": "Lentil, dried, raw",
+    "roman": "mosur dal Lens",
+    "category": "Pulses, legumes and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/lentil-dried-raw-02-0008/"
+  },
+  {
+    "code": "02_0009",
+    "name_bn": "মটর",
+    "name_en": "Pea, dried, raw",
+    "roman": "Motor",
+    "category": "Pulses, legumes and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/pea-dried-raw-02-0009/"
+  },
+  {
+    "code": "02_0010",
+    "name_bn": "অড়হর ডাল",
+    "name_en": "Red gram, split, dried, raw",
+    "roman": "Arhar dal",
+    "category": "Pulses, legumes and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/red-gram-split-dried-raw-02-0010/"
+  },
+  {
+    "code": "02_0011",
+    "name_bn": "সয়াবিন, শুকনা, কাঁচা",
+    "name_en": "Soybean, dried, raw",
+    "roman": "Gari kalai/Soyabean",
+    "category": "Pulses, legumes and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/soybean-dried-raw-02-0011/"
+  },
+  {
+    "code": "02_0012",
+    "name_bn": "ছোলা, সিদ্ধ, লবণ ছাড়া",
+    "name_en": "Bengal gram, whole, boiled* l (without salt)",
+    "roman": "hhola siddha, obon chara",
+    "category": "Pulses, legumes and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/bengal-gram-whole-boiled-l-without-salt-02-0012/"
+  },
+  {
+    "code": "02_0013",
+    "name_bn": "মুগ ডাল সিদ্ধ,লবণ ছাড়া",
+    "name_en": "Green gram, split, boiled* (without salt)",
+    "roman": "Mung dal siddha, lobon chara",
+    "category": "Pulses, legumes and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/green-gram-split-boiled-without-salt-02-0013/"
+  },
+  {
+    "code": "02_0014",
+    "name_bn": "খেসারি ডাল সিদ্ধ,লবণ ছাড়া",
+    "name_en": "Grass pea, split, boiled* (without salt)",
+    "roman": "Khesari dal siddha, lobon chara",
+    "category": "Pulses, legumes and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/grass-pea-split-boiled-without-salt-02-0014/"
+  },
+  {
+    "code": "02_0015",
+    "name_bn": "তেল, সিদ্ধ, লবণ ছাড়া",
+    "name_en": "Lentis, boiled* (without salt) s c",
+    "roman": "mosur dal Lens iddha, lobon hara",
+    "category": "Pulses, legumes and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/lentis-boiled-without-salt-s-c-02-0015/"
+  },
+  {
+    "code": "02_0016",
+    "name_bn": "মটর সিদ্ধ,লবণ ছাড়া",
+    "name_en": "Pea, boiled* (without salt)",
+    "roman": "Motor siddha, lobon chara",
+    "category": "Pulses, legumes and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/pea-boiled-without-salt-02-0016/"
+  },
+  {
+    "code": "03_0001",
+    "name_bn": "নটে শাক, কাঁচা",
+    "name_en": "Amaranth, stem, raw",
+    "roman": "Data",
+    "category": "Vegetables and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/amaranth-stem-raw-03-0001/"
+  },
+  {
+    "code": "03_0002",
+    "name_bn": "শিম",
+    "name_en": "Bean, scarlet runner, raw",
+    "roman": "Shim",
+    "category": "Vegetables and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/bean-scarlet-runner-raw-03-0002/"
+  },
+  {
+    "code": "03_0003",
+    "name_bn": "শিম",
+    "name_en": "Bean, seeds and pods, raw",
+    "roman": "Shim",
+    "category": "Vegetables and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/bean-seeds-and-pods-raw-03-0003/"
+  },
+  {
+    "code": "03_0004",
+    "name_bn": "বিটরুট",
+    "name_en": "Beetroot, red, raw",
+    "roman": "eet",
+    "category": "Vegetables and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/beetroot-red-raw-03-0004/"
+  },
+  {
+    "code": "03_0005",
+    "name_bn": "বেগুন,কালো লম্বা",
+    "name_en": "Brinjal, purple, long, raw",
+    "roman": "Begun, kalo lomba",
+    "category": "Vegetables and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/brinjal-purple-long-raw-03-0005/"
+  },
+  {
+    "code": "03_0006",
+    "name_bn": "মাখন শিম",
+    "name_en": "Broad beans, raw",
+    "roman": "Makhon shim",
+    "category": "Vegetables and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/broad-beans-raw-03-0006/"
+  },
+  {
+    "code": "03_0007",
+    "name_bn": "বাঁধাকপি",
+    "name_en": "Cabbage, raw",
+    "roman": "Badhakopi",
+    "category": "Vegetables and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/cabbage-raw-03-0007/"
+  },
+  {
+    "code": "03_0008",
+    "name_bn": "গাজর",
+    "name_en": "Carrot, raw",
+    "roman": "Gajor",
+    "category": "Vegetables and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/carrot-raw-03-0008/"
+  },
+  {
+    "code": "03_0009",
+    "name_bn": "ফুলকপি",
+    "name_en": "Cauliflower, raw",
+    "roman": "Fulkopi",
+    "category": "Vegetables and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/cauliflower-raw-03-0009/"
+  },
+  {
+    "code": "03_0010",
+    "name_bn": "কাঁচা মরিচ",
+    "name_en": "Chilli, green, with seeds, raw",
+    "roman": "Kancha morich",
+    "category": "Vegetables and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/chilli-green-with-seeds-raw-03-0010/"
+  },
+  {
+    "code": "03_0011",
+    "name_bn": "বরবটি",
+    "name_en": "Cowpea, pods and seeds, raw",
+    "roman": "Borboti",
+    "category": "Vegetables and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/cowpea-pods-and-seeds-raw-03-0011/"
+  },
+  {
+    "code": "03_0012",
+    "name_bn": "শসা",
+    "name_en": "Cucumber, peeled, raw",
+    "roman": "Shosa",
+    "category": "Vegetables and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/cucumber-peeled-raw-03-0012/"
+  },
+  {
+    "code": "03_0013",
+    "name_bn": "সজনে, কাঁচা",
+    "name_en": "Drumstick, pods, raw",
+    "roman": "Sajna data",
+    "category": "Vegetables and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/drumstick-pods-raw-03-0013/"
+  },
+  {
+    "code": "03_0014",
+    "name_bn": "রসুন",
+    "name_en": "Garlic, raw",
+    "roman": "Rosun",
+    "category": "Vegetables and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/garlic-raw-03-0014/"
+  },
+  {
+    "code": "03_0015",
+    "name_bn": "চালকুমড়া",
+    "name_en": "Gourd, ash, raw",
+    "roman": "Chalkumra",
+    "category": "Vegetables and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/gourd-ash-raw-03-0015/"
+  },
+  {
+    "code": "03_0016",
+    "name_bn": "করলা",
+    "name_en": "Gourd, bitter, raw",
+    "roman": "Korola",
+    "category": "Vegetables and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/gourd-bitter-raw-03-0016/"
+  },
+  {
+    "code": "03_0017",
+    "name_bn": "লাউ",
+    "name_en": "Gourd, bottle, raw",
+    "roman": "Lau",
+    "category": "Vegetables and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/gourd-bottle-raw-03-0017/"
+  },
+  {
+    "code": "03_0018",
+    "name_bn": "পটল",
+    "name_en": "Gourd, pointed, raw",
+    "roman": "Potol",
+    "category": "Vegetables and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/gourd-pointed-raw-03-0018/"
+  },
+  {
+    "code": "03_0019",
+    "name_bn": "ঝিঙে",
+    "name_en": "Gourd, ridge, raw",
+    "roman": "Jhinga",
+    "category": "Vegetables and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/gourd-ridge-raw-03-0019/"
+  },
+  {
+    "code": "03_0020",
+    "name_bn": "চিচিঙ্গা",
+    "name_en": "Gourd, snake, raw",
+    "roman": "Chichinga",
+    "category": "Vegetables and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/gourd-snake-raw-03-0020/"
+  },
+  {
+    "code": "03_0021",
+    "name_bn": "ধুন্দুল",
+    "name_en": "Gourd, sponge, raw",
+    "roman": "Dhundul",
+    "category": "Vegetables and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/gourd-sponge-raw-03-0021/"
+  },
+  {
+    "code": "03_0022",
+    "name_bn": "কাঁকরোল",
+    "name_en": "Gourd, teasle, raw",
+    "roman": "Kakrol",
+    "category": "Vegetables and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/gourd-teasle-raw-03-0022/"
+  },
+  {
+    "code": "03_0023",
+    "name_bn": "ঢেঁড়স",
+    "name_en": "Okra/Lady’s finger, raw",
+    "roman": "Dheros",
+    "category": "Vegetables and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/okra-lady-s-finger-raw-03-0023/"
+  },
+  {
+    "code": "03_0024",
+    "name_bn": "পেঁয়াজ",
+    "name_en": "Onion, raw",
+    "roman": "Piaj",
+    "category": "Vegetables and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/onion-raw-03-0024/"
+  },
+  {
+    "code": "03_0025",
+    "name_bn": "কাঁচা পেঁপে",
+    "name_en": "Papaya, unripe, raw",
+    "roman": "Kancha pepe",
+    "category": "Vegetables and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/papaya-unripe-raw-03-0025/"
+  },
+  {
+    "code": "03_0026",
+    "name_bn": "মটরশুঁটি",
+    "name_en": "Peas, raw",
+    "roman": "Motorshuti",
+    "category": "Vegetables and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/peas-raw-03-0026/"
+  },
+  {
+    "code": "03_0027",
+    "name_bn": "কাঁচা কলা",
+    "name_en": "Plantain, raw",
+    "roman": "Kancha kola",
+    "category": "Vegetables and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/plantain-raw-03-0027/"
+  },
+  {
+    "code": "03_0028",
+    "name_bn": "মিষ্টিকুমড়া",
+    "name_en": "Pumpkin, raw",
+    "roman": "Mistikumra",
+    "category": "Vegetables and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/pumpkin-raw-03-0028/"
+  },
+  {
+    "code": "03_0029",
+    "name_bn": "মূলা",
+    "name_en": "Radish, raw",
+    "roman": "Mula",
+    "category": "Vegetables and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/radish-raw-03-0029/"
+  },
+  {
+    "code": "03_0030",
+    "name_bn": "টমেটো,কাঁচা",
+    "name_en": "Tomato, green raw",
+    "roman": "Tomato, kancha",
+    "category": "Vegetables and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/tomato-green-raw-03-0030/"
+  },
+  {
+    "code": "03_0031",
+    "name_bn": "টমেটো,পাকা",
+    "name_en": "Tomato, red, ripe , raw",
+    "roman": "Tomato, paka",
+    "category": "Vegetables and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/tomato-red-ripe-raw-03-0031/"
+  },
+  {
+    "code": "03_0032",
+    "name_bn": "শালগম",
+    "name_en": "Turnip, raw",
+    "roman": "Shalgom",
+    "category": "Vegetables and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/turnip-raw-03-0032/"
+  },
+  {
+    "code": "03_0033",
+    "name_bn": "বেগুন সিদ্ধ,লবণ ছাড়া",
+    "name_en": "Brinjal, purple, long, boiled* (without salt)",
+    "roman": "Begun siddha, lobon chara",
+    "category": "Vegetables and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/brinjal-purple-long-boiled-without-salt-03-0033/"
+  },
+  {
+    "code": "03_0034",
+    "name_bn": "বাঁধাকপি সিদ্ধ,লবণ ছাড়া",
+    "name_en": "Cabbage, boiled* (without salt)",
+    "roman": "Badhakopi siddha, lobon chara",
+    "category": "Vegetables and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/cabbage-boiled-without-salt-03-0034/"
+  },
+  {
+    "code": "03_0035",
+    "name_bn": "গাজর সিদ্ধ,লবণ ছাড়া",
+    "name_en": "Carrot, boiled* (without salt)",
+    "roman": "Gajor siddha, lobon chara",
+    "category": "Vegetables and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/carrot-boiled-without-salt-03-0035/"
+  },
+  {
+    "code": "03_0036",
+    "name_bn": "ফুলকপি, সিদ্ধ, লবণ ছাড়া",
+    "name_en": "Cauliflower, boiled* (without salt)",
+    "roman": "Fulkopi siddha, Br lobon chara va",
+    "category": "Vegetables and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/cauliflower-boiled-without-salt-03-0036/"
+  },
+  {
+    "code": "03_0037",
+    "name_bn": "বরবটি, সিদ্ধ, লবণ ছাড়া",
+    "name_en": "Cowpea, boiled* (without salt)",
+    "roman": "Borboti siddha, Vign lobon chara",
+    "category": "Vegetables and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/cowpea-boiled-without-salt-03-0037/"
+  },
+  {
+    "code": "03_0038",
+    "name_bn": "পটল সিদ্ধ,লবণ ছাড়া",
+    "name_en": "Gourd, pointed, boiled* (without salt)",
+    "roman": "Potol siddha, lobon chara",
+    "category": "Vegetables and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/gourd-pointed-boiled-without-salt-03-0038/"
+  },
+  {
+    "code": "03_0039",
+    "name_bn": "কাঁকরোল সিদ্ধ,লবণ ছাড়া",
+    "name_en": "Gourd, teasle, boiled* (without salt)",
+    "roman": "Kakrol siddha, lobon chara",
+    "category": "Vegetables and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/gourd-teasle-boiled-without-salt-03-0039/"
+  },
+  {
+    "code": "03_0040",
+    "name_bn": "ঢেঁড়স সিদ্ধ,লবণ ছাড়া",
+    "name_en": "Okra/Lady’s finger, boiled* (without salt)",
+    "roman": "Dheros siddha, lobon chara",
+    "category": "Vegetables and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/okra-lady-s-finger-boiled-without-salt-03-0040/"
+  },
+  {
+    "code": "03_0041",
+    "name_bn": "কাঁচা পেঁপে সিদ্ধ,লবণ ছাড়া",
+    "name_en": "Papaya, unripe, boiled* (without salt)",
+    "roman": "Kancha pepe siddha, lobon chara",
+    "category": "Vegetables and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/papaya-unripe-boiled-without-salt-03-0041/"
+  },
+  {
+    "code": "03_0042",
+    "name_bn": "কাঁচা কলা সিদ্ধ,লবণ ছাড়া",
+    "name_en": "Plantain, boiled* (without salt)",
+    "roman": "Kancha kola siddha, lobon chara",
+    "category": "Vegetables and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/plantain-boiled-without-salt-03-0042/"
+  },
+  {
+    "code": "03_0043",
+    "name_bn": "মিষ্টিকুমড়া সিদ্ধ,লবণ ছাড়া",
+    "name_en": "Pumpkin, boiled* (without salt)",
+    "roman": "Mistikumra siddha, lobon chara",
+    "category": "Vegetables and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/pumpkin-boiled-without-salt-03-0043/"
+  },
+  {
+    "code": "03_0044",
+    "name_bn": "মূলা সিদ্ধ,লবণ ছাড়া",
+    "name_en": "Radish, boiled* (without salt)",
+    "roman": "Mula siddha, lobon chara",
+    "category": "Vegetables and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/radish-boiled-without-salt-03-0044/"
+  },
+  {
+    "code": "03_0045",
+    "name_bn": "টমেটো, লাল, সিদ্ধ, পাকা",
+    "name_en": "Tomato, red, ripe, boiled* (without sal",
+    "roman": "Tomato paka t) siddha, lobon chara",
+    "category": "Vegetables and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/tomato-red-ripe-boiled-without-sal-03-0045/"
+  },
+  {
+    "code": "03_0046",
+    "name_bn": "ঢেঁড়স-টমেটো ভুনা",
+    "name_en": "Lady’s finger- tomato bhuna*",
+    "roman": "Dheros-tomato bhuna",
+    "category": "Vegetables and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/lady-s-finger-tomato-bhuna-03-0046/"
+  },
+  {
+    "code": "03_0047",
+    "name_bn": "করলা সিদ্ধ,লবণ ছাড়া",
+    "name_en": "Gourd, bitter, boiled* (without salt)",
+    "roman": "Korola siddha, lobon chara",
+    "category": "Vegetables and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/gourd-bitter-boiled-without-salt-03-0047/"
+  },
+  {
+    "code": "03_0048",
+    "name_bn": "করলা ভাজি",
+    "name_en": "Gourd, bitter, fry*",
+    "roman": "Korola vaji",
+    "category": "Vegetables and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/gourd-bitter-fry-03-0048/"
+  },
+  {
+    "code": "04_0001",
+    "name_bn": "বকফুল শাক, কাঁচা",
+    "name_en": "Agathi, raw",
+    "roman": "Bok ful shak",
+    "category": "Leafy vegetables",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/agathi-raw-04-0001/"
+  },
+  {
+    "code": "04_0002",
+    "name_bn": "মালঞ্চ শাক",
+    "name_en": "Alligator weed, raw",
+    "roman": "Malancha shak",
+    "category": "Leafy vegetables",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/alligator-weed-raw-04-0002/"
+  },
+  {
+    "code": "04_0003",
+    "name_bn": "নটে শাক, কাঁচা",
+    "name_en": "Amaranth leaves, spiney, raw",
+    "roman": "Kanta notay shak Ama",
+    "category": "Leafy vegetables",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/amaranth-leaves-spiney-raw-04-0003/"
+  },
+  {
+    "code": "04_0004",
+    "name_bn": "লাল শাক",
+    "name_en": "Amaranth leaves, red, raw",
+    "roman": "Lal shak",
+    "category": "Leafy vegetables",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/amaranth-leaves-red-raw-04-0004/"
+  },
+  {
+    "code": "04_0005",
+    "name_bn": "নটে শাক, সবুজ, কাঁচা",
+    "name_en": "Amaranth, leaves, green, raw",
+    "roman": "Data shak",
+    "category": "Leafy vegetables",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/amaranth-leaves-green-raw-04-0005/"
+  },
+  {
+    "code": "04_0006",
+    "name_bn": "চুকাই শাক,বিভিন্ন প্রজাতি",
+    "name_en": "Dock leaves, raw",
+    "roman": "Chukai shak, bivinno projati",
+    "category": "Leafy vegetables",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/dock-leaves-raw-04-0006/"
+  },
+  {
+    "code": "04_0007",
+    "name_bn": "বিট শাক, সবুজ",
+    "name_en": "Beet greens leaves",
+    "roman": "eet shak",
+    "category": "Leafy vegetables",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/beet-greens-leaves-04-0007/"
+  },
+  {
+    "code": "04_0008",
+    "name_bn": "বৈট্যা শাক, কাঁচা",
+    "name_en": "Bengal dayflower, leaves, raw",
+    "roman": "at baitta shak b",
+    "category": "Leafy vegetables",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/bengal-dayflower-leaves-raw-04-0008/"
+  },
+  {
+    "code": "04_0009",
+    "name_bn": "করলা, সবুজ, কাঁচা",
+    "name_en": "Bitter gourd leaves, green, raw",
+    "roman": "orola shak c",
+    "category": "Leafy vegetables",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/bitter-gourd-leaves-green-raw-04-0009/"
+  },
+  {
+    "code": "04_0010",
+    "name_bn": "লাউ, কাঁচা",
+    "name_en": "Bottle gourd leaves, winter and summer, raw",
+    "roman": "au shak",
+    "category": "Leafy vegetables",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/bottle-gourd-leaves-winter-and-summer-raw-04-0010/"
+  },
+  {
+    "code": "04_0011",
+    "name_bn": "সবরাং, কাঁচা",
+    "name_en": "Bugleweed, raw",
+    "roman": "Sabarang",
+    "category": "Leafy vegetables",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/bugleweed-raw-04-0011/"
+  },
+  {
+    "code": "04_0012",
+    "name_bn": "সিমেই আলু শাক",
+    "name_en": "Cassava, leaves, raw",
+    "roman": "Simei alu shak",
+    "category": "Leafy vegetables",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/cassava-leaves-raw-04-0012/"
+  },
+  {
+    "code": "04_0013",
+    "name_bn": "কালো কচু শাক",
+    "name_en": "Colocasia leaves, black, raw",
+    "roman": "Kalo kochu shak",
+    "category": "Leafy vegetables",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/colocasia-leaves-black-raw-04-0013/"
+  },
+  {
+    "code": "04_0014",
+    "name_bn": "সবুজ কচু শাক",
+    "name_en": "Colocasia leaves, green, raw",
+    "roman": "Shobuj kochu shak",
+    "category": "Leafy vegetables",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/colocasia-leaves-green-raw-04-0014/"
+  },
+  {
+    "code": "04_0015",
+    "name_bn": "বরবটি, কাঁচা",
+    "name_en": "Cowpea, leaves, raw",
+    "roman": "Borboti pata Vign",
+    "category": "Leafy vegetables",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/cowpea-leaves-raw-04-0015/"
+  },
+  {
+    "code": "04_0016",
+    "name_bn": "ডিমা শাক, কাঁচা",
+    "name_en": "Dima leaves, raw",
+    "roman": "Dima shak",
+    "category": "Leafy vegetables",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/dima-leaves-raw-04-0016/"
+  },
+  {
+    "code": "04_0017",
+    "name_bn": "সজনে পাতা",
+    "name_en": "Drumstick, leaves, raw",
+    "roman": "Sajna pata",
+    "category": "Leafy vegetables",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/drumstick-leaves-raw-04-0017/"
+  },
+  {
+    "code": "04_0018",
+    "name_bn": "ঢেঁকি শাক দি এস ভু",
+    "name_en": "Farn, leaves, raw",
+    "roman": "Dheki shak Di es vu",
+    "category": "Leafy vegetables",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/farn-leaves-raw-04-0018/"
+  },
+  {
+    "code": "04_0019",
+    "name_bn": "মেথি, কাঁচা",
+    "name_en": "Fenugreek, leaves, raw",
+    "roman": "Methi shak Tr fo",
+    "category": "Leafy vegetables",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/fenugreek-leaves-raw-04-0019/"
+  },
+  {
+    "code": "04_0020",
+    "name_bn": "পুঁই শাক",
+    "name_en": "Indian spinach, raw",
+    "roman": "Pui shak",
+    "category": "Leafy vegetables",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/indian-spinach-raw-04-0020/"
+  },
+  {
+    "code": "04_0021",
+    "name_bn": "পাট শাক, কাঁচা",
+    "name_en": "Jute leaves, raw",
+    "roman": "at shak Corc",
+    "category": "Leafy vegetables",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/jute-leaves-raw-04-0021/"
+  },
+  {
+    "code": "04_0022",
+    "name_bn": "মিষ্টিকুমড়া, কাঁচা",
+    "name_en": "Pumpkin leaves, raw",
+    "roman": "misti kumra shak Cu",
+    "category": "Leafy vegetables",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/pumpkin-leaves-raw-04-0022/"
+  },
+  {
+    "code": "04_0023",
+    "name_bn": "মূলা শাক",
+    "name_en": "Radish leaves, raw",
+    "roman": "Mula shak",
+    "category": "Leafy vegetables",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/radish-leaves-raw-04-0023/"
+  },
+  {
+    "code": "04_0024",
+    "name_bn": "নটে শাক",
+    "name_en": "Slender amaranth leaves, raw",
+    "roman": "Notay shak",
+    "category": "Leafy vegetables",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/slender-amaranth-leaves-raw-04-0024/"
+  },
+  {
+    "code": "04_0025",
+    "name_bn": "পালং শাক",
+    "name_en": "Spinach, raw",
+    "roman": "Palong shak",
+    "category": "Leafy vegetables",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/spinach-raw-04-0025/"
+  },
+  {
+    "code": "04_0026",
+    "name_bn": "মিষ্টি আলু, কাঁচা",
+    "name_en": "Sweet potato leaves, raw",
+    "roman": "Misti alu shak",
+    "category": "Leafy vegetables",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/sweet-potato-leaves-raw-04-0026/"
+  },
+  {
+    "code": "04_0027",
+    "name_bn": "মিষ্টি আলু, সবুজ, কাঁচা",
+    "name_en": "Sweet potato leaves, SP4, dark green, mature, raw",
+    "roman": "Misti alu shak (SP4)",
+    "category": "Leafy vegetables",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/sweet-potato-leaves-sp4-dark-green-mature-raw-04-0027/"
+  },
+  {
+    "code": "04_0028",
+    "name_bn": "মিষ্টি আলু, সবুজ, কাঁচা",
+    "name_en": "Sweet potato leaves, SP7, dark green, mature, raw",
+    "roman": "Misti alu shak (SP7)",
+    "category": "Leafy vegetables",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/sweet-potato-leaves-sp7-dark-green-mature-raw-04-0028/"
+  },
+  {
+    "code": "04_0029",
+    "name_bn": "মিষ্টি আলু, সবুজ, কাঁচা",
+    "name_en": "Sweet potato leaves, SP8, light green, mature, raw",
+    "roman": "Misti alu shak (SP8)",
+    "category": "Leafy vegetables",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/sweet-potato-leaves-sp8-light-green-mature-raw-04-0029/"
+  },
+  {
+    "code": "04_0030",
+    "name_bn": "কলমি শাক",
+    "name_en": "Water spinach, raw",
+    "roman": "Kolmee shak",
+    "category": "Leafy vegetables",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/water-spinach-raw-04-0030/"
+  },
+  {
+    "code": "04_0031",
+    "name_bn": "হেলেঞ্চা শাক",
+    "name_en": "Watercress, raw",
+    "roman": "Helencha shak",
+    "category": "Leafy vegetables",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/watercress-raw-04-0031/"
+  },
+  {
+    "code": "04_0032",
+    "name_bn": "লাল শাক,সিদ্ধ,লবণ ছাড়া",
+    "name_en": "Amaranth leaves, red, boiled* (without salt)",
+    "roman": "Lal shak, siddha, lobon chara",
+    "category": "Leafy vegetables",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/amaranth-leaves-red-boiled-without-salt-04-0032/"
+  },
+  {
+    "code": "04_0033",
+    "name_bn": "নটে শাক, সবুজ, সিদ্ধ, লবণ ছাড়া",
+    "name_en": "Amaranth leaves, green, boiled* (without salt)",
+    "roman": "Data shak, sobuj, siddha, lobon chara",
+    "category": "Leafy vegetables",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/amaranth-leaves-green-boiled-without-salt-04-0033/"
+  },
+  {
+    "code": "04_0034",
+    "name_bn": "নটে শাক সিদ্ধ,লবণ ছাড়া",
+    "name_en": "Slender amaranth leaves, boiled* (without salt)",
+    "roman": "Notay shak siddha, lobon chara",
+    "category": "Leafy vegetables",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/slender-amaranth-leaves-boiled-without-salt-04-0034/"
+  },
+  {
+    "code": "04_0035",
+    "name_bn": "পালং শাক সিদ্ধ,লবণ ছাড়া",
+    "name_en": "Spinach, boiled*(without salt)",
+    "roman": "Palong shak siddha, lobon chara",
+    "category": "Leafy vegetables",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/spinach-boiled-without-salt-04-0035/"
+  },
+  {
+    "code": "04_0036",
+    "name_bn": "পুঁই শাক সিদ্ধ,লবণ ছাড়া",
+    "name_en": "Indian spinach, boiled*(without salt)",
+    "roman": "Pui shak siddha, lobon chara",
+    "category": "Leafy vegetables",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/indian-spinach-boiled-without-salt-04-0036/"
+  },
+  {
+    "code": "05_0001",
+    "name_bn": "কচুর মুখী",
+    "name_en": "Colocasia/Taro, corm, raw",
+    "roman": "Kochur Mukhi",
+    "category": "Starchy roots, tubers and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/colocasia-taro-corm-raw-05-0001/"
+  },
+  {
+    "code": "05_0002",
+    "name_bn": "কচু, কাঁচা",
+    "name_en": "Colocasia/Taro/ Tannia, cormel, raw",
+    "roman": "Dudh kochu v",
+    "category": "Starchy roots, tubers and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/colocasia-taro-tannia-cormel-raw-05-0002/"
+  },
+  {
+    "code": "05_0003",
+    "name_bn": "ওল কচু",
+    "name_en": "Elephant foot, corm, raw",
+    "roman": "Ole Kochu",
+    "category": "Starchy roots, tubers and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/elephant-foot-corm-raw-05-0003/"
+  },
+  {
+    "code": "05_0004",
+    "name_bn": "মানকচু",
+    "name_en": "Giant taro, corm, raw",
+    "roman": "Mankochu",
+    "category": "Starchy roots, tubers and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/giant-taro-corm-raw-05-0004/"
+  },
+  {
+    "code": "05_0005",
+    "name_bn": "আলু, কাঁচা",
+    "name_en": "Potato, Diamond, raw k",
+    "roman": "ol alu, So iamond jat, hosa chara",
+    "category": "Starchy roots, tubers and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/potato-diamond-raw-k-05-0005/"
+  },
+  {
+    "code": "05_0006",
+    "name_bn": "মিষ্টি আলু, কাঁচা",
+    "name_en": "Sweet potato, Komola Sundori, orange flesh, raw",
+    "roman": "Misti alu, Komola Sundori",
+    "category": "Starchy roots, tubers and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/sweet-potato-komola-sundori-orange-flesh-raw-05-0006/"
+  },
+  {
+    "code": "05_0007",
+    "name_bn": "মিষ্টি আলু, হলুদ, কাঁচা",
+    "name_en": "Sweet potato, pale- yellow flesh, raw",
+    "roman": "Misti alu, holdey",
+    "category": "Starchy roots, tubers and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/sweet-potato-pale-yellow-flesh-raw-05-0007/"
+  },
+  {
+    "code": "05_0008",
+    "name_bn": "মিষ্টি আলু, হলুদ, বেগুনি, কাঁচা",
+    "name_en": "Sweet potato, skin purple, flesh pale- yellow, raw",
+    "roman": "Misti alu, Lal khosa",
+    "category": "Starchy roots, tubers and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/sweet-potato-skin-purple-flesh-pale-yellow-raw-05-0008/"
+  },
+  {
+    "code": "05_0009",
+    "name_bn": "মিষ্টি আলু, সাদা, কাঁচা",
+    "name_en": "Sweet potato, white flesh, raw",
+    "roman": "Misti Alu, Sada",
+    "category": "Starchy roots, tubers and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/sweet-potato-white-flesh-raw-05-0009/"
+  },
+  {
+    "code": "05_0010",
+    "name_bn": "ওল, কাঁচা",
+    "name_en": "Yam, tuber, raw",
+    "roman": "Bon Alu, Bivinno projati 1 rsity of",
+    "category": "Starchy roots, tubers and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/yam-tuber-raw-05-0010/"
+  },
+  {
+    "code": "05_0011",
+    "name_bn": "কচুর মুখী সিদ্ধ,লবণ ছাড়া",
+    "name_en": "Colocasia/Taro, boiled* (without salt)",
+    "roman": "Kochur Mukhi siddha, lobon chara",
+    "category": "Starchy roots, tubers and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/colocasia-taro-boiled-without-salt-05-0011/"
+  },
+  {
+    "code": "05_0012",
+    "name_bn": "আলু, সিদ্ধ, লবণ ছাড়া",
+    "name_en": "Potato, Diamond, l boiled* (without salt)",
+    "roman": "ol alu siddha, So obon chara",
+    "category": "Starchy roots, tubers and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/potato-diamond-l-boiled-without-salt-05-0012/"
+  },
+  {
+    "code": "05_0013",
+    "name_bn": "মিষ্টি আলু, হলুদ, সিদ্ধ, লবণ ছাড়া",
+    "name_en": "Sweet potato, pale- yellow flesh, boiled* (without salt)",
+    "roman": "Misti alu, holdey, siddha, lobon chara",
+    "category": "Starchy roots, tubers and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/sweet-potato-pale-yellow-flesh-boiled-without-salt-05-0013/"
+  },
+  {
+    "code": "05_0014",
+    "name_bn": "মিষ্টি আলু, সাদা, সিদ্ধ, লবণ ছাড়া",
+    "name_en": "Sweet potato, white flesh, boiled* (without salt)",
+    "roman": "Misti alu, sada, siddha, lobon chara",
+    "category": "Starchy roots, tubers and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/sweet-potato-white-flesh-boiled-without-salt-05-0014/"
+  },
+  {
+    "code": "05_0015",
+    "name_bn": "মিষ্টি আলু, হলুদ, বেগুনি, সিদ্ধ, লবণ ছাড়া",
+    "name_en": "Sweet potato, skin purple, flesh pale- yellow, boiled* (without salt)",
+    "roman": "Misti alu, lal khosa, siddha, lobon chara",
+    "category": "Starchy roots, tubers and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/sweet-potato-skin-purple-flesh-pale-yellow-boiled-without-salt-05-0015/"
+  },
+  {
+    "code": "05_0016",
+    "name_bn": "মিষ্টি আলু, সিদ্ধ, লবণ ছাড়া",
+    "name_en": "Sweet potato, Komola Sundori, orange flesh, boiled* (without salt)",
+    "roman": "Misti alu, Komola Sundori, siddha, lobon chara",
+    "category": "Starchy roots, tubers and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/sweet-potato-komola-sundori-orange-flesh-boiled-without-salt-05-0016/"
+  },
+  {
+    "code": "05_0017",
+    "name_bn": "দুধ কচু সিদ্ধ,লবণ ছাড়া",
+    "name_en": "Colocasia/Taro/T annia, cormel, boiled* (without salt)",
+    "roman": "Dudh kochu siddha, lobon chara",
+    "category": "Starchy roots, tubers and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/colocasia-taro-t-annia-cormel-boiled-without-salt-05-0017/"
+  },
+  {
+    "code": "05_0018",
+    "name_bn": "ওল কচু সিদ্ধ,লবণ ছাড়া",
+    "name_en": "Elephant foot, corm, boiled* (without salt)",
+    "roman": "Ole kochu siddha, lobon chara",
+    "category": "Starchy roots, tubers and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/elephant-foot-corm-boiled-without-salt-05-0018/"
+  },
+  {
+    "code": "05_0019",
+    "name_bn": "মানকচু সিদ্ধ,লবণ ছাড়া",
+    "name_en": "Giant taro, corm, boiled* (without salt)",
+    "roman": "Mankochu siddha, lobon chara",
+    "category": "Starchy roots, tubers and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/giant-taro-corm-boiled-without-salt-05-0019/"
+  },
+  {
+    "code": "05_0020",
+    "name_bn": "ওল, সিদ্ধ, লবণ ছাড়া",
+    "name_en": "Yam, tuber, boiled* (without salt)",
+    "roman": "Bon alu siddha, lobon chara",
+    "category": "Starchy roots, tubers and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/yam-tuber-boiled-without-salt-05-0020/"
+  },
+  {
+    "code": "05_0021",
+    "name_bn": "আলু",
+    "name_en": "Potato Mash* l",
+    "roman": "lu siddha, obon soho",
+    "category": "Starchy roots, tubers and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/potato-mash-l-05-0021/"
+  },
+  {
+    "code": "06_0001",
+    "name_bn": "সূর্যমুখীর বীজ, শুকনা",
+    "name_en": "Sunflower seeds, dried",
+    "roman": "Surjomukhi bij",
+    "category": "Nuts, seeds and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/sunflower-seeds-dried-06-0001/"
+  },
+  {
+    "code": "06_0002",
+    "name_bn": "কাজুবাদাম, কাঁচা",
+    "name_en": "Cashew nuts, raw",
+    "roman": "Hizlee badam",
+    "category": "Nuts, seeds and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/cashew-nuts-raw-06-0002/"
+  },
+  {
+    "code": "06_0003",
+    "name_bn": "চিলগোজা, শুকনা",
+    "name_en": "Chilgoza pine, dried",
+    "roman": "Chilgoza",
+    "category": "Nuts, seeds and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/chilgoza-pine-dried-06-0003/"
+  },
+  {
+    "code": "06_0004",
+    "name_bn": "নারিকেল দুধ",
+    "name_en": "Coconut Milk",
+    "roman": "Narikel dudh",
+    "category": "Nuts, seeds and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/coconut-milk-06-0004/"
+  },
+  {
+    "code": "06_0005",
+    "name_bn": "নারিকেল,শুকনা",
+    "name_en": "Coconut, desiccated",
+    "roman": "Narikel, shukna",
+    "category": "Nuts, seeds and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/coconut-desiccated-06-0005/"
+  },
+  {
+    "code": "06_0006",
+    "name_bn": "নারিকেল",
+    "name_en": "Coconut, mature kernel",
+    "roman": "Narikel",
+    "category": "Nuts, seeds and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/coconut-mature-kernel-06-0006/"
+  },
+  {
+    "code": "06_0007",
+    "name_bn": "চিনাবাদাম, কাঁচা",
+    "name_en": "Groundnuts/Pea nut, raw",
+    "roman": "China badam",
+    "category": "Nuts, seeds and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/groundnuts-pea-nut-raw-06-0007/"
+  },
+  {
+    "code": "06_0008",
+    "name_bn": "কাঁঠালের বিচি, কাঁচা",
+    "name_en": "Jackfruit seeds, raw",
+    "roman": "Kathal er bichi h",
+    "category": "Nuts, seeds and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/jackfruit-seeds-raw-06-0008/"
+  },
+  {
+    "code": "06_0009",
+    "name_bn": "তিসি, কাঁচা",
+    "name_en": "Linseed,Tisi, raw",
+    "roman": "isi Linu",
+    "category": "Nuts, seeds and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/linseed-tisi-raw-06-0009/"
+  },
+  {
+    "code": "06_0010",
+    "name_bn": "পদ্মবীজ, শুকনা",
+    "name_en": "Lotus seeds, Pod dried shu",
+    "roman": "do gota, Nelu kna",
+    "category": "Nuts, seeds and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/lotus-seeds-pod-dried-shu-06-0010/"
+  },
+  {
+    "code": "06_0011",
+    "name_bn": "পদ্মবীজ, সবুজ",
+    "name_en": "Lotus seeds, green k",
+    "roman": "oddo gota, Nelu ancha",
+    "category": "Nuts, seeds and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/lotus-seeds-green-k-06-0011/"
+  },
+  {
+    "code": "06_0012",
+    "name_bn": "সরিষা, শুকনা",
+    "name_en": "Mustard seeds, dried",
+    "roman": "Sarisha",
+    "category": "Nuts, seeds and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/mustard-seeds-dried-06-0012/"
+  },
+  {
+    "code": "06_0013",
+    "name_bn": "পেস্তা, শুকনা",
+    "name_en": "Pistachio nuts, dried",
+    "roman": "Pesta",
+    "category": "Nuts, seeds and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/pistachio-nuts-dried-06-0013/"
+  },
+  {
+    "code": "06_0014",
+    "name_bn": "মিষ্টিকুমড়া, শুকনা",
+    "name_en": "Pumpkin seeds, dried",
+    "roman": "Mistikumrar bichi",
+    "category": "Nuts, seeds and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/pumpkin-seeds-dried-06-0014/"
+  },
+  {
+    "code": "06_0015",
+    "name_bn": "তিল",
+    "name_en": "Sesame seeds, whole, dried",
+    "roman": "Til",
+    "category": "Nuts, seeds and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/sesame-seeds-whole-dried-06-0015/"
+  },
+  {
+    "code": "06_0016",
+    "name_bn": "আখরোট",
+    "name_en": "Walnuts",
+    "roman": "Akhrot",
+    "category": "Nuts, seeds and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/walnuts-06-0016/"
+  },
+  {
+    "code": "07_0001",
+    "name_bn": "তেজপাতা, শুকনা",
+    "name_en": "Bay leaf, dried",
+    "roman": "Tejpata",
+    "category": "Spices, condiments and herbs",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/bay-leaf-dried-07-0001/"
+  },
+  {
+    "code": "07_0002",
+    "name_bn": "এলাচ",
+    "name_en": "Cardamom",
+    "roman": "Elach",
+    "category": "Spices, condiments and herbs",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/cardamom-07-0002/"
+  },
+  {
+    "code": "07_0003",
+    "name_bn": "শুকনা মরিচ",
+    "name_en": "Chilli, red, dry",
+    "roman": "Shukna morich",
+    "category": "Spices, condiments and herbs",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/chilli-red-dry-07-0003/"
+  },
+  {
+    "code": "07_0004",
+    "name_bn": "দারুচিনি",
+    "name_en": "Cinnamon, ground",
+    "roman": "Darchini gura",
+    "category": "Spices, condiments and herbs",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/cinnamon-ground-07-0004/"
+  },
+  {
+    "code": "07_0005",
+    "name_bn": "লবঙ্গ, শুকনা",
+    "name_en": "Cloves, dried",
+    "roman": "Labongo",
+    "category": "Spices, condiments and herbs",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/cloves-dried-07-0005/"
+  },
+  {
+    "code": "07_0006",
+    "name_bn": "ধনেপাতা, কাঁচা",
+    "name_en": "Coriander leaves, raw",
+    "roman": "Dhone pata s",
+    "category": "Spices, condiments and herbs",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/coriander-leaves-raw-07-0006/"
+  },
+  {
+    "code": "07_0007",
+    "name_bn": "ধনিয়া",
+    "name_en": "Coriander seed, dry",
+    "roman": "Dhonia s",
+    "category": "Spices, condiments and herbs",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/coriander-seed-dry-07-0007/"
+  },
+  {
+    "code": "07_0008",
+    "name_bn": "জিরা",
+    "name_en": "Cumin seeds",
+    "roman": "Jira",
+    "category": "Spices, condiments and herbs",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/cumin-seeds-07-0008/"
+  },
+  {
+    "code": "07_0009",
+    "name_bn": "মৌরি",
+    "name_en": "Fennel seeds",
+    "roman": "Mauri",
+    "category": "Spices, condiments and herbs",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/fennel-seeds-07-0009/"
+  },
+  {
+    "code": "07_0010",
+    "name_bn": "মেথি",
+    "name_en": "Fenugreek seeds",
+    "roman": "Methi Tr fo",
+    "category": "Spices, condiments and herbs",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/fenugreek-seeds-07-0010/"
+  },
+  {
+    "code": "07_0011",
+    "name_bn": "আদা",
+    "name_en": "Ginger root, raw",
+    "roman": "Ada",
+    "category": "Spices, condiments and herbs",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/ginger-root-raw-07-0011/"
+  },
+  {
+    "code": "07_0012",
+    "name_bn": "থানকুনি পাতা, কাঁচা",
+    "name_en": "Indian penny wort, raw",
+    "roman": "Thankuni pata",
+    "category": "Spices, condiments and herbs",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/indian-penny-wort-raw-07-0012/"
+  },
+  {
+    "code": "07_0013",
+    "name_bn": "লেমনগ্রাস, কাঁচা",
+    "name_en": "Lemon grass, raw",
+    "roman": "emon ghas Cymb",
+    "category": "Spices, condiments and herbs",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/lemon-grass-raw-07-0013/"
+  },
+  {
+    "code": "07_0014",
+    "name_bn": "লেবুর খোসা, কাঁচা",
+    "name_en": "Lemon peel, raw",
+    "roman": "ebur khosa Citr",
+    "category": "Spices, condiments and herbs",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/lemon-peel-raw-07-0014/"
+  },
+  {
+    "code": "07_0015",
+    "name_bn": "জয়ত্রী",
+    "name_en": "Mace, ground",
+    "roman": "Jayitri, gura",
+    "category": "Spices, condiments and herbs",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/mace-ground-07-0015/"
+  },
+  {
+    "code": "07_0016",
+    "name_bn": "জায়ফল, শুকনা",
+    "name_en": "Nutmeg, dried",
+    "roman": "Jayfol",
+    "category": "Spices, condiments and herbs",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/nutmeg-dried-07-0016/"
+  },
+  {
+    "code": "07_0017",
+    "name_bn": "গোলমরিচ",
+    "name_en": "Pepper, black",
+    "roman": "Golmorich",
+    "category": "Spices, condiments and herbs",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/pepper-black-07-0017/"
+  },
+  {
+    "code": "07_0018",
+    "name_bn": "পোস্তদানা",
+    "name_en": "Poppy seeds",
+    "roman": "osto dana",
+    "category": "Spices, condiments and herbs",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/poppy-seeds-07-0018/"
+  },
+  {
+    "code": "07_0019",
+    "name_bn": "নাশপাতি",
+    "name_en": "Spearmint leaves, fresh",
+    "roman": "Pudina pata",
+    "category": "Spices, condiments and herbs",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/spearmint-leaves-fresh-07-0019/"
+  },
+  {
+    "code": "07_0020",
+    "name_bn": "হলুদ",
+    "name_en": "Turmeric, dried",
+    "roman": "Holud",
+    "category": "Spices, condiments and herbs",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/turmeric-dried-07-0020/"
+  },
+  {
+    "code": "08_0001",
+    "name_bn": "আপেল,খোসা ছাড়া",
+    "name_en": "Apple, without skin, raw",
+    "roman": "Apel, khosa chara",
+    "category": "Fruits",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/apple-without-skin-raw-08-0001/"
+  },
+  {
+    "code": "08_0002",
+    "name_bn": "আপেল,খোসা সহ",
+    "name_en": "Apple, with skin, raw",
+    "roman": "Apel, khosa soho",
+    "category": "Fruits",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/apple-with-skin-raw-08-0002/"
+  },
+  {
+    "code": "08_0003",
+    "name_bn": "নাশপাতি, কাঁচা",
+    "name_en": "Asian pears, raw",
+    "roman": "Nashpati",
+    "category": "Fruits",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/asian-pears-raw-08-0003/"
+  },
+  {
+    "code": "08_0004",
+    "name_bn": "কলা, কাঁচা, পাকা",
+    "name_en": "Banana, Sagar, ripe, raw",
+    "roman": "Kola, Sagar, paka",
+    "category": "Fruits",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/banana-sagar-ripe-raw-08-0004/"
+  },
+  {
+    "code": "08_0005",
+    "name_bn": "ব্রেডফ্রুট, কাঁচা",
+    "name_en": "Breadfruit, raw",
+    "roman": "adar",
+    "category": "Fruits",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/breadfruit-raw-08-0005/"
+  },
+  {
+    "code": "08_0006",
+    "name_bn": "নোনা আতা, কাঁচা, পাকা",
+    "name_en": "Bullocks Heart, ripe, raw",
+    "roman": "Nona ata",
+    "category": "Fruits",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/bullocks-heart-ripe-raw-08-0006/"
+  },
+  {
+    "code": "08_0007",
+    "name_bn": "কামরাঙা",
+    "name_en": "Carambola, raw",
+    "roman": "Kamranga",
+    "category": "Fruits",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/carambola-raw-08-0007/"
+  },
+  {
+    "code": "08_0008",
+    "name_bn": "আতা, কাঁচা",
+    "name_en": "Custard apple, raw",
+    "roman": "Atafol",
+    "category": "Fruits",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/custard-apple-raw-08-0008/"
+  },
+  {
+    "code": "08_0009",
+    "name_bn": "খেজুর, শুকনা",
+    "name_en": "Dates, dried",
+    "roman": "Khorma",
+    "category": "Fruits",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/dates-dried-08-0009/"
+  },
+  {
+    "code": "08_0010",
+    "name_bn": "খেজুর, কাঁচা",
+    "name_en": "Dates, raw",
+    "roman": "Khejur, paka, taza",
+    "category": "Fruits",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/dates-raw-08-0010/"
+  },
+  {
+    "code": "08_0011",
+    "name_bn": "কদবেল, কাঁচা, পাকা",
+    "name_en": "Elephant apple, ripe, raw",
+    "roman": "Kodbel",
+    "category": "Fruits",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/elephant-apple-ripe-raw-08-0011/"
+  },
+  {
+    "code": "08_0012",
+    "name_bn": "আমলকী, কাঁচা",
+    "name_en": "Emblic, raw",
+    "roman": "Amloki Ph em",
+    "category": "Fruits",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/emblic-raw-08-0012/"
+  },
+  {
+    "code": "08_0013",
+    "name_bn": "ডুমুর, কাঁচা, পাকা",
+    "name_en": "Fig, ripe, raw",
+    "roman": "Dumur, paka Fi",
+    "category": "Fruits",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/fig-ripe-raw-08-0013/"
+  },
+  {
+    "code": "08_0014",
+    "name_bn": "আঙুর, সবুজ, কাঁচা",
+    "name_en": "Grapes, green, raw",
+    "roman": "Angur, halka sobuj",
+    "category": "Fruits",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/grapes-green-raw-08-0014/"
+  },
+  {
+    "code": "08_0015",
+    "name_bn": "পেয়ারা, সবুজ, কাঁচা",
+    "name_en": "Guava, green, raw",
+    "roman": "Peyara, bivinno variety, kancha",
+    "category": "Fruits",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/guava-green-raw-08-0015/"
+  },
+  {
+    "code": "08_0016",
+    "name_bn": "আমড়া, কাঁচা",
+    "name_en": "Hog plum, raw",
+    "roman": "Amra",
+    "category": "Fruits",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/hog-plum-raw-08-0016/"
+  },
+  {
+    "code": "08_0017",
+    "name_bn": "কাঁঠাল,পাকা হ",
+    "name_en": "Jackfruit, ripe, raw",
+    "roman": "Kathal, paka h",
+    "category": "Fruits",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/jackfruit-ripe-raw-08-0017/"
+  },
+  {
+    "code": "08_0018",
+    "name_bn": "কালোজাম, কাঁচা",
+    "name_en": "Jambolan, raw",
+    "roman": "Kalojam",
+    "category": "Fruits",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/jambolan-raw-08-0018/"
+  },
+  {
+    "code": "08_0019",
+    "name_bn": "জামরুল",
+    "name_en": "Jambos, raw",
+    "roman": "Jamrul",
+    "category": "Fruits",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/jambos-raw-08-0019/"
+  },
+  {
+    "code": "08_0020",
+    "name_bn": "আপেল, কাঁচা",
+    "name_en": "Java apple, raw",
+    "roman": "Golapjam s",
+    "category": "Fruits",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/java-apple-raw-08-0020/"
+  },
+  {
+    "code": "08_0021",
+    "name_bn": "বরই, কাঁচা",
+    "name_en": "Jujube, raw English",
+    "roman": "Boroi 1 engali",
+    "category": "Fruits",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/jujube-raw-english-08-0021/"
+  },
+  {
+    "code": "08_0022",
+    "name_bn": "লেবু, কাঁচা",
+    "name_en": "Lemon, Kagoji, raw",
+    "roman": "ebu, Kagoji Citr",
+    "category": "Fruits",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/lemon-kagoji-raw-08-0022/"
+  },
+  {
+    "code": "08_0023",
+    "name_bn": "মোসাম্বি/মিষ্টি লেবু, কাঁচা",
+    "name_en": "Lime, Sweet, raw",
+    "roman": "ushambee Citr",
+    "category": "Fruits",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/lime-sweet-raw-08-0023/"
+  },
+  {
+    "code": "08_0024",
+    "name_bn": "লিচু",
+    "name_en": "Lychee, raw",
+    "roman": "Lichu",
+    "category": "Fruits",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/lychee-raw-08-0024/"
+  },
+  {
+    "code": "08_0025",
+    "name_bn": "আম, কাঁচা, পাকা",
+    "name_en": "Mango, Fazli, orange flesh, ripe, raw",
+    "roman": "Aam, Fazli, paka",
+    "category": "Fruits",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/mango-fazli-orange-flesh-ripe-raw-08-0025/"
+  },
+  {
+    "code": "08_0026",
+    "name_bn": "আম, হলুদ, কাঁচা, পাকা",
+    "name_en": "Mango, Langra, yellow flesh, ripe, raw",
+    "roman": "Aam, Langra, paka",
+    "category": "Fruits",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/mango-langra-yellow-flesh-ripe-raw-08-0026/"
+  },
+  {
+    "code": "08_0027",
+    "name_bn": "কমলা, কাঁচা, পাকা",
+    "name_en": "Melon, Futi, orange flesh, ripe, raw",
+    "roman": "Futi, paka",
+    "category": "Fruits",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/melon-futi-orange-flesh-ripe-raw-08-0027/"
+  },
+  {
+    "code": "08_0028",
+    "name_bn": "কমলা, হলুদ, কাঁচা",
+    "name_en": "Monkey-jack, yellowish-orange flesh, raw",
+    "roman": "Dewa",
+    "category": "Fruits",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/monkey-jack-yellowish-orange-flesh-raw-08-0028/"
+  },
+  {
+    "code": "08_0029",
+    "name_bn": "কমলা, কাঁচা, পাকা",
+    "name_en": "Muskmelon, Bangee, light orange flesh, ripe, raw",
+    "roman": "Bangee, paka",
+    "category": "Fruits",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/muskmelon-bangee-light-orange-flesh-ripe-raw-08-0029/"
+  },
+  {
+    "code": "08_0030",
+    "name_bn": "কমলা, কাঁচা",
+    "name_en": "Orange juice, raw (unsweetened)",
+    "roman": "Komolar ross",
+    "category": "Fruits",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/orange-juice-raw-unsweetened-08-0030/"
+  },
+  {
+    "code": "08_0031",
+    "name_bn": "কমলা,বিভিন্ন প্রজাতি",
+    "name_en": "Orange, raw",
+    "roman": "Komola, bivinno projati",
+    "category": "Fruits",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/orange-raw-08-0031/"
+  },
+  {
+    "code": "08_0032",
+    "name_bn": "কমলা, কাঁচা, পাকা",
+    "name_en": "Orange, Sweet, ripe, raw",
+    "roman": "Malta, paka",
+    "category": "Fruits",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/orange-sweet-ripe-raw-08-0032/"
+  },
+  {
+    "code": "08_0033",
+    "name_bn": "তালের শাঁস, কাঁচা",
+    "name_en": "Palmyra palm, cotyledon, raw",
+    "roman": "Kochi tal er shas",
+    "category": "Fruits",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/palmyra-palm-cotyledon-raw-08-0033/"
+  },
+  {
+    "code": "08_0034",
+    "name_bn": "তালের শাঁস, কাঁচা, পাকা",
+    "name_en": "Palmyra palm, pulp, orange flesh, ripe, raw",
+    "roman": "Taal, paka",
+    "category": "Fruits",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/palmyra-palm-pulp-orange-flesh-ripe-raw-08-0034/"
+  },
+  {
+    "code": "08_0035",
+    "name_bn": "পেঁপে,পাকা",
+    "name_en": "Papaya, ripe, raw",
+    "roman": "Pepe, paka",
+    "category": "Fruits",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/papaya-ripe-raw-08-0035/"
+  },
+  {
+    "code": "08_0036",
+    "name_bn": "বিলাতি গাব, কাঁচা, পাকা",
+    "name_en": "Persimmon, ripe, raw",
+    "roman": "Gab, Bilati, paka",
+    "category": "Fruits",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/persimmon-ripe-raw-08-0036/"
+  },
+  {
+    "code": "08_0037",
+    "name_bn": "আপেল, কাঁচা, পাকা",
+    "name_en": "Pineapple, Joldugee, ripe, raw",
+    "roman": "Anaros, Joldugee, paka",
+    "category": "Fruits",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/pineapple-joldugee-ripe-raw-08-0037/"
+  },
+  {
+    "code": "08_0038",
+    "name_bn": "আনারস,পাকা",
+    "name_en": "Pineapple, ripe, raw",
+    "roman": "Anaros, paka",
+    "category": "Fruits",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/pineapple-ripe-raw-08-0038/"
+  },
+  {
+    "code": "08_0039",
+    "name_bn": "বেদানা, কাঁচা, পাকা",
+    "name_en": "Pomegranate, ripe, with seed, raw English",
+    "roman": "Bedana, paka, bichi soho engali",
+    "category": "Fruits",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/pomegranate-ripe-with-seed-raw-english-08-0039/"
+  },
+  {
+    "code": "08_0040",
+    "name_bn": "জাম্বুরা, কাঁচা",
+    "name_en": "Pomelo, raw",
+    "roman": "ambura Ci",
+    "category": "Fruits",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/pomelo-raw-08-0040/"
+  },
+  {
+    "code": "08_0041",
+    "name_bn": "তেঁতুল, কাঁচা, পাকা",
+    "name_en": "Tamarind, pulp, ripe, raw",
+    "roman": "Tetul, paka",
+    "category": "Fruits",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/tamarind-pulp-ripe-raw-08-0041/"
+  },
+  {
+    "code": "08_0042",
+    "name_bn": "তরমুজ, পাকা",
+    "name_en": "Watermelon, ripe, ra",
+    "roman": "w Tarmuz, lal, paka",
+    "category": "Fruits",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/watermelon-ripe-ra-08-0042/"
+  },
+  {
+    "code": "08_0043",
+    "name_bn": "আপেল, কাঁচা, পাকা",
+    "name_en": "Woodapple, ripe, raw",
+    "roman": "Bel, paka",
+    "category": "Fruits",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/woodapple-ripe-raw-08-0043/"
+  },
+  {
+    "code": "09_0001",
+    "name_bn": "ফেসা মাছ, শুকনা",
+    "name_en": "Anchovy, Gangetic hairfin, dried",
+    "roman": "Fesha, shutki",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/anchovy-gangetic-hairfin-dried-09-0001/"
+  },
+  {
+    "code": "09_0002",
+    "name_bn": "ফেসা",
+    "name_en": "Anchovy, Gangetic hairfin, raw",
+    "roman": "Fesha",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/anchovy-gangetic-hairfin-raw-09-0002/"
+  },
+  {
+    "code": "09_0003",
+    "name_bn": "ওলুয়া",
+    "name_en": "Anchovy, Goldspotted grebadier, raw",
+    "roman": "Olua",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/anchovy-goldspotted-grebadier-raw-09-0003/"
+  },
+  {
+    "code": "09_0004",
+    "name_bn": "ফেসা,তেলি",
+    "name_en": "Anchovy, Scaly hairfin, raw",
+    "roman": "Fesha, Teli",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/anchovy-scaly-hairfin-raw-09-0004/"
+  },
+  {
+    "code": "09_0005",
+    "name_bn": "সরপুঁটি",
+    "name_en": "Olive barb / Sarpunti, raw",
+    "roman": "Sorpunti",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/olive-barb-sarpunti-raw-09-0005/"
+  },
+  {
+    "code": "09_0006",
+    "name_bn": "সরপুঁটি,কাঁটা ছাড়া",
+    "name_en": "Barb, Olive, without bones, raw",
+    "roman": "Sorpunti, kata chara",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/barb-olive-without-bones-raw-09-0006/"
+  },
+  {
+    "code": "09_0007",
+    "name_bn": "পুঁটি,ভাদি পুঁটি,চোখ সহ",
+    "name_en": "Barb, Pool barb, eyes included, raw",
+    "roman": "Punti, Vadi punti, chokh soho",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/barb-pool-barb-eyes-included-raw-09-0007/"
+  },
+  {
+    "code": "09_0008",
+    "name_bn": "পুঁটি,ভাদি পুঁটি,চোখ সহ,কাঁটা ছাড়া",
+    "name_en": "Barb, Pool barb, without bones, eyes included, raw",
+    "roman": "Punti, Vadi punti, chokh soho, kata chara",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/barb-pool-barb-without-bones-eyes-included-raw-09-0008/"
+  },
+  {
+    "code": "09_0009",
+    "name_bn": "বাটা",
+    "name_en": "Bata, raw",
+    "roman": "Bata",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/bata-raw-09-0009/"
+  },
+  {
+    "code": "09_0010",
+    "name_bn": "বোয়াল,কাঁটা ছাড়া",
+    "name_en": "Boal,without bones, raw",
+    "roman": "boal, kata chara",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/boal-without-bones-raw-09-0010/"
+  },
+  {
+    "code": "09_0011",
+    "name_bn": "ফলি",
+    "name_en": "Bronze featherback, raw",
+    "roman": "Foli",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/bronze-featherback-raw-09-0011/"
+  },
+  {
+    "code": "09_0012",
+    "name_bn": "কালবাউশ",
+    "name_en": "Calbasu, without bones, raw",
+    "roman": "Kalbaush",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/calbasu-without-bones-raw-09-0012/"
+  },
+  {
+    "code": "09_0013",
+    "name_bn": "বাচা",
+    "name_en": "Catfish, Bacha, raw",
+    "roman": "Bacha",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/catfish-bacha-raw-09-0013/"
+  },
+  {
+    "code": "09_0014",
+    "name_bn": "পাবদা",
+    "name_en": "Catfish, Pabdah, raw",
+    "roman": "Pabda",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/catfish-pabdah-raw-09-0014/"
+  },
+  {
+    "code": "09_0015",
+    "name_bn": "কাতলা",
+    "name_en": "Catla, raw",
+    "roman": "Katla",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/catla-raw-09-0015/"
+  },
+  {
+    "code": "09_0016",
+    "name_bn": "চাঁদা,রাঙা,চোখ সহ",
+    "name_en": "Chanda, Indian glassy fish, eyes included, raw",
+    "roman": "Chanda, Ranga, chokh soho",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/chanda-indian-glassy-fish-eyes-included-raw-09-0016/"
+  },
+  {
+    "code": "09_0017",
+    "name_bn": "কৈ,দেশি,চোখ সহ",
+    "name_en": "Climbing perch, indigenous, eyes included, raw",
+    "roman": "Koi, deshi, chokh soho",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/climbing-perch-indigenous-eyes-included-raw-09-0017/"
+  },
+  {
+    "code": "09_0018",
+    "name_bn": "কৈ,থাই,চোখ সহ",
+    "name_en": "Climbing perch, Thai, without bones, eyes included, raw",
+    "roman": "Koi, Thai, chokh soho",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/climbing-perch-thai-without-bones-eyes-included-raw-09-0018/"
+  },
+  {
+    "code": "09_0019",
+    "name_bn": "চিতল,কাঁটা ছাড়া",
+    "name_en": "Clown knifefish, without bones, raw",
+    "roman": "chital, kata chara",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/clown-knifefish-without-bones-raw-09-0019/"
+  },
+  {
+    "code": "09_0020",
+    "name_bn": "কার্প মাছ, কাঁটা ছাড়া, কাঁচা",
+    "name_en": "Common carp, without bones, raw",
+    "roman": "Commmon carp, kata chara",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/common-carp-without-bones-raw-09-0020/"
+  },
+  {
+    "code": "09_0021",
+    "name_bn": "পোয়া মাছ, কাঁটা ছাড়া, কাঁচা",
+    "name_en": "Croaker, Blackspotted, without bones, raw",
+    "roman": "Poa, kata chara d",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/croaker-blackspotted-without-bones-raw-09-0021/"
+  },
+  {
+    "code": "09_0022",
+    "name_bn": "টেংরা,বিভিন্ন প্রজাতি,চোখ সহ",
+    "name_en": "Day's mystus, combined species, eyes included, raw",
+    "roman": "Tengra, bivinno projati, chokh soho",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/day-s-mystus-combined-species-eyes-included-raw-09-0022/"
+  },
+  {
+    "code": "09_0023",
+    "name_bn": "কাতলা, চামড়াসহ, কাঁচা",
+    "name_en": "Fish (Catla, Mrigal, Rohu), dorsal with skin, raw",
+    "roman": "0.047",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/fish-catla-mrigal-rohu-dorsal-with-skin-raw-09-0023/"
+  },
+  {
+    "code": "09_0024",
+    "name_bn": "কাতলা, চামড়াসহ, কাঁচা",
+    "name_en": "Fish (Catla, Mrigal, Rohu), ventral with skin, raw",
+    "roman": "0.11",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/fish-catla-mrigal-rohu-ventral-with-skin-raw-09-0024/"
+  },
+  {
+    "code": "09_0025",
+    "name_bn": "কাচকি",
+    "name_en": "Kachki, bivinno projati",
+    "roman": "",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/kachki-bivinno-projati-09-0025/"
+  },
+  {
+    "code": "09_0026",
+    "name_bn": "কাজুলি",
+    "name_en": "Gangetic ailia, raw",
+    "roman": "Kajuli",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/gangetic-ailia-raw-09-0026/"
+  },
+  {
+    "code": "09_0027",
+    "name_bn": "গুলশা",
+    "name_en": "Gangetic mystus, raw",
+    "roman": "Gulsha",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/gangetic-mystus-raw-09-0027/"
+  },
+  {
+    "code": "09_0028",
+    "name_bn": "গুইজ্জা",
+    "name_en": "Giant river-catfish, raw Foodname in",
+    "roman": "Guizza",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/giant-river-catfish-raw-foodname-in-09-0028/"
+  },
+  {
+    "code": "09_0029",
+    "name_bn": "ভেটকি, শুকনা",
+    "name_en": "Giant sea perch, whole, dried",
+    "roman": "",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/giant-sea-perch-whole-dried-09-0029/"
+  },
+  {
+    "code": "09_0030",
+    "name_bn": "ভেটকি,কাঁটা ছাড়া",
+    "name_en": "Giant sea perch,without bones, raw",
+    "roman": "Vetkee, kata chara",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/giant-sea-perch-without-bones-raw-09-0030/"
+  },
+  {
+    "code": "09_0031",
+    "name_bn": "বেলে",
+    "name_en": "Goby, Tank goby, raw",
+    "roman": "Bele",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/goby-tank-goby-raw-09-0031/"
+  },
+  {
+    "code": "09_0032",
+    "name_bn": "খলিশা,কাঁটা ছাড়া,চোখ সহ",
+    "name_en": "Gourami, Banded gourami, eyes included, raw",
+    "roman": "Khailsa, kata chara, chokh soho",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/gourami-banded-gourami-eyes-included-raw-09-0032/"
+  },
+  {
+    "code": "09_0033",
+    "name_bn": "ইলিশ",
+    "name_en": "Hilsa, raw",
+    "roman": "Ilish, kata chara",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/hilsa-raw-09-0033/"
+  },
+  {
+    "code": "09_0034",
+    "name_bn": "চাপিলা",
+    "name_en": "Indian river shad, raw",
+    "roman": "Chapila",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/indian-river-shad-raw-09-0034/"
+  },
+  {
+    "code": "09_0035",
+    "name_bn": "লাক্ষা, কাঁটা ছাড়া, কাঁচা",
+    "name_en": "Indian threadfin, without bones, raw",
+    "roman": "Lakkha, gada, kata chara i",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/indian-threadfin-without-bones-raw-09-0035/"
+  },
+  {
+    "code": "09_0036",
+    "name_bn": "সুরমা/বিজোরাম, কাঁটা ছাড়া, কাঁচা",
+    "name_en": "Indo-pacific king mackerel, without bones, raw",
+    "roman": "Surma/ Bijoram, kata chara g",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/indo-pacific-king-mackerel-without-bones-raw-09-0036/"
+  },
+  {
+    "code": "09_0037",
+    "name_bn": "ঘনিয়া মাছ, কাঁটা ছাড়া, কাঁচা",
+    "name_en": "Kuria labeo, without bones, raw",
+    "roman": "onia",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/kuria-labeo-without-bones-raw-09-0037/"
+  },
+  {
+    "code": "09_0038",
+    "name_bn": "ক্যাটফিশ, কাঁটা ছাড়া, লাল, কাঁচা",
+    "name_en": "Long- Ayr whiskered catfish, without bones, raw",
+    "roman": "e, kata chara",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/long-ayr-whiskered-catfish-without-bones-raw-09-0038/"
+  },
+  {
+    "code": "09_0039",
+    "name_bn": "চম্পা",
+    "name_en": "Mackerel, Narrow-barred Spanish, raw",
+    "roman": "Chompa",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/mackerel-narrow-barred-spanish-raw-09-0039/"
+  },
+  {
+    "code": "09_0040",
+    "name_bn": "চেলা,ফুলচেলা",
+    "name_en": "Minnow, Finescale razorbelly, raw",
+    "roman": "Chela, Fulchela",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/minnow-finescale-razorbelly-raw-09-0040/"
+  },
+  {
+    "code": "09_0041",
+    "name_bn": "চেলা,ফুলচেলা,শুকনা",
+    "name_en": "Minnow, Finescale razorbelly, dried",
+    "roman": "Chela, Fulchela, shukna",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/minnow-finescale-razorbelly-dried-09-0041/"
+  },
+  {
+    "code": "09_0042",
+    "name_bn": "চেলা,নারকেলি",
+    "name_en": "Minnow, Largescale razorbelly, raw",
+    "roman": "Chela, Narkeli",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/minnow-largescale-razorbelly-raw-09-0042/"
+  },
+  {
+    "code": "09_0043",
+    "name_bn": "মলা মাছ, চোখসহ, কাঁচা",
+    "name_en": "Mola carplet, whole, eyes included, raw",
+    "roman": "Mola, chokh soho m",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/mola-carplet-whole-eyes-included-raw-09-0043/"
+  },
+  {
+    "code": "09_0044",
+    "name_bn": "মৃগেল,চোখ সহ",
+    "name_en": "Mrigal carp eyes included, raw",
+    "roman": "Mrigal, chokh soho",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/mrigal-carp-eyes-included-raw-09-0044/"
+  },
+  {
+    "code": "09_0045",
+    "name_bn": "পারশে",
+    "name_en": "Mullet, Goldspot, raw",
+    "roman": "Parshe",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/mullet-goldspot-raw-09-0045/"
+  },
+  {
+    "code": "09_0046",
+    "name_bn": "ঝিনুক, কাঁচা",
+    "name_en": "Mussel/Clam, mixed species, raw",
+    "roman": "Jhinuk a m",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/mussel-clam-mixed-species-raw-09-0046/"
+  },
+  {
+    "code": "09_0047",
+    "name_bn": "পাঙ্গাস,কাঁটা ছাড়া",
+    "name_en": "Pangas, without bones, raw",
+    "roman": "Pangas, kata chara",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/pangas-without-bones-raw-09-0047/"
+  },
+  {
+    "code": "09_0048",
+    "name_bn": "মেনি",
+    "name_en": "Perch, Mud, raw",
+    "roman": "Meni",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/perch-mud-raw-09-0048/"
+  },
+  {
+    "code": "09_0049",
+    "name_bn": "রূপচাঁদা,কালো,প্রজাতি",
+    "name_en": "Pomfret, Black, raw b",
+    "roman": "rupchanda, kalo, projati",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/pomfret-black-raw-b-09-0049/"
+  },
+  {
+    "code": "09_0050",
+    "name_bn": "রূপচাঁদা, কাঁচা",
+    "name_en": "Pomfret, Chinese Silver, raw",
+    "roman": "rupchanda, hinese Sada",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/pomfret-chinese-silver-raw-09-0050/"
+  },
+  {
+    "code": "09_0051",
+    "name_bn": "রূপচাঁদা, শুকনা",
+    "name_en": "Pomfret, Silver, dried",
+    "roman": "rupchanda, ada, shutki",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/pomfret-silver-dried-09-0051/"
+  },
+  {
+    "code": "09_0052",
+    "name_bn": "রূপচাঁদা,সাদা",
+    "name_en": "Pomfret, Silver, without bones, raw",
+    "roman": "rupchanda, Sada",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/pomfret-silver-without-bones-raw-09-0052/"
+  },
+  {
+    "code": "09_0053",
+    "name_bn": "চিংড়ি, কাঁচা",
+    "name_en": "Prawn, Birma river prawn, raw r",
+    "roman": "chingri, Birma iver prawn",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/prawn-birma-river-prawn-raw-r-09-0053/"
+  },
+  {
+    "code": "09_0054",
+    "name_bn": "চিংড়ি,গলদা",
+    "name_en": "Prawn, Giant river prawn, raw",
+    "roman": "chingri, Golda",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/prawn-giant-river-prawn-raw-09-0054/"
+  },
+  {
+    "code": "09_0055",
+    "name_bn": "চিংড়ি,বাগদা",
+    "name_en": "Prawn, Giant tiger prawn, raw",
+    "roman": "chingri, Bagda",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/prawn-giant-tiger-prawn-raw-09-0055/"
+  },
+  {
+    "code": "09_0056",
+    "name_bn": "চিংড়ি",
+    "name_en": "Prawn, Hairy river prawn, raw",
+    "roman": "chingri",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/prawn-hairy-river-prawn-raw-09-0056/"
+  },
+  {
+    "code": "09_0057",
+    "name_bn": "চিংড়ি",
+    "name_en": "Prawn, Indian white prawn, raw",
+    "roman": "chingri",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/prawn-indian-white-prawn-raw-09-0057/"
+  },
+  {
+    "code": "09_0058",
+    "name_bn": "চিংড়ি,নদীর",
+    "name_en": "Prawn, Monsoon river prawn, raw",
+    "roman": "chingri, Nodir",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/prawn-monsoon-river-prawn-raw-09-0058/"
+  },
+  {
+    "code": "09_0059",
+    "name_bn": "রুই",
+    "name_en": "Rohu, raw",
+    "roman": "Rui, nodir",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/rohu-raw-09-0059/"
+  },
+  {
+    "code": "09_0060",
+    "name_bn": "রুই,কাঁটা ছাড়া",
+    "name_en": "Rohu, without bones, raw",
+    "roman": "Rui, kata chara",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/rohu-without-bones-raw-09-0060/"
+  },
+  {
+    "code": "09_0061",
+    "name_bn": "চিংড়ি,হরিণা",
+    "name_en": "Shrimp, Speckled, raw",
+    "roman": "Chingri, Horina",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/shrimp-speckled-raw-09-0061/"
+  },
+  {
+    "code": "09_0062",
+    "name_bn": "সিলভার কার্প,কাঁটা ছাড়া",
+    "name_en": "Silver carp, without bones, raw",
+    "roman": "Silver carp, kata chara",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/silver-carp-without-bones-raw-09-0062/"
+  },
+  {
+    "code": "09_0063",
+    "name_bn": "কাকিলা,চোখ সহ",
+    "name_en": "Silver needle fish, eyes included, raw",
+    "roman": "Kakila, chokh soho",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/silver-needle-fish-eyes-included-raw-09-0063/"
+  },
+  {
+    "code": "09_0064",
+    "name_bn": "টাকি,কাঁটা ছাড়া",
+    "name_en": "Spotted snakehead, raw",
+    "roman": "Taki, kata chara",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/spotted-snakehead-raw-09-0064/"
+  },
+  {
+    "code": "09_0065",
+    "name_bn": "শিং মাছ,কাঁটা ছাড়া",
+    "name_en": "Stinging catfish, raw",
+    "roman": "Shing mach, kata chara",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/stinging-catfish-raw-09-0065/"
+  },
+  {
+    "code": "09_0066",
+    "name_bn": "টাটকিনি",
+    "name_en": "Stone roller, raw Ta",
+    "roman": "tatkini",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/stone-roller-raw-ta-09-0066/"
+  },
+  {
+    "code": "09_0067",
+    "name_bn": "শোল,কাঁটা ছাড়া",
+    "name_en": "Striped snake- head, raw",
+    "roman": "Shol, kata chara",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/striped-snake-head-raw-09-0067/"
+  },
+  {
+    "code": "09_0068",
+    "name_bn": "তেলাপিয়া, কাঁচা",
+    "name_en": "Tilapia, without bon raw",
+    "roman": "es, Telapia, kata chara",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/tilapia-without-bon-raw-09-0068/"
+  },
+  {
+    "code": "09_0069",
+    "name_bn": "টুনা,কাঁটা ছাড়া",
+    "name_en": "Tuna, without bones, raw",
+    "roman": "Tuna, kata chara",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/tuna-without-bones-raw-09-0069/"
+  },
+  {
+    "code": "09_0070",
+    "name_bn": "মাগুর,কাঁটা ছাড়া",
+    "name_en": "Walking catfish, without bones, raw",
+    "roman": "Magur, kata chara",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/walking-catfish-without-bones-raw-09-0070/"
+  },
+  {
+    "code": "09_0071",
+    "name_bn": "কাচকি মাছ ভাজা",
+    "name_en": "Small fish fry*",
+    "roman": "Kachki mach vaja",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/small-fish-fry-09-0071/"
+  },
+  {
+    "code": "09_0072",
+    "name_bn": "মাছের কোফতা",
+    "name_en": "Fish ball*",
+    "roman": "Macher kopta",
+    "category": "Fish, shellfish and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/fish-ball-09-0072/"
+  },
+  {
+    "code": "10_0001",
+    "name_bn": "গরুর কলিজা",
+    "name_en": "Beef liver, raw",
+    "roman": "Gorur koliza",
+    "category": "Meat, poultry and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/beef-liver-raw-10-0001/"
+  },
+  {
+    "code": "10_0002",
+    "name_bn": "গরুর মাংস, কাঁচা",
+    "name_en": "Beef, meat, lean, boneless, raw",
+    "roman": "Gorur mangsaw, har o chorbi chara",
+    "category": "Meat, poultry and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/beef-meat-lean-boneless-raw-10-0002/"
+  },
+  {
+    "code": "10_0003",
+    "name_bn": "গরুর মাংস, কাঁচা",
+    "name_en": "Beef, meat, 15- 20 % fat, boneless, raw",
+    "roman": "Gorur mangsaw, har chara",
+    "category": "Meat, poultry and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/beef-meat-15-20-fat-boneless-raw-10-0003/"
+  },
+  {
+    "code": "10_0004",
+    "name_bn": "গরুর মাংস, কাঁচা",
+    "name_en": "Beef, mince, lean, raw English",
+    "roman": "Gorur mangsaw, kima engali",
+    "category": "Meat, poultry and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/beef-mince-lean-raw-english-10-0004/"
+  },
+  {
+    "code": "10_0005",
+    "name_bn": "মহিষের মাংস, কাঁচা",
+    "name_en": "Buffalo meat, raw",
+    "roman": "Mohish er mangsaw",
+    "category": "Meat, poultry and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/buffalo-meat-raw-10-0005/"
+  },
+  {
+    "code": "10_0006",
+    "name_bn": "মুরগির বুকের মাংস, কাঁচা",
+    "name_en": "Chicken breast, without skin, raw",
+    "roman": "Murgi, buker mangsaw, chamra charano",
+    "category": "Meat, poultry and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/chicken-breast-without-skin-raw-10-0006/"
+  },
+  {
+    "code": "10_0007",
+    "name_bn": "মুরগির রান, কাঁচা",
+    "name_en": "Chicken leg, without skin, raw",
+    "roman": "Murgi, ranner mangsaw, chamra charano",
+    "category": "Meat, poultry and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/chicken-leg-without-skin-raw-10-0007/"
+  },
+  {
+    "code": "10_0008",
+    "name_bn": "মুরগির কলিজা",
+    "name_en": "Chicken liver, raw",
+    "roman": "Murgir koliza",
+    "category": "Meat, poultry and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/chicken-liver-raw-10-0008/"
+  },
+  {
+    "code": "10_0009",
+    "name_bn": "হাঁস এর মাংস",
+    "name_en": "Duck, meat, raw",
+    "roman": "Hash er mangsaw",
+    "category": "Meat, poultry and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/duck-meat-raw-10-0009/"
+  },
+  {
+    "code": "10_0010",
+    "name_bn": "ব্যাঙের রান, কাঁচা",
+    "name_en": "Frog, legs, raw",
+    "roman": "Bang Bu me",
+    "category": "Meat, poultry and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/frog-legs-raw-10-0010/"
+  },
+  {
+    "code": "10_0011",
+    "name_bn": "ছাগলের মাংস, কাঁচা",
+    "name_en": "Goat meat, lean, raw",
+    "roman": "Khaseer mangsaw",
+    "category": "Meat, poultry and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/goat-meat-lean-raw-10-0011/"
+  },
+  {
+    "code": "10_0012",
+    "name_bn": "খাসির মাংস, কাঁচা",
+    "name_en": "Lamb/mutton, meat moderately fat, raw",
+    "roman": "erar mangsaw Capr",
+    "category": "Meat, poultry and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/lamb-mutton-meat-moderately-fat-raw-10-0012/"
+  },
+  {
+    "code": "10_0013",
+    "name_bn": "খাসির মাংস, কাঁচা",
+    "name_en": "Lamb/Mutton, liver,raw",
+    "roman": "erar koliza Ovis",
+    "category": "Meat, poultry and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/lamb-mutton-liver-raw-10-0013/"
+  },
+  {
+    "code": "10_0014",
+    "name_bn": "কবুতরের মাংস, কাঁচা",
+    "name_en": "Pigeon meat, raw",
+    "roman": "Kobutorer mangsaw",
+    "category": "Meat, poultry and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/pigeon-meat-raw-10-0014/"
+  },
+  {
+    "code": "10_0015",
+    "name_bn": "শূকরের মাংস, কাঁচা",
+    "name_en": "Pork, meat, <5 % fat, raw m",
+    "roman": "hukorer Su angsaw",
+    "category": "Meat, poultry and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/pork-meat-5-fat-raw-m-10-0015/"
+  },
+  {
+    "code": "10_0016",
+    "name_bn": "গরুর মাংস",
+    "name_en": "Beef handi kabab*",
+    "roman": "Haaree kabab (goru)",
+    "category": "Meat, poultry and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/beef-handi-kabab-10-0016/"
+  },
+  {
+    "code": "11_0001",
+    "name_bn": "মুরগি, কাঁচা",
+    "name_en": "Eggs, chicken, farmed, raw",
+    "roman": "Murgir dim, farm er",
+    "category": "Eggs and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/eggs-chicken-farmed-raw-11-0001/"
+  },
+  {
+    "code": "11_0002",
+    "name_bn": "মুরগির ডিম,দেশি",
+    "name_en": "Egg, chicken, native, raw",
+    "roman": "Murgir dim, deshi",
+    "category": "Eggs and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/egg-chicken-native-raw-11-0002/"
+  },
+  {
+    "code": "11_0003",
+    "name_bn": "মুরগি, কাঁচা",
+    "name_en": "Egg, chicken, yolk, raw",
+    "roman": "Murgir dim er kusum, deshi",
+    "category": "Eggs and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/egg-chicken-yolk-raw-11-0003/"
+  },
+  {
+    "code": "11_0004",
+    "name_bn": "হাঁস এর ডিম",
+    "name_en": "Egg, duck, whole, raw",
+    "roman": "Hash er dim",
+    "category": "Eggs and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/egg-duck-whole-raw-11-0004/"
+  },
+  {
+    "code": "11_0005",
+    "name_bn": "মুরগির ডিম,সিদ্ধ,লবণ ছাড়া",
+    "name_en": "Eggs, chicken, farmned boiled* (without salt)",
+    "roman": "Murgir dim, siddha, lobon chara",
+    "category": "Eggs and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/eggs-chicken-farmned-boiled-without-salt-11-0005/"
+  },
+  {
+    "code": "11_0006",
+    "name_bn": "দেশি মুরগির ডিম সিদ্ধ,লবণ ছাড়া",
+    "name_en": "Egg, chicken, native, boiled* (without salt)",
+    "roman": "Deshi Murgir dim siddha, lobon chara",
+    "category": "Eggs and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/egg-chicken-native-boiled-without-salt-11-0006/"
+  },
+  {
+    "code": "11_0007",
+    "name_bn": "হাঁস এর ডিম,সিদ্ধ,লবণ ছাড়া",
+    "name_en": "Egg, duck, whole, boiled* (without salt)",
+    "roman": "Hash er dim, siddha, lobon chara",
+    "category": "Eggs and their products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/egg-duck-whole-boiled-without-salt-11-0007/"
+  },
+  {
+    "code": "12_0001",
+    "name_bn": "ঘোল",
+    "name_en": "Buttermilk, fluid, low fat",
+    "roman": "Ghol",
+    "category": "Milk and its products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/buttermilk-fluid-low-fat-12-0001/"
+  },
+  {
+    "code": "12_0002",
+    "name_bn": "ছানা/কটেজ চিজ",
+    "name_en": "Cheese, cottage, 25% fat",
+    "roman": "Poneer",
+    "category": "Milk and its products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/cheese-cottage-25-fat-12-0002/"
+  },
+  {
+    "code": "12_0003",
+    "name_bn": "দই,মিষ্টি",
+    "name_en": "Curd, sweetened, whole milk",
+    "roman": "Doi, misti",
+    "category": "Milk and its products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/curd-sweetened-whole-milk-12-0003/"
+  },
+  {
+    "code": "12_0004",
+    "name_bn": "মহিষের দুধ, পূর্ণচর্বিযুক্ত",
+    "name_en": "Milk, buffalo, whole fat",
+    "roman": "Mohiser dudh",
+    "category": "Milk and its products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/milk-buffalo-whole-fat-12-0004/"
+  },
+  {
+    "code": "12_0005",
+    "name_bn": "গুঁড়া দুধ,গরু,মাখন তোলা/ননীহীন",
+    "name_en": "Milk, cow, powder, skimmed",
+    "roman": "Gura dudh, Goru, makhon tola/noniheen",
+    "category": "Milk and its products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/milk-cow-powder-skimmed-12-0005/"
+  },
+  {
+    "code": "12_0006",
+    "name_bn": "গুঁড়া দুধ,গরু",
+    "name_en": "Milk, cow, powder, whole",
+    "roman": "Gura dudh, Goru",
+    "category": "Milk and its products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/milk-cow-powder-whole-12-0006/"
+  },
+  {
+    "code": "12_0007",
+    "name_bn": "গরুর দুধ,মাখন তোলা/ননীহীন",
+    "name_en": "Milk, cow, skimmed",
+    "roman": "Gorur dudh, makhon tola/noniheen",
+    "category": "Milk and its products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/milk-cow-skimmed-12-0007/"
+  },
+  {
+    "code": "12_0008",
+    "name_bn": "গরুর দুধ, পূর্ণচর্বিযুক্ত",
+    "name_en": "Milk, cow, whole fat (pasteurised, UTH)",
+    "roman": "Gorur dudh, purno noni-jukto",
+    "category": "Milk and its products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/milk-cow-whole-fat-pasteurised-uth-12-0008/"
+  },
+  {
+    "code": "12_0009",
+    "name_bn": "গরুর দুধ",
+    "name_en": "Milk, cow, whole, condensed, sweetened",
+    "roman": "Kondense milk, Goru, chini- jukto",
+    "category": "Milk and its products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/milk-cow-whole-condensed-sweetened-12-0009/"
+  },
+  {
+    "code": "12_0010",
+    "name_bn": "ছাগলের দুধ",
+    "name_en": "Milk, goat, combined breeds",
+    "roman": "Chagoler dudh",
+    "category": "Milk and its products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/milk-goat-combined-breeds-12-0010/"
+  },
+  {
+    "code": "12_0011",
+    "name_bn": "শালদুধ, কাঁচা",
+    "name_en": "Milk, human, colostrum, raw",
+    "roman": "Shaldudh",
+    "category": "Milk and its products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/milk-human-colostrum-raw-12-0011/"
+  },
+  {
+    "code": "12_0012",
+    "name_bn": "মায়ের দুধ, কাঁচা",
+    "name_en": "Milk, human, mature, raw",
+    "roman": "Mayer dudh",
+    "category": "Milk and its products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/milk-human-mature-raw-12-0012/"
+  },
+  {
+    "code": "12_0013",
+    "name_bn": "পায়েস",
+    "name_en": "Payesh*",
+    "roman": "Payesh",
+    "category": "Milk and its products",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/payesh-12-0013/"
+  },
+  {
+    "code": "13_0001",
+    "name_bn": "লবণযুক্ত মাখন",
+    "name_en": "Butter, salted",
+    "roman": "Makhon, nonta",
+    "category": "Fat and oils",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/butter-salted-13-0001/"
+  },
+  {
+    "code": "13_0002",
+    "name_bn": "তুলাবীজের তেল",
+    "name_en": "Cottonseed oil",
+    "roman": "Tular bij er telGoss herb",
+    "category": "Fat and oils",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/cottonseed-oil-13-0002/"
+  },
+  {
+    "code": "13_0003",
+    "name_bn": "কড লিভার অয়েল",
+    "name_en": "Fish oil, cod liver",
+    "roman": "Kod liver tel",
+    "category": "Fat and oils",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/fish-oil-cod-liver-13-0003/"
+  },
+  {
+    "code": "13_0004",
+    "name_bn": "ঘি,গরুর",
+    "name_en": "Ghee, cow",
+    "roman": "Ghee, gorur",
+    "category": "Fat and oils",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/ghee-cow-13-0004/"
+  },
+  {
+    "code": "13_0005",
+    "name_bn": "বনস্পতি ঘি",
+    "name_en": "Ghee, vegetable",
+    "roman": "Dalda/Bonosh pati",
+    "category": "Fat and oils",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/ghee-vegetable-13-0005/"
+  },
+  {
+    "code": "13_0006",
+    "name_bn": "মার্জারিন",
+    "name_en": "Margarine",
+    "roman": "Margarine",
+    "category": "Fat and oils",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/margarine-13-0006/"
+  },
+  {
+    "code": "13_0007",
+    "name_bn": "মেয়োনেজ, লবণযুক্ত",
+    "name_en": "Mayonnaise, salted",
+    "roman": "Mayonnaise, nonta",
+    "category": "Fat and oils",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/mayonnaise-salted-13-0007/"
+  },
+  {
+    "code": "13_0008",
+    "name_bn": "সরিষার তেল",
+    "name_en": "Mustard oil",
+    "roman": "Sorishar tel",
+    "category": "Fat and oils",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/mustard-oil-13-0008/"
+  },
+  {
+    "code": "13_0009",
+    "name_bn": "পাম তেল",
+    "name_en": "Palm oil",
+    "roman": "Palm tel",
+    "category": "Fat and oils",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/palm-oil-13-0009/"
+  },
+  {
+    "code": "13_0010",
+    "name_bn": "চিনাবাদামের তেল",
+    "name_en": "Peanut oil",
+    "roman": "China badam er tel",
+    "category": "Fat and oils",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/peanut-oil-13-0010/"
+  },
+  {
+    "code": "13_0011",
+    "name_bn": "তিলের তেল",
+    "name_en": "Sesame oil",
+    "roman": "Tiler tel",
+    "category": "Fat and oils",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/sesame-oil-13-0011/"
+  },
+  {
+    "code": "13_0012",
+    "name_bn": "সয়াবিন তেল",
+    "name_en": "Soybean oil",
+    "roman": "Soybean tel",
+    "category": "Fat and oils",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/soybean-oil-13-0012/"
+  },
+  {
+    "code": "14_0001",
+    "name_bn": "ডাবের পানি",
+    "name_en": "Coconut Water",
+    "roman": "Daber pani",
+    "category": "Beverages",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/coconut-water-14-0001/"
+  },
+  {
+    "code": "14_0002",
+    "name_bn": "দুধ, গুঁড়া, পূর্ণচর্বিযুক্ত",
+    "name_en": "Coffee infusion (instant with sugar and milk powder, whole fat)",
+    "roman": "Coffee, dudh o chini soho",
+    "category": "Beverages",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/coffee-infusion-instant-with-sugar-and-milk-powder-whole-fat-14-0002/"
+  },
+  {
+    "code": "14_0003",
+    "name_bn": "কফি",
+    "name_en": "Coffee, powder",
+    "roman": "Coffee",
+    "category": "Beverages",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/coffee-powder-14-0003/"
+  },
+  {
+    "code": "14_0004",
+    "name_bn": "কোমল পানীয়",
+    "name_en": "Soft drinks, carbonated",
+    "roman": "Komol paniyo",
+    "category": "Beverages",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/soft-drinks-carbonated-14-0004/"
+  },
+  {
+    "code": "14_0005",
+    "name_bn": "সয়াবিন দুধ",
+    "name_en": "Soya milk (not sweetened)",
+    "roman": "Soybean dudh",
+    "category": "Beverages",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/soya-milk-not-sweetened-14-0005/"
+  },
+  {
+    "code": "14_0006",
+    "name_bn": "আখের রস",
+    "name_en": "Sugar cane Juice",
+    "roman": "Akher Ros",
+    "category": "Beverages",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/sugar-cane-juice-14-0006/"
+  },
+  {
+    "code": "14_0007",
+    "name_bn": "দুধ চা",
+    "name_en": "Tea infusion (with sugar and milk powder, whole fat)",
+    "roman": "Dudh cha",
+    "category": "Beverages",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/tea-infusion-with-sugar-and-milk-powder-whole-fat-14-0007/"
+  },
+  {
+    "code": "14_0008",
+    "name_bn": "চা",
+    "name_en": "Tea, infusion (with sugar)",
+    "roman": "Likar cha",
+    "category": "Beverages",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/tea-infusion-with-sugar-14-0008/"
+  },
+  {
+    "code": "14_0009",
+    "name_bn": "চা পাতা",
+    "name_en": "Tea, powder",
+    "roman": "Cha pata",
+    "category": "Beverages",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/tea-powder-14-0009/"
+  },
+  {
+    "code": "14_0010",
+    "name_bn": "পানি",
+    "name_en": "Water, drinking",
+    "roman": "Khabar pani",
+    "category": "Beverages",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/water-drinking-14-0010/"
+  },
+  {
+    "code": "15_0001",
+    "name_bn": "বেকিং পাউডার, গুঁড়া",
+    "name_en": "Baking powder",
+    "roman": "Baking powder",
+    "category": "Miscellaneous",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/baking-powder-15-0001/"
+  },
+  {
+    "code": "15_0002",
+    "name_bn": "পানপাতা, কাঁচা",
+    "name_en": "Betel leaves, raw",
+    "roman": "pata",
+    "category": "Miscellaneous",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/betel-leaves-raw-15-0002/"
+  },
+  {
+    "code": "15_0003",
+    "name_bn": "মধু",
+    "name_en": "Honey",
+    "roman": "Modhu",
+    "category": "Miscellaneous",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/honey-15-0003/"
+  },
+  {
+    "code": "15_0004",
+    "name_bn": "আখের গুড়",
+    "name_en": "Jaggery, sugarcane, solid",
+    "roman": "Gur, Akh o",
+    "category": "Miscellaneous",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/jaggery-sugarcane-solid-15-0004/"
+  },
+  {
+    "code": "15_0005",
+    "name_bn": "খেজুরের গুড়",
+    "name_en": "Jaggery/Panela, date pulm",
+    "roman": "Gur, Khejur",
+    "category": "Miscellaneous",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/jaggery-panela-date-pulm-15-0005/"
+  },
+  {
+    "code": "15_0006",
+    "name_bn": "নলেন গুড়",
+    "name_en": "Jagggery liquid, date plum",
+    "roman": "Nolen gur",
+    "category": "Miscellaneous",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/jagggery-liquid-date-plum-15-0006/"
+  },
+  {
+    "code": "15_0007",
+    "name_bn": "লবণ",
+    "name_en": "Salt",
+    "roman": "Lobon",
+    "category": "Miscellaneous",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/salt-15-0007/"
+  },
+  {
+    "code": "15_0008",
+    "name_bn": "সাদা চিনি",
+    "name_en": "Sugar, white",
+    "roman": "Chini, sada",
+    "category": "Miscellaneous",
+    "url": "https://probalsarpv-byte.github.io/bangladesh-food-composition-blogger/food/sugar-white-15-0008/"
+  }
+]
