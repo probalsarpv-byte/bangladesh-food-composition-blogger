@@ -29,5 +29,19 @@
   <div id="bd-fct-app"></div>
 
   <script src="./bangladesh-food-composition-blogger.js?v=12" defer></script>
+  <script>
+function sendHeightToBlogger() {
+  const height = document.documentElement.scrollHeight || document.body.scrollHeight;
+  window.parent.postMessage({ shuddhoFrameHeight: height }, '*');
+}
+
+// পেজ লোড হলে এবং উইন্ডো রিসাইজ হলে হাইট ব্লগারের কাছে পাঠানো
+window.addEventListener('load', sendHeightToBlogger);
+window.addEventListener('resize', sendHeightToBlogger);
+
+// যদি ক্যালকুলেটর ট্যাব বদলানো হয় তবে হাইট আপডেট করা
+const observer = new ResizeObserver(sendHeightToBlogger);
+observer.observe(document.body);
+</script>
 </body>
 </html>
