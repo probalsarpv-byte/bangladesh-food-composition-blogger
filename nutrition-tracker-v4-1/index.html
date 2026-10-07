@@ -1,0 +1,9255 @@
+<!doctype html>
+<html lang="bn">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width,initial-scale=1,viewport-fit=cover">
+<meta name="theme-color" content="#064e3b">
+
+<title>SHUDDHO Nutrition Tracker V4.1</title>
+
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<link href="https://fonts.googleapis.com/css2?family=Hind+Siliguri:wght@400;500;600;700&family=Outfit:wght@600;700;800&display=swap" rel="stylesheet">
+
+<style>
+:root{
+  --p:#0a8f63;
+  --pd:#056447;
+  --p2:#18b981;
+
+  --bg:#f5f8f6;
+  --card:#ffffff;
+  --ink:#10231d;
+  --mut:#667970;
+  --line:#dfebe5;
+
+  --mint:#eaf8f1;
+  --soft:#f8fbf9;
+
+  --amber:#f59e0b;
+  --red:#dc2626;
+  --blue:#0284c7;
+
+  --shadow:0 15px 36px rgba(12,65,45,.10);
+}
+
+*{
+  box-sizing:border-box;
+}
+
+html{
+  background:#e8efeb;
+}
+
+body{
+  margin:0;
+  min-height:100vh;
+
+  background:var(--bg);
+  color:var(--ink);
+
+  font-family:
+    "Hind Siliguri",
+    "Noto Sans Bengali",
+    system-ui,
+    sans-serif;
+
+  -webkit-font-smoothing:antialiased;
+  text-rendering:optimizeLegibility;
+}
+
+body.dark{
+  --bg:#071812;
+  --card:#0d241c;
+  --ink:#effbf6;
+  --mut:#9ab2a9;
+  --line:#1d3b30;
+  --mint:#123c2e;
+  --soft:#0f211a;
+
+  --shadow:0 15px 38px rgba(0,0,0,.28);
+}
+
+button,
+input,
+select{
+  font:inherit;
+}
+
+button{
+  cursor:pointer;
+}
+
+h1,h2,h3,h4,p{
+  margin:0;
+}
+
+.app{
+  width:min(760px,100%);
+  min-height:100vh;
+
+  margin:0 auto;
+
+  padding:
+    0
+    13px
+    calc(105px + env(safe-area-inset-bottom));
+}
+
+
+/* ===================================
+   HEADER
+=================================== */
+
+.top{
+  position:sticky;
+  top:0;
+  z-index:40;
+
+  margin:0 -13px;
+
+  padding:
+    calc(10px + env(safe-area-inset-top))
+    13px
+    10px;
+
+  background:
+    color-mix(
+      in srgb,
+      var(--bg) 92%,
+      transparent
+    );
+
+  backdrop-filter:blur(18px);
+
+  border-bottom:
+    1px solid var(--line);
+}
+
+.brand{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+
+  gap:10px;
+}
+
+.brand-left{
+  display:flex;
+  align-items:center;
+
+  gap:9px;
+
+  min-width:0;
+}
+
+.logo{
+  width:42px;
+  height:42px;
+
+  flex:0 0 auto;
+
+  border-radius:14px;
+
+  display:grid;
+  place-items:center;
+
+  font-size:21px;
+
+  color:#fff;
+
+  background:
+    linear-gradient(
+      145deg,
+      var(--p),
+      var(--pd)
+    );
+
+  box-shadow:
+    0 10px 22px
+    rgba(5,100,71,.25);
+}
+
+.brand-text{
+  min-width:0;
+}
+
+.brand-text h1{
+  font-size:16px;
+  line-height:1.15;
+}
+
+.brand-sub{
+  margin-top:2px;
+
+  color:var(--mut);
+
+  font-size:10px;
+
+  white-space:nowrap;
+  overflow:hidden;
+  text-overflow:ellipsis;
+}
+
+.icon-btn{
+  width:39px;
+  height:39px;
+
+  border-radius:13px;
+
+  border:1px solid var(--line);
+
+  color:var(--ink);
+  background:var(--card);
+}
+
+
+/* ===================================
+   SCREEN
+=================================== */
+
+.screen{
+  display:none;
+  padding-top:13px;
+}
+
+.screen.active{
+  display:block;
+}
+
+
+/* ===================================
+   COMMON
+=================================== */
+
+.section{
+  margin-top:17px;
+}
+
+.title-row{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+
+  gap:10px;
+
+  margin-bottom:8px;
+}
+
+.title-row h3{
+  font-size:15px;
+}
+
+.mini{
+  color:var(--mut);
+  font-size:10px;
+}
+
+.card{
+  padding:13px;
+
+  border-radius:20px;
+
+  border:1px solid var(--line);
+
+  background:var(--card);
+
+  box-shadow:
+    0 6px 18px
+    rgba(15,65,47,.045);
+}
+
+.note{
+  color:var(--mut);
+
+  font-size:10px;
+  line-height:1.55;
+}
+
+
+/* ===================================
+   DATABASE
+=================================== */
+
+.db-bar{
+  display:flex;
+  align-items:center;
+  justify-content:space-between;
+
+  gap:10px;
+
+  padding:10px 11px;
+
+  border-radius:15px;
+
+  border:1px solid #b8efd1;
+
+  background:var(--mint);
+}
+
+.db-left{
+  display:flex;
+  align-items:flex-start;
+
+  gap:8px;
+
+  min-width:0;
+}
+
+.live-dot{
+  width:8px;
+  height:8px;
+
+  flex:0 0 auto;
+
+  margin-top:5px;
+
+  border-radius:50%;
+
+  background:#6ce3a2;
+
+  box-shadow:
+    0 0 0 6px
+    rgba(108,227,162,.12);
+}
+
+.db-bar b{
+  display:block;
+
+  font-size:11px;
+}
+
+.db-bar span{
+  display:block;
+
+  color:var(--mut);
+
+  font-size:9.8px;
+  line-height:1.4;
+}
+
+.db-bar a{
+  flex:0 0 auto;
+
+  color:var(--p);
+
+  font-size:10px;
+  font-weight:700;
+
+  text-decoration:none;
+}
+
+
+/* ===================================
+   HOME HERO
+=================================== */
+
+.hero{
+  position:relative;
+
+  overflow:hidden;
+
+  padding:16px;
+
+  border-radius:24px;
+
+  color:#fff;
+
+  background:
+    radial-gradient(
+      circle at 93% 10%,
+      rgba(255,255,255,.18),
+      transparent 25%
+    ),
+    linear-gradient(
+      145deg,
+      #065f46,
+      #0a9869
+    );
+
+  box-shadow:var(--shadow);
+}
+
+.hero::before,
+.hero::after{
+  content:"";
+
+  position:absolute;
+
+  border-radius:50%;
+
+  border:
+    1px solid
+    rgba(255,255,255,.14);
+}
+
+.hero::before{
+  width:145px;
+  height:145px;
+
+  right:-48px;
+  top:-58px;
+}
+
+.hero::after{
+  width:92px;
+  height:92px;
+
+  right:38px;
+  top:-22px;
+}
+
+.hero-small{
+  font-size:10px;
+  opacity:.9;
+}
+
+.hero h2{
+  margin-top:5px;
+
+  font:
+    800
+    29px/1.03
+    "Outfit",
+    sans-serif;
+}
+
+.hero-sub{
+  margin-top:4px;
+
+  font-size:11px;
+
+  opacity:.9;
+}
+
+.hero-bottom{
+  display:grid;
+
+  grid-template-columns:
+    95px
+    1fr;
+
+  gap:14px;
+
+  align-items:center;
+
+  margin-top:15px;
+}
+
+.cal-ring{
+  width:92px;
+  height:92px;
+
+  border-radius:50%;
+
+  display:grid;
+  place-items:center;
+
+  position:relative;
+
+  background:
+    conic-gradient(
+      #fbbf24
+      var(--ring,0deg),
+      rgba(255,255,255,.17)
+      0
+    );
+}
+
+.cal-ring::before{
+  content:"";
+
+  position:absolute;
+
+  inset:14px;
+
+  border-radius:50%;
+
+  background:#087353;
+}
+
+.ring-inner{
+  position:relative;
+
+  text-align:center;
+}
+
+.ring-inner b{
+  display:block;
+
+  font:
+    800
+    20px
+    "Outfit",
+    sans-serif;
+}
+
+.ring-inner small{
+  display:block;
+
+  margin-top:2px;
+
+  font-size:8px;
+  opacity:.84;
+}
+
+.hero-grid{
+  display:grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  gap:8px;
+}
+
+.hero-stat{
+  padding:8px;
+
+  border-radius:14px;
+
+  border:
+    1px solid
+    rgba(255,255,255,.13);
+
+  background:
+    rgba(255,255,255,.10);
+}
+
+.hero-stat small{
+  font-size:9px;
+  opacity:.83;
+}
+
+.hero-stat b{
+  display:block;
+
+  margin-top:2px;
+
+  font:
+    700
+    15px
+    "Outfit",
+    sans-serif;
+}
+
+
+/* ===================================
+   CHIPS
+=================================== */
+
+.scroll-row{
+  display:flex;
+
+  gap:7px;
+
+  overflow-x:auto;
+
+  scrollbar-width:none;
+
+  padding-bottom:2px;
+}
+
+.scroll-row::-webkit-scrollbar{
+  display:none;
+}
+
+.chip{
+  padding:8px 12px;
+
+  border-radius:999px;
+
+  white-space:nowrap;
+
+  border:1px solid var(--line);
+
+  background:var(--card);
+  color:var(--mut);
+
+  font-size:10.5px;
+}
+
+.chip.active{
+  border-color:var(--pd);
+
+  background:var(--pd);
+  color:#fff;
+
+  font-weight:700;
+}
+
+
+/* ===================================
+   SEARCH
+=================================== */
+
+.search{
+  position:relative;
+
+  margin:10px 0;
+}
+
+.search span{
+  position:absolute;
+
+  left:14px;
+  top:8px;
+
+  color:var(--mut);
+
+  font-size:20px;
+}
+
+.search input{
+  width:100%;
+
+  padding:
+    12px
+    14px
+    12px
+    39px;
+
+  border-radius:15px;
+
+  border:1px solid var(--line);
+
+  outline:0;
+
+  background:var(--card);
+  color:var(--ink);
+}
+
+.search input:focus{
+  border-color:var(--p);
+
+  box-shadow:
+    0 0 0 3px
+    rgba(10,143,99,.10);
+}
+
+
+/* ===================================
+   FOOD CARDS
+=================================== */
+
+.food-grid{
+  display:grid;
+
+  grid-template-columns:
+    repeat(
+      2,
+      minmax(0,1fr)
+    );
+
+  gap:9px;
+}
+
+.food-card{
+  overflow:hidden;
+
+  padding:0;
+
+  min-width:0;
+
+  text-align:left;
+
+  color:var(--ink);
+  background:var(--card);
+
+  border-radius:18px;
+
+  border:1px solid var(--line);
+
+  transition:transform .16s;
+}
+
+.food-card:active{
+  transform:scale(.985);
+}
+
+.food-image{
+  height:106px;
+
+  overflow:hidden;
+
+  display:grid;
+  place-items:center;
+
+  position:relative;
+
+  background:
+    linear-gradient(
+      145deg,
+      #e7f7ef,
+      #d4ecdf
+    );
+}
+
+body.dark .food-image{
+  background:
+    linear-gradient(
+      145deg,
+      #123629,
+      #164131
+    );
+}
+
+.food-image img{
+  width:100%;
+  height:100%;
+
+  object-fit:cover;
+}
+
+.food-icon{
+  font-size:50px;
+
+  filter:
+    drop-shadow(
+      0 8px 8px
+      rgba(0,0,0,.13)
+    );
+}
+
+.food-tag{
+  position:absolute;
+
+  top:6px;
+  right:6px;
+
+  padding:3px 6px;
+
+  border-radius:999px;
+
+  background:
+    rgba(255,255,255,.90);
+
+  color:#50655c;
+
+  font-size:8px;
+}
+
+.food-body{
+  padding:9px;
+}
+
+.food-name{
+  min-height:31px;
+
+  font-size:12.3px;
+  font-weight:700;
+  line-height:1.25;
+
+  display:-webkit-box;
+  -webkit-line-clamp:2;
+  -webkit-box-orient:vertical;
+
+  overflow:hidden;
+}
+
+.food-meta{
+  margin-top:5px;
+
+  color:var(--mut);
+
+  font-size:9.4px;
+  line-height:1.45;
+}
+
+.food-add{
+  margin-top:5px;
+
+  color:var(--p);
+
+  font-size:10px;
+  font-weight:700;
+}
+
+
+/* ===================================
+   LOG
+=================================== */
+
+.log-list{
+  display:grid;
+
+  gap:7px;
+}
+
+.log-item{
+  display:grid;
+
+  grid-template-columns:
+    1fr auto;
+
+  gap:8px;
+
+  align-items:center;
+
+  padding:9px 10px;
+
+  border-radius:14px;
+
+  background:var(--soft);
+}
+
+.log-item b{
+  display:block;
+
+  font-size:11px;
+  line-height:1.25;
+}
+
+.log-item small{
+  color:var(--mut);
+
+  font-size:9.5px;
+}
+
+.delete-btn{
+  width:30px;
+  height:30px;
+
+  border:0;
+
+  border-radius:10px;
+
+  color:#991b1b;
+  background:#fee2e2;
+}
+
+
+/* ===================================
+   PROGRESS
+=================================== */
+
+.progress-row{
+  margin:10px 0;
+}
+
+.progress-head{
+  display:flex;
+
+  justify-content:space-between;
+
+  gap:8px;
+
+  margin-bottom:4px;
+
+  font-size:10.8px;
+}
+
+.track{
+  height:8px;
+
+  overflow:hidden;
+
+  border-radius:99px;
+
+  background:
+    color-mix(
+      in srgb,
+      var(--line) 70%,
+      transparent
+    );
+}
+
+.track i{
+  display:block;
+
+  height:100%;
+
+  border-radius:inherit;
+
+  background:
+    linear-gradient(
+      90deg,
+      var(--p2),
+      var(--p)
+    );
+}
+
+
+/* ===================================
+   METRIC
+=================================== */
+
+.metrics{
+  display:grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  gap:8px;
+}
+
+.metric{
+  padding:10px;
+
+  border-radius:15px;
+
+  background:var(--mint);
+}
+
+.metric small{
+  color:var(--mut);
+
+  font-size:9px;
+}
+
+.metric b{
+  display:block;
+
+  color:var(--pd);
+
+  font:
+    700
+    18px
+    "Outfit",
+    sans-serif;
+}
+
+body.dark .metric b{
+  color:#61e8b8;
+}
+
+
+/* ===================================
+   PROFILE
+=================================== */
+
+.form-grid{
+  display:grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  gap:9px;
+}
+
+.field.full{
+  grid-column:1/-1;
+}
+
+.field label{
+  display:block;
+
+  margin-bottom:4px;
+
+  font-size:10px;
+  font-weight:700;
+}
+
+.field input,
+.field select{
+  width:100%;
+
+  padding:10px;
+
+  border-radius:12px;
+
+  border:1px solid var(--line);
+
+  outline:0;
+
+  background:var(--card);
+  color:var(--ink);
+}
+
+
+/* ===================================
+   MICRO
+=================================== */
+
+.micro-grid{
+  display:grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  gap:8px;
+}
+
+.micro{
+  padding:9px;
+
+  border-radius:13px;
+
+  border:1px solid var(--line);
+
+  background:
+    color-mix(
+      in srgb,
+      var(--card) 78%,
+      var(--mint)
+    );
+}
+
+.micro small{
+  color:var(--mut);
+
+  font-size:9px;
+}
+
+.micro b{
+  display:block;
+
+  margin-top:2px;
+
+  font:
+    700
+    15px
+    "Outfit",
+    sans-serif;
+}
+
+
+/* ===================================
+   TIMELINE
+=================================== */
+
+.timeline{
+  display:grid;
+
+  gap:10px;
+}
+
+.timeline-row{
+  display:grid;
+
+  grid-template-columns:
+    36px 1fr;
+
+  gap:10px;
+
+  align-items:start;
+}
+
+.timeline-icon{
+  width:36px;
+  height:36px;
+
+  display:grid;
+  place-items:center;
+
+  border-radius:50%;
+
+  background:var(--mint);
+
+  border:1px solid var(--line);
+}
+
+.timeline-content b{
+  display:block;
+
+  font-size:12px;
+}
+
+.timeline-content small{
+  display:block;
+
+  margin-top:2px;
+
+  color:var(--mut);
+
+  font-size:9.8px;
+  line-height:1.4;
+}
+
+
+/* ===================================
+   CANVAS
+=================================== */
+
+.canvas-wrap{
+  text-align:center;
+}
+
+#shareCanvas{
+  display:block;
+
+  width:100%;
+  max-width:300px;
+
+  margin:10px auto;
+
+  border-radius:17px;
+
+  border:
+    2px solid
+    #b8efd1;
+
+  background:#fff;
+}
+
+.primary{
+  padding:11px 15px;
+
+  border:0;
+
+  border-radius:13px;
+
+  color:#fff;
+
+  font-weight:700;
+
+  background:
+    linear-gradient(
+      135deg,
+      var(--p),
+      var(--pd)
+    );
+}
+
+
+/* ===================================
+   BOTTOM NAV
+=================================== */
+
+.bottom-nav{
+  position:fixed;
+
+  left:50%;
+  bottom:0;
+
+  transform:
+    translateX(-50%);
+
+  width:min(760px,100%);
+
+  z-index:50;
+
+  display:grid;
+
+  grid-template-columns:
+    repeat(4,1fr);
+
+  padding:
+    8px
+    10px
+    calc(
+      9px +
+      env(safe-area-inset-bottom)
+    );
+
+  border-top:
+    1px solid var(--line);
+
+  background:
+    color-mix(
+      in srgb,
+      var(--card) 94%,
+      transparent
+    );
+
+  backdrop-filter:blur(18px);
+}
+
+.nav-btn{
+  border:0;
+
+  padding:3px;
+
+  color:var(--mut);
+  background:transparent;
+
+  font-size:9px;
+}
+
+.nav-btn span{
+  display:block;
+
+  font-size:20px;
+  line-height:1.2;
+}
+
+.nav-btn.active{
+  color:var(--p);
+
+  font-weight:700;
+}
+
+
+/* ===================================
+   BOTTOM SHEET
+=================================== */
+
+.sheet-back{
+  display:none;
+
+  position:fixed;
+
+  inset:0;
+
+  z-index:80;
+
+  background:
+    rgba(4,19,14,.60);
+}
+
+.sheet-back.open{
+  display:block;
+}
+
+.sheet{
+  position:absolute;
+
+  left:0;
+  right:0;
+  bottom:0;
+
+  width:min(760px,100%);
+
+  max-height:90%;
+
+  margin:0 auto;
+
+  padding:
+    10px
+    16px
+    calc(
+      18px +
+      env(safe-area-inset-bottom)
+    );
+
+  overflow-y:auto;
+
+  border-radius:
+    28px
+    28px
+    0
+    0;
+
+  background:var(--card);
+
+  animation:
+    sheetUp
+    .22s ease;
+}
+
+@keyframes sheetUp{
+  from{
+    transform:
+      translateY(100%);
+  }
+}
+
+.handle{
+  width:44px;
+  height:5px;
+
+  margin:
+    0 auto 14px;
+
+  border-radius:99px;
+
+  background:var(--line);
+}
+
+.sheet-head{
+  display:flex;
+
+  align-items:center;
+
+  gap:11px;
+}
+
+.sheet-photo{
+  width:74px;
+  height:74px;
+
+  flex:0 0 auto;
+
+  overflow:hidden;
+
+  display:grid;
+  place-items:center;
+
+  border-radius:18px;
+
+  background:var(--mint);
+}
+
+.sheet-photo img{
+  width:100%;
+  height:100%;
+
+  object-fit:cover;
+}
+
+.sheet-photo .fallback{
+  font-size:40px;
+}
+
+.sheet-head h4{
+  font-size:15px;
+}
+
+.sheet-small{
+  margin-top:2px;
+
+  color:var(--mut);
+
+  font-size:9.5px;
+  line-height:1.4;
+}
+
+.qty{
+  display:grid;
+
+  grid-template-columns:
+    46px 1fr 46px;
+
+  gap:7px;
+
+  margin:14px 0 9px;
+}
+
+.qty button{
+  border-radius:13px;
+
+  border:1px solid var(--line);
+
+  color:var(--ink);
+  background:var(--mint);
+
+  font-size:24px;
+}
+
+.qty input{
+  width:100%;
+
+  padding:11px;
+
+  border-radius:13px;
+
+  border:1px solid var(--line);
+
+  text-align:center;
+
+  color:var(--ink);
+  background:var(--card);
+}
+
+.source-link{
+  display:inline-block;
+
+  margin-top:8px;
+
+  color:var(--p);
+
+  font-size:10px;
+  font-weight:700;
+
+  text-decoration:none;
+}
+
+
+/* ===================================
+   MIXED VEGETABLE BUILDER
+=================================== */
+
+.custom-mix{
+  display:none;
+
+  margin-top:13px;
+}
+
+.custom-mix.show{
+  display:block;
+}
+
+.mix-grid{
+  display:grid;
+
+  grid-template-columns:
+    1fr 1fr;
+
+  gap:7px;
+
+  margin-top:8px;
+}
+
+.mix-item{
+  display:flex;
+
+  align-items:center;
+
+  gap:6px;
+
+  padding:8px;
+
+  border-radius:12px;
+
+  border:1px solid var(--line);
+
+  background:var(--soft);
+
+  font-size:10px;
+}
+
+.mix-item input{
+  accent-color:var(--p);
+}
+
+
+/* ===================================
+   TOAST
+=================================== */
+
+.toast{
+  position:fixed;
+
+  left:50%;
+  bottom:88px;
+
+  z-index:100;
+
+  transform:
+    translateX(-50%);
+
+  padding:8px 14px;
+
+  border-radius:999px;
+
+  color:#fff;
+  background:#10231d;
+
+  font-size:10px;
+
+  white-space:nowrap;
+
+  opacity:0;
+
+  pointer-events:none;
+
+  transition:.2s;
+}
+
+.toast.show{
+  opacity:1;
+}
+
+
+/* ===================================
+   LOADING
+=================================== */
+
+.loading{
+  min-height:220px;
+
+  display:grid;
+  place-items:center;
+
+  padding:30px;
+
+  color:var(--mut);
+
+  text-align:center;
+}
+
+.spinner{
+  width:36px;
+  height:36px;
+
+  margin:
+    0 auto 10px;
+
+  border-radius:50%;
+
+  border:
+    4px solid
+    var(--line);
+
+  border-top-color:
+    var(--p);
+
+  animation:
+    spin .8s linear infinite;
+}
+
+@keyframes spin{
+  to{
+    transform:
+      rotate(360deg);
+  }
+}
+
+.empty{
+  padding:16px;
+
+  color:var(--mut);
+
+  text-align:center;
+
+  font-size:11px;
+}
+
+
+@media(min-width:620px){
+
+  .food-grid{
+    grid-template-columns:
+      repeat(3,1fr);
+  }
+
+  .food-image{
+    height:126px;
+  }
+
+}
+
+@media(max-width:370px){
+
+  .form-grid{
+    grid-template-columns:1fr;
+  }
+
+  .field.full{
+    grid-column:auto;
+  }
+
+  .hero-bottom{
+    grid-template-columns:
+      88px 1fr;
+  }
+
+  .cal-ring{
+    width:84px;
+    height:84px;
+  }
+
+  .cal-ring::before{
+    inset:12px;
+  }
+
+}
+
+@media(prefers-reduced-motion:reduce){
+
+  *{
+    animation:none!important;
+    transition:none!important;
+    scroll-behavior:auto!important;
+  }
+
+}
+</style>
+</head>
+
+
+<body>
+
+<div class="app">
+
+<header class="top">
+
+<div class="brand">
+
+<div class="brand-left">
+
+<div class="logo">
+🥗
+</div>
+
+<div class="brand-text">
+
+<h1>
+SHUDDHO Nutrition Tracker V4.1
+</h1>
+
+<div class="brand-sub">
+বাংলাদেশি রান্না করা খাবার • GitHub Nutrition Engine
+</div>
+
+</div>
+
+</div>
+
+<button
+id="themeBtn"
+class="icon-btn">
+🌙
+</button>
+
+</div>
+
+</header>
+
+
+<!-- HOME -->
+
+<section
+id="home"
+class="screen active">
+
+<div class="db-bar">
+
+<div class="db-left">
+
+<div class="live-dot">
+</div>
+
+<div>
+
+<b id="dbTitle">
+GitHub database সংযোগ হচ্ছে…
+</b>
+
+<span id="dbSub">
+Food Composition Table for Bangladesh
+</span>
+
+</div>
+
+</div>
+
+<a
+href="../"
+target="_blank">
+Source ↗
+</a>
+
+</div>
+
+
+<div class="section">
+
+<div class="hero">
+
+<div
+id="heroGreeting"
+class="hero-small">
+আজকের অগ্রগতি
+</div>
+
+<h2 id="remaining">
+— kcal
+</h2>
+
+<div
+id="goalText"
+class="hero-sub">
+দৈনিক লক্ষ্য হিসাব হচ্ছে…
+</div>
+
+
+<div class="hero-bottom">
+
+<div
+id="calRing"
+class="cal-ring">
+
+<div class="ring-inner">
+
+<b id="ringPct">
+0%
+</b>
+
+<small>
+লক্ষ্য পূরণ
+</small>
+
+</div>
+
+</div>
+
+
+<div class="hero-grid">
+
+<div class="hero-stat">
+
+<small>
+আজ খেয়েছেন
+</small>
+
+<b id="heroIntake">
+0
+</b>
+
+<small>
+kcal
+</small>
+
+</div>
+
+
+<div class="hero-stat">
+
+<small>
+লক্ষ্য
+</small>
+
+<b id="heroTarget">
+0
+</b>
+
+<small>
+kcal
+</small>
+
+</div>
+
+
+<div class="hero-stat">
+
+<small>
+প্রোটিন
+</small>
+
+<b id="heroProtein">
+0g
+</b>
+
+</div>
+
+
+<div class="hero-stat">
+
+<small>
+পানি লক্ষ্য
+</small>
+
+<b id="heroWater">
+0L
+</b>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<div class="title-row">
+
+<h3>
+আজকের ম্যাক্রো
+</h3>
+
+<span
+id="todayDate"
+class="mini">
+</span>
+
+</div>
+
+<div
+id="macroHome"
+class="card">
+</div>
+
+</div>
+
+
+<div class="section">
+
+<div class="title-row">
+
+<h3>
+আজকের খাবার
+</h3>
+
+<button
+class="chip"
+data-go="diary">
++ খাবার যোগ করুন
+</button>
+
+</div>
+
+<div
+id="todayLog"
+class="card log-list">
+</div>
+
+</div>
+
+
+<div class="section">
+
+<div class="title-row">
+
+<h3>
+আজকের Insight
+</h3>
+
+</div>
+
+<div
+id="insight"
+class="card">
+</div>
+
+</div>
+
+</section>
+
+
+<!-- DIARY -->
+
+<section
+id="diary"
+class="screen">
+
+<div class="title-row">
+
+<h3>
+🍽️ রান্না করা খাবারের ডায়েরি
+</h3>
+
+<span
+id="mealCalories"
+class="mini">
+0 kcal
+</span>
+
+</div>
+
+
+<div
+id="mealTabs"
+class="scroll-row">
+</div>
+
+
+<div class="search">
+
+<span>
+⌕
+</span>
+
+<input
+id="foodSearch"
+type="search"
+placeholder="ভাত, ডাল, মাছ, সবজি, মাংস, চা…">
+
+</div>
+
+
+<div
+id="categoryTabs"
+class="scroll-row">
+</div>
+
+
+<div id="foodArea">
+
+<div class="loading">
+
+<div>
+
+<div class="spinner">
+</div>
+
+GitHub database লোড হচ্ছে…
+
+</div>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<div class="title-row">
+
+<h3>
+এই বেলার খাবার
+</h3>
+
+<span
+id="mealCount"
+class="mini">
+0 item
+</span>
+
+</div>
+
+<div
+id="mealLog"
+class="card log-list">
+</div>
+
+</div>
+
+</section>
+
+
+<!-- REPORT -->
+
+<section
+id="report"
+class="screen">
+
+<div class="title-row">
+
+<h3>
+📊 ব্যক্তিগত দৈনিক রিপোর্ট
+</h3>
+
+<span class="mini">
+Facebook-ready
+</span>
+
+</div>
+
+
+<div
+id="reportSummary"
+class="card">
+</div>
+
+
+<div class="section">
+
+<div class="title-row">
+
+<h3>
+ম্যাক্রোনিউট্রিয়েন্ট
+</h3>
+
+</div>
+
+<div
+id="reportMacros"
+class="card">
+</div>
+
+</div>
+
+
+<div class="section">
+
+<div class="title-row">
+
+<h3>
+Micronutrient Snapshot
+</h3>
+
+</div>
+
+<div class="card">
+
+<div
+id="microGrid"
+class="micro-grid">
+</div>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<div class="title-row">
+
+<h3>
+Meal Journey
+</h3>
+
+</div>
+
+<div class="card">
+
+<div
+id="mealJourney"
+class="timeline">
+</div>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<div class="title-row">
+
+<h3>
+Personal Nutrition Story Card
+</h3>
+
+</div>
+
+<div class="card canvas-wrap">
+
+<canvas
+id="shareCanvas"
+width="1080"
+height="1350">
+</canvas>
+
+<button
+id="downloadCard"
+class="primary">
+📥 PNG ডাউনলোড
+</button>
+
+</div>
+
+</div>
+
+
+<p
+class="note"
+style="margin-top:10px">
+
+রান্না করা খাবারের nutrient value
+recipe composition ও Bangladesh Food
+Composition data থেকে estimate করা হয়।
+রান্নার ধরন, পানি ও তেলের পরিমাণে
+বাস্তব মান পরিবর্তিত হতে পারে।
+
+</p>
+
+</section>
+
+
+<!-- PROFILE -->
+
+<section
+id="profile"
+class="screen">
+
+<div class="title-row">
+
+<h3>
+👤 প্রোফাইল ও Energy Goal
+</h3>
+
+<span class="mini">
+BMR / TDEE
+</span>
+
+</div>
+
+
+<div class="card">
+
+<div class="form-grid">
+
+<div class="field full">
+
+<label>
+নাম
+</label>
+
+<input
+id="name"
+value="ব্যবহারকারী">
+
+</div>
+
+
+<div class="field">
+
+<label>
+বয়স
+</label>
+
+<input
+id="age"
+type="number"
+min="14"
+max="100"
+value="25">
+
+</div>
+
+
+<div class="field">
+
+<label>
+লিঙ্গ
+</label>
+
+<select id="sex">
+
+<option value="male">
+পুরুষ
+</option>
+
+<option value="female">
+মহিলা
+</option>
+
+</select>
+
+</div>
+
+
+<div class="field">
+
+<label>
+ওজন (kg)
+</label>
+
+<input
+id="weight"
+type="number"
+min="30"
+max="250"
+step="0.1"
+value="65">
+
+</div>
+
+
+<div class="field">
+
+<label>
+উচ্চতা (cm)
+</label>
+
+<input
+id="height"
+type="number"
+min="120"
+max="230"
+step="0.1"
+value="168">
+
+</div>
+
+
+<div class="field full">
+
+<label>
+Activity
+</label>
+
+<select id="activity">
+
+<option value="1.2">
+Sedentary
+</option>
+
+<option value="1.375">
+Lightly active
+</option>
+
+<option
+value="1.55"
+selected>
+Moderately active
+</option>
+
+<option value="1.725">
+Very active
+</option>
+
+<option value="1.9">
+Extra active
+</option>
+
+</select>
+
+</div>
+
+
+<div class="field full">
+
+<label>
+লক্ষ্য
+</label>
+
+<select id="goal">
+
+<option value="maintain">
+ওজন বজায় রাখা
+</option>
+
+<option value="loss">
+ফ্যাট লস
+</option>
+
+<option value="gain">
+পেশি / ওজন বৃদ্ধি
+</option>
+
+</select>
+
+</div>
+
+</div>
+
+
+<div class="section">
+
+<div class="metrics">
+
+<div class="metric">
+
+<small>
+BMR
+</small>
+
+<b id="bmr">
+—
+</b>
+
+</div>
+
+
+<div class="metric">
+
+<small>
+TDEE
+</small>
+
+<b id="tdee">
+—
+</b>
+
+</div>
+
+
+<div class="metric">
+
+<small>
+ক্যালোরি লক্ষ্য
+</small>
+
+<b id="targetMetric">
+—
+</b>
+
+</div>
+
+
+<div class="metric">
+
+<small>
+প্রোটিন লক্ষ্য
+</small>
+
+<b id="proteinTarget">
+—
+</b>
+
+</div>
+
+</div>
+
+</div>
+
+</div>
+
+</section>
+
+</div>
+
+
+<nav class="bottom-nav">
+
+<button
+class="nav-btn active"
+data-nav="home">
+
+<span>
+⌂
+</span>
+
+হোম
+
+</button>
+
+
+<button
+class="nav-btn"
+data-nav="diary">
+
+<span>
+🍽️
+</span>
+
+ডায়েরি
+
+</button>
+
+
+<button
+class="nav-btn"
+data-nav="report">
+
+<span>
+▥
+</span>
+
+রিপোর্ট
+
+</button>
+
+
+<button
+class="nav-btn"
+data-nav="profile">
+
+<span>
+👤
+</span>
+
+প্রোফাইল
+
+</button>
+
+</nav>
+
+
+<!-- FOOD SHEET -->
+
+<div
+id="foodSheet"
+class="sheet-back">
+
+<div class="sheet">
+
+<div class="handle">
+</div>
+
+
+<div class="sheet-head">
+
+<div
+id="sheetPhoto"
+class="sheet-photo">
+</div>
+
+
+<div>
+
+<h4 id="sheetName">
+খাবার
+</h4>
+
+<div
+id="sheetDescription"
+class="sheet-small">
+</div>
+
+<div
+id="sheetServing"
+class="sheet-small">
+</div>
+
+</div>
+
+</div>
+
+
+<div
+id="portionPresets"
+class="scroll-row"
+style="margin-top:12px">
+</div>
+
+
+<div
+id="customMix"
+class="custom-mix">
+
+<div class="title-row">
+
+<h3>
+মিশ্র সবজি কাস্টমাইজ
+</h3>
+
+<span class="mini">
+পছন্দ করুন
+</span>
+
+</div>
+
+<div
+id="mixGrid"
+class="mix-grid">
+</div>
+
+<p
+class="note"
+style="margin-top:7px">
+
+নির্বাচিত সবজিগুলোর মোট অংশ
+সমানভাবে ভাগ করে nutrition estimate
+করা হবে।
+
+</p>
+
+</div>
+
+
+<div class="qty">
+
+<button id="minus">
+−
+</button>
+
+<input
+id="grams"
+type="number"
+min="1"
+max="2000"
+step="5"
+value="100">
+
+<button id="plus">
++
+</button>
+
+</div>
+
+
+<div
+id="foodCalculation"
+class="card">
+</div>
+
+
+<a
+id="foodSource"
+class="source-link"
+href="../"
+target="_blank">
+
+Food source/details ↗
+
+</a>
+
+
+<button
+id="addFood"
+class="primary"
+style="width:100%;margin-top:11px">
+
+আজকের খাবারে যোগ করুন
+
+</button>
+
+</div>
+
+</div>
+
+
+<div
+id="toast"
+class="toast">
+</div>
+
+
+<script>
+(function(){
+
+"use strict";
+
+
+const DB_JS =
+"../bangladesh-food-composition-blogger.js";
+
+const DB_INDEX =
+"../food-search-index.json";
+
+
+const STORE =
+"shuddhoNutritionV41";
+
+const CACHE =
+"shuddhoNutritionV41Cache";
+
+
+const $ =
+q=>document.querySelector(q);
+
+const $$ =
+q=>Array.from(
+  document.querySelectorAll(q)
+);
+
+
+const NUTRIENTS = [
+
+  "energy_kcal",
+
+  "protein_g",
+
+  "fat_g",
+
+  "carb_g",
+
+  "fibre_g",
+
+  "calcium_mg",
+
+  "iron_mg",
+
+  "magnesium_mg",
+
+  "potassium_mg",
+
+  "zinc_mg",
+
+  "folate_mcg",
+
+  "vitamin_c_mg"
+
+];
+
+
+const MEALS = {
+
+  breakfast:{
+    label:"🌅 সকাল",
+    icon:"🌅"
+  },
+
+  lunch:{
+    label:"☀️ দুপুর",
+    icon:"☀️"
+  },
+
+  snacks:{
+    label:"🌇 বিকেল",
+    icon:"🌇"
+  },
+
+  dinner:{
+    label:"🌙 রাত",
+    icon:"🌙"
+  }
+
+};
+
+
+const CATEGORIES = {
+
+  all:[
+    "সব",
+    "✨"
+  ],
+
+  staple:[
+    "ভাত/রুটি",
+    "🍚"
+  ],
+
+  dal:[
+    "ডাল",
+    "🥣"
+  ],
+
+  protein:[
+    "মাছ/মাংস",
+    "🍗"
+  ],
+
+  veg:[
+    "সবজি",
+    "🥬"
+  ],
+
+  snacks:[
+    "নাস্তা",
+    "☕"
+  ],
+
+  dessert:[
+    "ফল/দই",
+    "🍎"
+  ]
+
+};
+
+
+const MIX_VEGETABLES = [
+
+  {
+    code:"05_0012",
+    name:"আলু",
+    icon:"🥔"
+  },
+
+  {
+    code:"03_0036",
+    name:"ফুলকপি",
+    icon:"🥦"
+  },
+
+  {
+    code:"03_0033",
+    name:"বেগুন",
+    icon:"🍆"
+  },
+
+  {
+    code:"03_0041",
+    name:"কাঁচা পেঁপে",
+    icon:"🥒"
+  },
+
+  {
+    code:"03_0043",
+    name:"মিষ্টিকুমড়া",
+    icon:"🎃"
+  },
+
+  {
+    code:"03_0038",
+    name:"পটল",
+    icon:"🥒"
+  },
+
+  {
+    code:"03_0037",
+    name:"বরবটি",
+    icon:"🫛"
+  },
+
+  {
+    code:"03_0040",
+    name:"ঢেঁড়স",
+    icon:"🌿"
+  }
+
+];
+
+
+let foods = [];
+
+let searchIndex = {};
+
+let selectedRecipe = null;
+
+let selectedMixedVegetables = [
+
+  "05_0012",
+
+  "03_0036",
+
+  "03_0033",
+
+  "03_0041"
+
+];
+
+
+function component(
+  code,
+  grams
+){
+
+  return {
+    code,
+    grams
+  };
+
+}
+
+
+/*
+  IMPORTANT:
+  Exact photo না থাকলে photo:null রাখা হয়েছে।
+  ভুল generic photo দেখানোর চেয়ে
+  matching icon দেখানো হবে।
+*/
+
+const RECIPES = [
+
+{
+  id:"rice",
+  name:"সাদা ভাত",
+  en:"Cooked rice",
+  icon:"🍚",
+
+  photo:
+  "https://images.unsplash.com/photo-1516684732162-798a0062be99?auto=format&fit=crop&w=800&q=80",
+
+  meals:[
+    "lunch",
+    "dinner"
+  ],
+
+  category:"staple",
+
+  serving:150,
+
+  servingText:
+  "১ মাঝারি বাটি ≈ 150g",
+
+  description:
+  "দুপুর ও রাতের প্রধান খাবার",
+
+  portions:[
+    ["½ বাটি",75],
+    ["১ বাটি",150],
+    ["১.৫ বাটি",225],
+    ["২ বাটি",300]
+  ],
+
+  components:[
+    component(
+      "01_0037",
+      150
+    )
+  ]
+},
+
+
+{
+  id:"brown_rice",
+  name:"লাল চালের ভাত",
+  en:"Brown cooked rice",
+  icon:"🍚",
+
+  photo:
+  "https://images.unsplash.com/photo-1516684732162-798a0062be99?auto=format&fit=crop&w=800&q=80",
+
+  meals:[
+    "lunch",
+    "dinner"
+  ],
+
+  category:"staple",
+
+  serving:150,
+
+  servingText:
+  "১ মাঝারি বাটি ≈ 150g",
+
+  description:
+  "লাল বা ঢেঁকি ছাঁটা চালের ভাত",
+
+  portions:[
+    ["½ বাটি",75],
+    ["১ বাটি",150],
+    ["২ বাটি",300]
+  ],
+
+  components:[
+    component(
+      "01_0038",
+      150
+    )
+  ]
+},
+
+
+{
+  id:"roti",
+  name:"আটার রুটি",
+  en:"Whole wheat roti",
+  icon:"🫓",
+
+  photo:
+  "https://images.unsplash.com/photo-1626074353765-517a681e40be?auto=format&fit=crop&w=800&q=80",
+
+  meals:[
+    "breakfast",
+    "dinner"
+  ],
+
+  category:"staple",
+
+  serving:40,
+
+  servingText:
+  "১টি মাঝারি রুটি ≈ 40g",
+
+  description:
+  "আটার পাতলা রুটি",
+
+  portions:[
+    ["১টি",40],
+    ["২টি",80],
+    ["৩টি",120]
+  ],
+
+  components:[
+    component(
+      "01_0030",
+      30
+    ),
+
+    component(
+      "13_0012",
+      1.5
+    )
+  ]
+},
+
+
+{
+  id:"paratha",
+  name:"পরোটা",
+  en:"Paratha",
+  icon:"🫓",
+
+  photo:
+  "https://images.unsplash.com/photo-1626074353765-517a681e40be?auto=format&fit=crop&w=800&q=80",
+
+  meals:[
+    "breakfast",
+    "dinner"
+  ],
+
+  category:"staple",
+
+  serving:60,
+
+  servingText:
+  "১টি ≈ 60g",
+
+  description:
+  "তেলে ভাজা পরোটা",
+
+  portions:[
+    ["½টি",30],
+    ["১টি",60],
+    ["২টি",120]
+  ],
+
+  components:[
+    component(
+      "01_0030",
+      38
+    ),
+
+    component(
+      "13_0012",
+      8
+    )
+  ]
+},
+
+
+{
+  id:"khichuri",
+  name:"ভুনা খিচুড়ি",
+  en:"Khichuri",
+  icon:"🥘",
+
+  photo:null,
+
+  meals:[
+    "breakfast",
+    "lunch",
+    "dinner"
+  ],
+
+  category:"staple",
+
+  serving:180,
+
+  servingText:
+  "১ বাটি ≈ 180g",
+
+  description:
+  "চাল, ডাল, আলু ও তেল",
+
+  portions:[
+    ["½ বাটি",90],
+    ["১ বাটি",180],
+    ["১.৫ বাটি",270]
+  ],
+
+  components:[
+
+    component(
+      "01_0037",
+      95
+    ),
+
+    component(
+      "02_0015",
+      45
+    ),
+
+    component(
+      "05_0012",
+      22
+    ),
+
+    component(
+      "13_0012",
+      8
+    ),
+
+    component(
+      "03_0024",
+      10
+    )
+
+  ]
+},
+
+
+{
+  id:"polao",
+  name:"পোলাও",
+  en:"Polao",
+  icon:"🍛",
+
+  photo:
+  "https://images.unsplash.com/photo-1633945274405-b6c8069047b0?auto=format&fit=crop&w=800&q=80",
+
+  meals:[
+    "lunch",
+    "dinner"
+  ],
+
+  category:"staple",
+
+  serving:180,
+
+  servingText:
+  "১ বাটি ≈ 180g",
+
+  description:
+  "সুগন্ধি ভাত, ঘি ও পেঁয়াজ",
+
+  portions:[
+    ["½ বাটি",90],
+    ["১ বাটি",180],
+    ["১.৫ বাটি",270]
+  ],
+
+  components:[
+
+    component(
+      "01_0040",
+      150
+    ),
+
+    component(
+      "13_0004",
+      8
+    ),
+
+    component(
+      "03_0024",
+      12
+    )
+
+  ]
+},
+
+
+{
+  id:"masoor_dal",
+  name:"মসুর ডাল",
+  en:"Masoor dal",
+  icon:"🥣",
+
+  photo:
+  "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+
+  meals:[
+    "lunch",
+    "dinner"
+  ],
+
+  category:"dal",
+
+  serving:150,
+
+  servingText:
+  "১ বাটি ≈ 150g",
+
+  description:
+  "পাতলা রান্না করা মসুর ডাল",
+
+  portions:[
+    ["½ বাটি",75],
+    ["১ বাটি",150],
+    ["২ বাটি",300]
+  ],
+
+  components:[
+
+    component(
+      "02_0015",
+      125
+    ),
+
+    component(
+      "13_0012",
+      4
+    ),
+
+    component(
+      "03_0024",
+      12
+    ),
+
+    component(
+      "03_0014",
+      2
+    )
+
+  ]
+},
+
+
+{
+  id:"mung_dal",
+  name:"মুগ ডাল",
+  en:"Moong dal",
+  icon:"🥣",
+
+  photo:
+  "https://images.unsplash.com/photo-1546833999-b9f581a1996d?auto=format&fit=crop&w=800&q=80",
+
+  meals:[
+    "lunch",
+    "dinner"
+  ],
+
+  category:"dal",
+
+  serving:150,
+
+  servingText:
+  "১ বাটি ≈ 150g",
+
+  description:
+  "রান্না করা মুগ ডাল",
+
+  portions:[
+    ["½ বাটি",75],
+    ["১ বাটি",150],
+    ["২ বাটি",300]
+  ],
+
+  components:[
+
+    component(
+      "02_0013",
+      125
+    ),
+
+    component(
+      "13_0012",
+      4
+    ),
+
+    component(
+      "03_0024",
+      12
+    )
+
+  ]
+},
+
+
+{
+  id:"chola",
+  name:"ছোলার তরকারি",
+  en:"Chickpea curry",
+  icon:"🫘",
+
+  photo:null,
+
+  meals:[
+    "breakfast",
+    "snacks"
+  ],
+
+  category:"dal",
+
+  serving:130,
+
+  servingText:
+  "১ বাটি ≈ 130g",
+
+  description:
+  "সিদ্ধ ছোলা ও মসলা",
+
+  portions:[
+    ["½ বাটি",65],
+    ["১ বাটি",130],
+    ["২ বাটি",260]
+  ],
+
+  components:[
+
+    component(
+      "02_0012",
+      105
+    ),
+
+    component(
+      "13_0012",
+      5
+    ),
+
+    component(
+      "03_0024",
+      15
+    ),
+
+    component(
+      "03_0045",
+      10
+    )
+
+  ]
+},
+
+
+{
+  id:"boiled_egg",
+  name:"ডিম সিদ্ধ",
+  en:"Boiled egg",
+  icon:"🥚",
+
+  photo:
+  "https://images.unsplash.com/photo-1582722872445-44dc5f7e3c8f?auto=format&fit=crop&w=800&q=80",
+
+  meals:[
+    "breakfast",
+    "snacks",
+    "dinner"
+  ],
+
+  category:"protein",
+
+  serving:50,
+
+  servingText:
+  "১টি মাঝারি ডিম ≈ 50g",
+
+  description:
+  "সিদ্ধ মুরগির ডিম",
+
+  portions:[
+    ["১টি",50],
+    ["২টি",100],
+    ["৩টি",150]
+  ],
+
+  components:[
+    component(
+      "11_0005",
+      50
+    )
+  ]
+},
+
+
+{
+  id:"omelette",
+  name:"ডিম ভাজি / অমলেট",
+  en:"Omelette",
+  icon:"🍳",
+
+  photo:
+  "https://images.unsplash.com/photo-1525351484163-7529414344d8?auto=format&fit=crop&w=800&q=80",
+
+  meals:[
+    "breakfast",
+    "dinner"
+  ],
+
+  category:"protein",
+
+  serving:60,
+
+  servingText:
+  "১টি ≈ 60g",
+
+  description:
+  "ডিম, পেঁয়াজ ও তেল",
+
+  portions:[
+    ["১টি",60],
+    ["২টি",120]
+  ],
+
+  components:[
+
+    component(
+      "11_0001",
+      50
+    ),
+
+    component(
+      "13_0012",
+      5
+    ),
+
+    component(
+      "03_0024",
+      5
+    )
+
+  ]
+},
+
+
+{
+  id:"rui_curry",
+  name:"রুই মাছের ঝোল",
+  en:"Rui fish curry",
+  icon:"🐟",
+
+  photo:null,
+
+  meals:[
+    "lunch",
+    "dinner"
+  ],
+
+  category:"protein",
+
+  serving:120,
+
+  servingText:
+  "১ পিস ঝোলসহ ≈ 120g",
+
+  description:
+  "রুই মাছ, পেঁয়াজ, টমেটো ও তেল",
+
+  portions:[
+    ["½ পিস",60],
+    ["১ পিস",120],
+    ["২ পিস",240]
+  ],
+
+  components:[
+
+    component(
+      "09_0059",
+      75
+    ),
+
+    component(
+      "13_0012",
+      7
+    ),
+
+    component(
+      "03_0024",
+      15
+    ),
+
+    component(
+      "03_0045",
+      15
+    )
+
+  ]
+},
+
+
+{
+  id:"hilsa_mustard",
+  name:"সর্ষে ইলিশ",
+  en:"Hilsa mustard curry",
+  icon:"🐟",
+
+  photo:
+  "https://propermasala.com/_astro/shorshe-ilish.xF4qTR_I.webp",
+
+  meals:[
+    "lunch",
+    "dinner"
+  ],
+
+  category:"protein",
+
+  serving:110,
+
+  servingText:
+  "১ পিস ≈ 110g",
+
+  description:
+  "ইলিশ ও সরিষার তেল",
+
+  portions:[
+    ["½ পিস",55],
+    ["১ পিস",110],
+    ["২ পিস",220]
+  ],
+
+  components:[
+
+    component(
+      "09_0033",
+      75
+    ),
+
+    component(
+      "13_0008",
+      8
+    ),
+
+    component(
+      "03_0024",
+      10
+    )
+
+  ]
+},
+
+
+{
+  id:"fish_fry",
+  name:"মাছ ভাজা",
+  en:"Fried fish",
+  icon:"🐟",
+
+  photo:null,
+
+  meals:[
+    "lunch",
+    "dinner"
+  ],
+
+  category:"protein",
+
+  serving:90,
+
+  servingText:
+  "১ পিস ≈ 90g",
+
+  description:
+  "রুই/দেশি মাছ ভাজা",
+
+  portions:[
+    ["½ পিস",45],
+    ["১ পিস",90],
+    ["২ পিস",180]
+  ],
+
+  components:[
+
+    component(
+      "09_0059",
+      75
+    ),
+
+    component(
+      "13_0012",
+      8
+    )
+
+  ]
+},
+
+
+{
+  id:"chicken_curry",
+  name:"মুরগির ঝোল",
+  en:"Chicken curry",
+  icon:"🍗",
+
+  photo:
+  "https://images.unsplash.com/photo-1604908176997-125f25cc6f3d?auto=format&fit=crop&w=800&q=80",
+
+  meals:[
+    "lunch",
+    "dinner"
+  ],
+
+  category:"protein",
+
+  serving:140,
+
+  servingText:
+  "১ পরিবেশন ≈ 140g",
+
+  description:
+  "মুরগি, আলু, পেঁয়াজ ও তেল",
+
+  portions:[
+    ["½ পরিবেশন",70],
+    ["১ পরিবেশন",140],
+    ["২ পরিবেশন",280]
+  ],
+
+  components:[
+
+    component(
+      "10_0006",
+      80
+    ),
+
+    component(
+      "05_0012",
+      25
+    ),
+
+    component(
+      "13_0012",
+      8
+    ),
+
+    component(
+      "03_0024",
+      18
+    )
+
+  ]
+},
+
+
+{
+  id:"chicken_roast",
+  name:"মুরগির রোস্ট",
+  en:"Chicken roast",
+  icon:"🍗",
+
+  photo:
+  "https://images.unsplash.com/photo-1598103442097-8b74394b95c6?auto=format&fit=crop&w=800&q=80",
+
+  meals:[
+    "lunch",
+    "dinner"
+  ],
+
+  category:"protein",
+
+  serving:125,
+
+  servingText:
+  "১ পিস ≈ 125g",
+
+  description:
+  "রোস্ট করা মুরগি",
+
+  portions:[
+    ["½ পিস",63],
+    ["১ পিস",125],
+    ["২ পিস",250]
+  ],
+
+  components:[
+
+    component(
+      "10_0006",
+      90
+    ),
+
+    component(
+      "13_0012",
+      10
+    ),
+
+    component(
+      "03_0024",
+      15
+    ),
+
+    component(
+      "12_0008",
+      10
+    )
+
+  ]
+},
+
+
+{
+  id:"beef_bhuna",
+  name:"গরুর মাংস ভুনা",
+  en:"Beef bhuna",
+  icon:"🥩",
+
+  photo:
+  "https://images.unsplash.com/photo-1544025162-d76694265947?auto=format&fit=crop&w=800&q=80",
+
+  meals:[
+    "lunch",
+    "dinner"
+  ],
+
+  category:"protein",
+
+  serving:120,
+
+  servingText:
+  "১ পরিবেশন ≈ 120g",
+
+  description:
+  "গরুর মাংস, পেঁয়াজ ও তেল",
+
+  portions:[
+    ["½ পরিবেশন",60],
+    ["১ পরিবেশন",120],
+    ["২ পরিবেশন",240]
+  ],
+
+  components:[
+
+    component(
+      "10_0003",
+      80
+    ),
+
+    component(
+      "13_0012",
+      8
+    ),
+
+    component(
+      "03_0024",
+      22
+    )
+
+  ]
+},
+
+
+{
+  id:"mutton_curry",
+  name:"খাসির মাংসের ঝোল",
+  en:"Mutton curry",
+  icon:"🍖",
+
+  photo:null,
+
+  meals:[
+    "lunch",
+    "dinner"
+  ],
+
+  category:"protein",
+
+  serving:130,
+
+  servingText:
+  "১ পরিবেশন ≈ 130g",
+
+  description:
+  "খাসির মাংসের ঝোল",
+
+  portions:[
+    ["½ পরিবেশন",65],
+    ["১ পরিবেশন",130],
+    ["২ পরিবেশন",260]
+  ],
+
+  components:[
+
+    component(
+      "10_0011",
+      85
+    ),
+
+    component(
+      "13_0012",
+      8
+    ),
+
+    component(
+      "03_0024",
+      22
+    ),
+
+    component(
+      "03_0045",
+      10
+    )
+
+  ]
+},
+
+
+{
+  id:"mixed_vegetable",
+  name:"পাঁচমিশালি সবজি",
+  en:"Mixed vegetable curry",
+  icon:"🥬",
+
+  photo:
+  "https://images.unsplash.com/photo-1540420773420-3366772f4999?auto=format&fit=crop&w=800&q=80",
+
+  meals:[
+    "breakfast",
+    "lunch",
+    "dinner"
+  ],
+
+  category:"veg",
+
+  serving:130,
+
+  servingText:
+  "১ বাটি ≈ 130g",
+
+  description:
+  "২–৫ ধরনের সবজি নিজের মতো নির্বাচন করুন",
+
+  customMix:true,
+
+  portions:[
+    ["½ বাটি",65],
+    ["১ বাটি",130],
+    ["২ বাটি",260]
+  ]
+},
+
+
+{
+  id:"potato_cauliflower",
+  name:"আলু-ফুলকপি তরকারি",
+  en:"Potato cauliflower curry",
+  icon:"🥦",
+
+  photo:
+  "https://images.unsplash.com/photo-1566385101042-1a0aa0c1268c?auto=format&fit=crop&w=800&q=80",
+
+  meals:[
+    "lunch",
+    "dinner"
+  ],
+
+  category:"veg",
+
+  serving:130,
+
+  servingText:
+  "১ বাটি ≈ 130g",
+
+  description:
+  "আলু ও ফুলকপির তরকারি",
+
+  portions:[
+    ["½ বাটি",65],
+    ["১ বাটি",130],
+    ["২ বাটি",260]
+  ],
+
+  components:[
+
+    component(
+      "05_0012",
+      55
+    ),
+
+    component(
+      "03_0036",
+      55
+    ),
+
+    component(
+      "13_0012",
+      6
+    ),
+
+    component(
+      "03_0024",
+      14
+    )
+
+  ]
+},
+
+
+{
+  id:"pumpkin",
+  name:"মিষ্টিকুমড়া তরকারি",
+  en:"Pumpkin curry",
+  icon:"🎃",
+
+  photo:null,
+
+  meals:[
+    "lunch",
+    "dinner"
+  ],
+
+  category:"veg",
+
+  serving:130,
+
+  servingText:
+  "১ বাটি ≈ 130g",
+
+  description:
+  "মিষ্টিকুমড়া, পেঁয়াজ ও তেল",
+
+  portions:[
+    ["½ বাটি",65],
+    ["১ বাটি",130],
+    ["২ বাটি",260]
+  ],
+
+  components:[
+
+    component(
+      "03_0043",
+      110
+    ),
+
+    component(
+      "13_0012",
+      6
+    ),
+
+    component(
+      "03_0024",
+      14
+    )
+
+  ]
+},
+
+
+{
+  id:"leafy_green",
+  name:"শাক ভাজি",
+  en:"Leafy greens fry",
+  icon:"🥬",
+
+  photo:
+  "https://images.unsplash.com/photo-1576045057995-568f588f82fb?auto=format&fit=crop&w=800&q=80",
+
+  meals:[
+    "lunch",
+    "dinner"
+  ],
+
+  category:"veg",
+
+  serving:80,
+
+  servingText:
+  "১ ছোট বাটি ≈ 80g",
+
+  description:
+  "পালং/পুঁই/লাল শাক জাতীয়",
+
+  portions:[
+    ["½ বাটি",40],
+    ["১ বাটি",80],
+    ["২ বাটি",160]
+  ],
+
+  components:[
+
+    component(
+      "04_0035",
+      60
+    ),
+
+    component(
+      "13_0012",
+      4
+    ),
+
+    component(
+      "03_0024",
+      12
+    )
+
+  ]
+},
+
+
+{
+  id:"alu_bhorta",
+  name:"আলু ভর্তা",
+  en:"Mashed potato",
+  icon:"🥔",
+
+  photo:
+  "https://images.unsplash.com/photo-1518977676601-b53f82aba655?auto=format&fit=crop&w=800&q=80",
+
+  meals:[
+    "lunch",
+    "dinner"
+  ],
+
+  category:"veg",
+
+  serving:80,
+
+  servingText:
+  "১ ছোট বাটি ≈ 80g",
+
+  description:
+  "আলু, পেঁয়াজ ও সরিষার তেল",
+
+  portions:[
+    ["½ বাটি",40],
+    ["১ বাটি",80],
+    ["২ বাটি",160]
+  ],
+
+  components:[
+
+    component(
+      "05_0012",
+      60
+    ),
+
+    component(
+      "13_0008",
+      5
+    ),
+
+    component(
+      "03_0024",
+      12
+    )
+
+  ]
+},
+
+
+{
+  id:"begun_bhorta",
+  name:"বেগুন ভর্তা",
+  en:"Mashed eggplant",
+  icon:"🍆",
+
+  photo:
+  "https://images.unsplash.com/photo-1615484477778-ca3b783256fd?auto=format&fit=crop&w=800&q=80",
+
+  meals:[
+    "lunch",
+    "dinner"
+  ],
+
+  category:"veg",
+
+  serving:80,
+
+  servingText:
+  "১ ছোট বাটি ≈ 80g",
+
+  description:
+  "বেগুন, পেঁয়াজ ও তেল",
+
+  portions:[
+    ["½ বাটি",40],
+    ["১ বাটি",80]
+  ],
+
+  components:[
+
+    component(
+      "03_0033",
+      60
+    ),
+
+    component(
+      "13_0008",
+      5
+    ),
+
+    component(
+      "03_0024",
+      12
+    )
+
+  ]
+},
+
+
+{
+  id:"chira_milk_banana",
+  name:"চিড়া, দুধ ও কলা",
+  en:"Chira with milk and banana",
+  icon:"🥣",
+
+  photo:null,
+
+  meals:[
+    "breakfast",
+    "snacks"
+  ],
+
+  category:"snacks",
+
+  serving:220,
+
+  servingText:
+  "১ বাটি ≈ 220g",
+
+  description:
+  "চিড়া, দুধ ও কলা",
+
+  portions:[
+    ["½ বাটি",110],
+    ["১ বাটি",220],
+    ["১.৫ বাটি",330]
+  ],
+
+  components:[
+
+    component(
+      "01_0010",
+      45
+    ),
+
+    component(
+      "12_0008",
+      120
+    ),
+
+    component(
+      "08_0004",
+      55
+    )
+
+  ]
+},
+
+
+{
+  id:"suji",
+  name:"সুজির হালুয়া",
+  en:"Suji halwa",
+  icon:"🍮",
+
+  photo:null,
+
+  meals:[
+    "breakfast",
+    "snacks"
+  ],
+
+  category:"dessert",
+
+  serving:140,
+
+  servingText:
+  "১ বাটি ≈ 140g",
+
+  description:
+  "সুজি, দুধ, চিনি ও ঘি",
+
+  portions:[
+    ["½ বাটি",70],
+    ["১ বাটি",140]
+  ],
+
+  components:[
+
+    component(
+      "01_0026",
+      45
+    ),
+
+    component(
+      "12_0008",
+      60
+    ),
+
+    component(
+      "15_0008",
+      18
+    ),
+
+    component(
+      "13_0004",
+      7
+    )
+
+  ]
+},
+
+
+{
+  id:"milk_tea",
+  name:"দুধ চা",
+  en:"Milk tea",
+  icon:"☕",
+
+  photo:
+  "https://images.unsplash.com/photo-1544787219-7f47ccb76574?auto=format&fit=crop&w=800&q=80",
+
+  meals:[
+    "breakfast",
+    "snacks",
+    "dinner"
+  ],
+
+  category:"snacks",
+
+  serving:150,
+
+  servingText:
+  "১ কাপ ≈ 150g",
+
+  description:
+  "চিনি ও দুধসহ চা",
+
+  portions:[
+    ["১ কাপ",150],
+    ["২ কাপ",300]
+  ],
+
+  components:[
+    component(
+      "14_0007",
+      150
+    )
+  ]
+},
+
+
+{
+  id:"black_tea",
+  name:"রং চা",
+  en:"Tea with sugar",
+  icon:"🍵",
+
+  photo:
+  "https://images.unsplash.com/photo-1576092768241-dec231879fc3?auto=format&fit=crop&w=800&q=80",
+
+  meals:[
+    "breakfast",
+    "snacks",
+    "dinner"
+  ],
+
+  category:"snacks",
+
+  serving:150,
+
+  servingText:
+  "১ কাপ ≈ 150g",
+
+  description:
+  "চিনি-সহ রং চা",
+
+  portions:[
+    ["১ কাপ",150],
+    ["২ কাপ",300]
+  ],
+
+  components:[
+    component(
+      "14_0008",
+      150
+    )
+  ]
+},
+
+
+{
+  id:"muri",
+  name:"মুড়ি",
+  en:"Puffed rice",
+  icon:"🥣",
+
+  photo:null,
+
+  meals:[
+    "breakfast",
+    "snacks"
+  ],
+
+  category:"snacks",
+
+  serving:35,
+
+  servingText:
+  "১ বাটি ≈ 35g",
+
+  description:
+  "হালকা মুড়ি",
+
+  portions:[
+    ["½ বাটি",18],
+    ["১ বাটি",35],
+    ["২ বাটি",70]
+  ],
+
+  components:[
+    component(
+      "01_0023",
+      35
+    )
+  ]
+},
+
+
+{
+  id:"tea_biscuit",
+  name:"চা ও বিস্কুট",
+  en:"Tea and biscuits",
+  icon:"🍪",
+
+  photo:
+  "https://images.unsplash.com/photo-1509440159596-0249088772ff?auto=format&fit=crop&w=800&q=80",
+
+  meals:[
+    "breakfast",
+    "snacks"
+  ],
+
+  category:"snacks",
+
+  serving:190,
+
+  servingText:
+  "১ কাপ চা + ২টি বিস্কুট",
+
+  description:
+  "সাধারণ চা-নাস্তা",
+
+  portions:[
+    ["১ সেট",190],
+    ["২ সেট",380]
+  ],
+
+  components:[
+
+    component(
+      "14_0007",
+      150
+    ),
+
+    component(
+      "01_0034",
+      40
+    )
+
+  ]
+},
+
+
+{
+  id:"singara",
+  name:"সিঙ্গাড়া",
+  en:"Singara",
+  icon:"🥟",
+
+  photo:
+  "https://www.banglakutir.com/app-contents/upload/1/products/1647260048_1_1_781278162.jpg",
+
+  meals:[
+    "snacks"
+  ],
+
+  category:"snacks",
+
+  serving:60,
+
+  servingText:
+  "১টি ≈ 60g",
+
+  description:
+  "আলু ও ময়দার ভাজা নাস্তা",
+
+  portions:[
+    ["১টি",60],
+    ["২টি",120],
+    ["৩টি",180]
+  ],
+
+  fallback:{
+    energy_kcal:147,
+    protein_g:2.2,
+    fat_g:8.1,
+    carb_g:16.5,
+    fibre_g:1.4,
+    calcium_mg:10,
+    iron_mg:.8,
+    magnesium_mg:12,
+    potassium_mg:105,
+    zinc_mg:.25,
+    folate_mcg:8,
+    vitamin_c_mg:2
+  }
+},
+
+
+{
+  id:"samosa",
+  name:"সমুচা",
+  en:"Samosa",
+  icon:"🥟",
+
+  photo:null,
+
+  meals:[
+    "snacks"
+  ],
+
+  category:"snacks",
+
+  serving:55,
+
+  servingText:
+  "১টি ≈ 55g",
+
+  description:
+  "ভাজা নাস্তা",
+
+  portions:[
+    ["১টি",55],
+    ["২টি",110],
+    ["৩টি",165]
+  ],
+
+  fallback:{
+    energy_kcal:142,
+    protein_g:2.6,
+    fat_g:7.8,
+    carb_g:15.4,
+    fibre_g:1.3,
+    calcium_mg:11,
+    iron_mg:.7,
+    magnesium_mg:11,
+    potassium_mg:95,
+    zinc_mg:.24,
+    folate_mcg:7,
+    vitamin_c_mg:2
+  }
+},
+
+
+{
+  id:"beguni",
+  name:"বেগুনি",
+  en:"Beguni",
+  icon:"🍆",
+
+  photo:null,
+
+  meals:[
+    "snacks"
+  ],
+
+  category:"snacks",
+
+  serving:55,
+
+  servingText:
+  "২টি ছোট ≈ 55g",
+
+  description:
+  "বেগুনের ভাজা নাস্তা",
+
+  portions:[
+    ["১টি",28],
+    ["২টি",55],
+    ["৪টি",110]
+  ],
+
+  fallback:{
+    energy_kcal:135,
+    protein_g:2.8,
+    fat_g:8.7,
+    carb_g:12.1,
+    fibre_g:1.8,
+    calcium_mg:16,
+    iron_mg:.7,
+    magnesium_mg:12,
+    potassium_mg:98,
+    zinc_mg:.22,
+    folate_mcg:11,
+    vitamin_c_mg:2.5
+  }
+},
+
+
+{
+  id:"piaju",
+  name:"পিয়াজু",
+  en:"Piaju",
+  icon:"🧅",
+
+  photo:null,
+
+  meals:[
+    "snacks"
+  ],
+
+  category:"snacks",
+
+  serving:60,
+
+  servingText:
+  "২টি ছোট ≈ 60g",
+
+  description:
+  "ডাল ও পেঁয়াজের ভাজা",
+
+  portions:[
+    ["১টি",30],
+    ["২টি",60],
+    ["৪টি",120]
+  ],
+
+  fallback:{
+    energy_kcal:158,
+    protein_g:4.8,
+    fat_g:8.4,
+    carb_g:15.7,
+    fibre_g:2.5,
+    calcium_mg:18,
+    iron_mg:1.1,
+    magnesium_mg:20,
+    potassium_mg:150,
+    zinc_mg:.4,
+    folate_mcg:22,
+    vitamin_c_mg:2
+  }
+},
+
+
+{
+  id:"banana",
+  name:"পাকা সাগর কলা",
+  en:"Sagar banana",
+  icon:"🍌",
+
+  photo:
+  "https://images.unsplash.com/photo-1571771894821-ce9b6c11b08e?auto=format&fit=crop&w=800&q=80",
+
+  meals:[
+    "breakfast",
+    "snacks"
+  ],
+
+  category:"dessert",
+
+  serving:100,
+
+  servingText:
+  "১টি ≈ 100g",
+
+  description:
+  "পাকা সাগর কলা",
+
+  portions:[
+    ["½টি",50],
+    ["১টি",100],
+    ["২টি",200]
+  ],
+
+  components:[
+    component(
+      "08_0004",
+      100
+    )
+  ]
+},
+
+
+{
+  id:"sweet_curd",
+  name:"মিষ্টি দই",
+  en:"Sweet curd",
+  icon:"🍮",
+
+  photo:
+  "https://images.unsplash.com/photo-1571212515416-fef01fc43637?auto=format&fit=crop&w=800&q=80",
+
+  meals:[
+    "snacks",
+    "dinner"
+  ],
+
+  category:"dessert",
+
+  serving:100,
+
+  servingText:
+  "১ ছোট বাটি ≈ 100g",
+
+  description:
+  "মিষ্টি দই",
+
+  portions:[
+    ["½ বাটি",50],
+    ["১ বাটি",100],
+    ["২ বাটি",200]
+  ],
+
+  components:[
+    component(
+      "12_0003",
+      100
+    )
+  ]
+}
+
+];
+
+
+let state =
+loadState();
+
+
+let selected =
+null;
+
+
+function today(){
+
+  return new Date()
+  .toISOString()
+  .slice(
+    0,
+    10
+  );
+
+}
+
+
+function loadState(){
+
+  let x =
+  null;
+
+
+  try{
+
+    x =
+    JSON.parse(
+      localStorage.getItem(
+        STORE
+      )
+      ||
+      "null"
+    );
+
+  }
+  catch(e){}
+
+
+  x =
+  x || {
+
+    date:
+    today(),
+
+    theme:
+    "light",
+
+    meal:
+    "breakfast",
+
+    category:
+    "all",
+
+    search:
+    "",
+
+    log:
+    [],
+
+    profile:{
+
+      name:
+      "ব্যবহারকারী",
+
+      age:
+      25,
+
+      sex:
+      "male",
+
+      weight:
+      65,
+
+      height:
+      168,
+
+      activity:
+      1.55,
+
+      goal:
+      "maintain"
+
+    }
+
+  };
+
+
+  if(
+    x.date !==
+    today()
+  ){
+
+    x.date =
+    today();
+
+    x.log =
+    [];
+
+  }
+
+
+  return x;
+
+}
+
+
+function save(){
+
+  localStorage.setItem(
+    STORE,
+    JSON.stringify(
+      state
+    )
+  );
+
+}
+
+
+function value(v){
+
+  if(
+    v === null ||
+    v === undefined ||
+    v === "" ||
+    v === "Tr"
+  ){
+
+    return 0;
+
+  }
+
+
+  const n =
+  Number(v);
+
+
+  return Number.isFinite(n)
+  ?
+  n
+  :
+  0;
+
+}
+
+
+function safe(s){
+
+  return String(
+    s ?? ""
+  )
+  .replace(
+
+    /[&<>"']/g,
+
+    m=>({
+
+      "&":"&amp;",
+
+      "<":"&lt;",
+
+      ">":"&gt;",
+
+      '"':"&quot;",
+
+      "'":"&#39;"
+
+    }[m])
+
+  );
+
+}
+
+
+function emptyNutrients(){
+
+  const x = {};
+
+
+  NUTRIENTS.forEach(
+    k=>x[k]=0
+  );
+
+
+  return x;
+
+}
+
+
+function addNutrients(
+  a,
+  b
+){
+
+  const x = {};
+
+
+  NUTRIENTS.forEach(
+
+    k=>
+
+    x[k] =
+    value(a[k])
+    +
+    value(b[k])
+
+  );
+
+
+  return x;
+
+}
+
+
+function multiplyNutrients(
+  a,
+  factor
+){
+
+  const x = {};
+
+
+  NUTRIENTS.forEach(
+
+    k=>
+
+    x[k] =
+    +(
+      value(a[k])
+      *
+      factor
+    )
+    .toFixed(4)
+
+  );
+
+
+  return x;
+
+}
+
+
+function foodByCode(
+  code
+){
+
+  return foods.find(
+    f=>
+    f.code === code
+  )
+  ||
+  null;
+
+}
+
+
+function sourceForCode(
+  code
+){
+
+  return searchIndex[code]
+  &&
+  searchIndex[code].url
+
+  ?
+
+  searchIndex[code].url
+
+  :
+
+  "../";
+
+}
+
+
+/* ==================================
+   READ FOODS ARRAY
+================================== */
+
+function extractFoods(text){
+
+  const marker =
+  "const FOODS =";
+
+
+  const markerAt =
+  text.indexOf(marker);
+
+
+  if(
+    markerAt < 0
+  ){
+
+    throw new Error(
+      "FOODS not found"
+    );
+
+  }
+
+
+  const start =
+  text.indexOf(
+    "[",
+    markerAt
+  );
+
+
+  let depth =
+  0;
+
+  let inString =
+  false;
+
+  let escaped =
+  false;
+
+
+  for(
+    let i=start;
+    i<text.length;
+    i++
+  ){
+
+    const ch =
+    text[i];
+
+
+    if(
+      inString
+    ){
+
+      if(
+        escaped
+      ){
+
+        escaped =
+        false;
+
+      }
+
+      else if(
+        ch === "\\"
+      ){
+
+        escaped =
+        true;
+
+      }
+
+      else if(
+        ch === '"'
+      ){
+
+        inString =
+        false;
+
+      }
+
+
+      continue;
+
+    }
+
+
+    if(
+      ch === '"'
+    ){
+
+      inString =
+      true;
+
+      continue;
+
+    }
+
+
+    if(
+      ch === "["
+    ){
+
+      depth++;
+
+    }
+
+
+    if(
+      ch === "]"
+    ){
+
+      depth--;
+
+
+      if(
+        depth === 0
+      ){
+
+        return JSON.parse(
+
+          text.slice(
+            start,
+            i+1
+          )
+
+        );
+
+      }
+
+    }
+
+  }
+
+
+  throw new Error(
+    "FOODS end not found"
+  );
+
+}
+
+
+/* ==================================
+   GITHUB DATABASE
+================================== */
+
+async function loadDatabase(){
+
+  let live =
+  false;
+
+
+  try{
+
+    const results =
+    await Promise.all([
+
+      fetch(
+        DB_JS,
+        {
+          cache:"no-store"
+        }
+      ),
+
+      fetch(
+        DB_INDEX,
+        {
+          cache:"no-store"
+        }
+      )
+
+    ]);
+
+
+    if(
+      !results[0].ok
+    ){
+
+      throw new Error(
+        "DB HTTP "
+        +
+        results[0].status
+      );
+
+    }
+
+
+    const js =
+    await results[0]
+    .text();
+
+
+    foods =
+    extractFoods(js);
+
+
+    if(
+      results[1].ok
+    ){
+
+      const list =
+      await results[1]
+      .json();
+
+
+      list.forEach(
+
+        item=>{
+
+          searchIndex[
+            item.code
+          ]
+          =
+          item;
+
+        }
+
+      );
+
+    }
+
+
+    try{
+
+      localStorage.setItem(
+
+        CACHE,
+
+        JSON.stringify({
+
+          foods,
+          searchIndex,
+          updated:
+          Date.now()
+
+        })
+
+      );
+
+    }
+    catch(e){}
+
+
+    live =
+    true;
+
+  }
+
+
+  catch(error){
+
+    try{
+
+      const cache =
+      JSON.parse(
+        localStorage.getItem(
+          CACHE
+        )
+        ||
+        "null"
+      );
+
+
+      if(
+        cache
+        &&
+        Array.isArray(
+          cache.foods
+        )
+      ){
+
+        foods =
+        cache.foods;
+
+
+        searchIndex =
+        cache.searchIndex
+        ||
+        {};
+
+      }
+
+      else{
+
+        throw error;
+
+      }
+
+    }
+
+
+    catch(_){
+
+      foods =
+      [];
+
+      searchIndex =
+      {};
+
+    }
+
+  }
+
+
+  document
+  .getElementById(
+    "dbTitle"
+  )
+  .textContent =
+
+  (
+    live
+    ?
+    "GitHub Live • "
+    :
+    "Offline cache • "
+  )
+
+  +
+
+  foods.length
+
+  +
+
+  " foods";
+
+
+  document
+  .getElementById(
+    "dbSub"
+  )
+  .textContent =
+
+  foods.length
+
+  ?
+
+  "Bangladesh FCT ingredient engine + cooked recipe tracker"
+
+  :
+
+  "Fallback recipe estimates ব্যবহার হচ্ছে";
+
+
+  renderAll();
+
+}
+
+
+/* ==================================
+   RECIPE ENGINE
+================================== */
+
+function mixedVegetableNutrition(){
+
+  if(
+    !foods.length
+  ){
+
+    return {
+
+      nutrients:{
+        energy_kcal:98,
+        protein_g:2.6,
+        fat_g:4.2,
+        carb_g:13.4,
+        fibre_g:3.8,
+        calcium_mg:34,
+        iron_mg:1,
+        magnesium_mg:24,
+        potassium_mg:275,
+        zinc_mg:.42,
+        folate_mcg:28,
+        vitamin_c_mg:17
+      },
+
+      source:"../",
+
+      mode:
+      "Recipe estimate"
+
+    };
+
+  }
+
+
+  let total =
+  emptyNutrients();
+
+
+  const codes =
+  selectedMixedVegetables.length
+
+  ?
+
+  selectedMixedVegetables
+
+  :
+
+  [
+    "05_0012",
+    "03_0036",
+    "03_0033",
+    "03_0041"
+  ];
+
+
+  const vegetableWeight =
+  100;
+
+
+  const perVegetable =
+  vegetableWeight
+  /
+  codes.length;
+
+
+  codes.forEach(
+
+    code=>{
+
+      const food =
+      foodByCode(code);
+
+
+      if(
+        !food
+      ){
+
+        return;
+
+      }
+
+
+      const part = {};
+
+
+      NUTRIENTS.forEach(
+
+        k=>
+
+        part[k] =
+        value(food[k])
+        *
+        perVegetable
+        /
+        100
+
+      );
+
+
+      total =
+      addNutrients(
+        total,
+        part
+      );
+
+    }
+
+  );
+
+
+  [
+    ["13_0012",6],
+    ["03_0024",12]
+  ]
+  .forEach(
+
+    pair=>{
+
+      const food =
+      foodByCode(
+        pair[0]
+      );
+
+
+      if(
+        !food
+      ){
+
+        return;
+
+      }
+
+
+      const part = {};
+
+
+      NUTRIENTS.forEach(
+
+        k=>
+
+        part[k] =
+        value(food[k])
+        *
+        pair[1]
+        /
+        100
+
+      );
+
+
+      total =
+      addNutrients(
+        total,
+        part
+      );
+
+    }
+
+  );
+
+
+  return {
+
+    nutrients:
+    total,
+
+    source:
+    sourceForCode(
+      codes[0]
+    ),
+
+    mode:
+    "Custom GitHub FCT recipe"
+
+  };
+
+}
+
+
+function recipeNutrition(
+  recipe
+){
+
+  if(
+    recipe.customMix
+  ){
+
+    return mixedVegetableNutrition();
+
+  }
+
+
+  if(
+    recipe.components
+    &&
+    foods.length
+  ){
+
+    let total =
+    emptyNutrients();
+
+
+    let matched =
+    0;
+
+
+    let firstSource =
+    "../";
+
+
+    recipe.components.forEach(
+
+      item=>{
+
+        const food =
+        foodByCode(
+          item.code
+        );
+
+
+        if(
+          !food
+        ){
+
+          return;
+
+        }
+
+
+        matched++;
+
+
+        const part = {};
+
+
+        NUTRIENTS.forEach(
+
+          key=>{
+
+            part[key] =
+
+            value(
+              food[key]
+            )
+
+            *
+
+            item.grams
+
+            /
+
+            100;
+
+          }
+
+        );
+
+
+        total =
+        addNutrients(
+          total,
+          part
+        );
+
+
+        if(
+          firstSource === "../"
+        ){
+
+          firstSource =
+          sourceForCode(
+            item.code
+          );
+
+        }
+
+      }
+
+    );
+
+
+    if(
+      matched
+    ){
+
+      return {
+
+        nutrients:
+        total,
+
+        source:
+        firstSource,
+
+        mode:
+        "GitHub FCT recipe"
+
+      };
+
+    }
+
+  }
+
+
+  return {
+
+    nutrients:
+    recipe.fallback
+    ||
+    emptyNutrients(),
+
+    source:
+    "../",
+
+    mode:
+    "Recipe estimate"
+
+  };
+
+}
+
+
+/* ==================================
+   PROFILE
+================================== */
+
+function profileCalculation(){
+
+  const p =
+  state.profile;
+
+
+  const age =
+  +p.age || 25;
+
+
+  const weight =
+  +p.weight || 65;
+
+
+  const height =
+  +p.height || 168;
+
+
+  const activity =
+  +p.activity || 1.55;
+
+
+  const bmr =
+
+  10 * weight
+
+  +
+
+  6.25 * height
+
+  -
+
+  5 * age
+
+  +
+
+  (
+    p.sex === "male"
+    ?
+    5
+    :
+    -161
+  );
+
+
+  const tdee =
+  bmr * activity;
+
+
+  const target =
+
+  tdee
+
+  *
+
+  (
+    p.goal === "loss"
+
+    ?
+
+    .85
+
+    :
+
+    p.goal === "gain"
+
+    ?
+
+    1.10
+
+    :
+
+    1
+  );
+
+
+  const protein =
+
+  weight
+
+  *
+
+  (
+    p.goal === "gain"
+
+    ?
+
+    1.8
+
+    :
+
+    p.goal === "loss"
+
+    ?
+
+    1.7
+
+    :
+
+    1.5
+  );
+
+
+  const fat =
+  target * .28 / 9;
+
+
+  const carb =
+
+  Math.max(
+
+    0,
+
+    (
+      target
+
+      -
+
+      protein*4
+
+      -
+
+      fat*9
+    )
+
+    /
+
+    4
+
+  );
+
+
+  return {
+
+    bmr:
+    Math.round(bmr),
+
+    tdee:
+    Math.round(tdee),
+
+    target:
+    Math.round(target),
+
+    protein:
+    Math.round(protein),
+
+    fat:
+    Math.round(fat),
+
+    carb:
+    Math.round(carb),
+
+    water:
+    (
+      weight * .035
+    )
+    .toFixed(1)
+
+  };
+
+}
+
+
+/* ==================================
+   LOG TOTAL
+================================== */
+
+function totals(
+  list = state.log
+){
+
+  const t =
+  emptyNutrients();
+
+
+  list.forEach(
+
+    x=>{
+
+      NUTRIENTS.forEach(
+
+        key=>
+
+        t[key]
+        +=
+        value(
+          x[key]
+        )
+
+      );
+
+    }
+
+  );
+
+
+  return t;
+
+}
+
+
+/* ==================================
+   FOOD IMAGE
+================================== */
+
+function visual(
+  recipe
+){
+
+  if(
+    recipe.photo
+  ){
+
+    return (
+
+      '<img'
+
+      +
+
+      ' src="'
+      +
+      safe(recipe.photo)
+      +
+      '"'
+
+      +
+
+      ' alt="'
+      +
+      safe(recipe.name)
+      +
+      '"'
+
+      +
+
+      ' loading="lazy"'
+
+      +
+
+      ' referrerpolicy="no-referrer"'
+
+      +
+
+      ' onerror="this.parentElement.innerHTML='
+
+      +
+
+      "'<span class=&quot;food-icon&quot;>"
+      +
+      safe(recipe.icon)
+      +
+      "</span>'"
+
+      +
+
+      '">'
+
+    );
+
+  }
+
+
+  return (
+
+    '<span class="food-icon">'
+
+    +
+
+    safe(
+      recipe.icon
+    )
+
+    +
+
+    '</span>'
+
+  );
+
+}
+
+
+/* ==================================
+   MACRO BARS
+================================== */
+
+function macroBars(
+  total,
+  profile
+){
+
+  return [
+
+    [
+      "কার্বোহাইড্রেট",
+      total.carb_g,
+      profile.carb
+    ],
+
+    [
+      "প্রোটিন",
+      total.protein_g,
+      profile.protein
+    ],
+
+    [
+      "ফ্যাট",
+      total.fat_g,
+      profile.fat
+    ]
+
+  ]
+  .map(
+
+    row=>{
+
+      const percent =
+      Math.min(
+
+        100,
+
+        Math.round(
+
+          value(row[1])
+
+          /
+
+          Math.max(
+            1,
+            row[2]
+          )
+
+          *
+
+          100
+
+        )
+
+      );
+
+
+      return (
+
+        '<div class="progress-row">'
+
+        +
+
+        '<div class="progress-head">'
+
+        +
+
+        '<span>'
+
+        +
+
+        row[0]
+
+        +
+
+        ' <b>'
+
+        +
+
+        Math.round(
+          value(
+            row[1]
+          )
+        )
+
+        +
+
+        'g</b>'
+
+        +
+
+        '</span>'
+
+        +
+
+        '<span>'
+
+        +
+
+        percent
+
+        +
+
+        '% / '
+
+        +
+
+        row[2]
+
+        +
+
+        'g'
+
+        +
+
+        '</span>'
+
+        +
+
+        '</div>'
+
+        +
+
+        '<div class="track">'
+
+        +
+
+        '<i style="width:'
+
+        +
+
+        percent
+
+        +
+
+        '%"></i>'
+
+        +
+
+        '</div>'
+
+        +
+
+        '</div>'
+
+      );
+
+    }
+
+  )
+  .join("");
+
+}
+
+
+/* ==================================
+   MEAL TABS
+================================== */
+
+function renderMealTabs(){
+
+  $("#mealTabs")
+  .innerHTML =
+
+  Object.entries(
+    MEALS
+  )
+
+  .map(
+
+    ([key,item])=>
+
+    '<button class="chip '
+
+    +
+
+    (
+      state.meal === key
+      ?
+      "active"
+      :
+      ""
+    )
+
+    +
+
+    '" data-meal="'
+
+    +
+
+    key
+
+    +
+
+    '">'
+
+    +
+
+    item.label
+
+    +
+
+    '</button>'
+
+  )
+
+  .join("");
+
+}
+
+
+/* ==================================
+   CATEGORY
+================================== */
+
+function renderCategories(){
+
+  $("#categoryTabs")
+  .innerHTML =
+
+  Object.entries(
+    CATEGORIES
+  )
+
+  .map(
+
+    ([key,item])=>
+
+    '<button class="chip '
+
+    +
+
+    (
+      state.category === key
+      ?
+      "active"
+      :
+      ""
+    )
+
+    +
+
+    '" data-category="'
+
+    +
+
+    key
+
+    +
+
+    '">'
+
+    +
+
+    item[1]
+
+    +
+
+    ' '
+
+    +
+
+    item[0]
+
+    +
+
+    '</button>'
+
+  )
+
+  .join("");
+
+}
+
+
+/* ==================================
+   RECIPES
+================================== */
+
+function visibleRecipes(){
+
+  const query =
+  (
+    state.search || ""
+  )
+  .toLowerCase()
+  .trim();
+
+
+  return RECIPES.filter(
+
+    recipe=>{
+
+      const mealMatch =
+      recipe.meals.includes(
+        state.meal
+      );
+
+
+      const categoryMatch =
+
+      state.category === "all"
+
+      ||
+
+      recipe.category ===
+      state.category;
+
+
+      const searchText =
+
+      [
+        recipe.name,
+        recipe.en,
+        recipe.description
+      ]
+      .join(" ")
+      .toLowerCase();
+
+
+      const searchMatch =
+
+      !query
+
+      ||
+
+      searchText.includes(
+        query
+      );
+
+
+      return (
+
+        mealMatch
+
+        &&
+
+        categoryMatch
+
+        &&
+
+        searchMatch
+
+      );
+
+    }
+
+  );
+
+}
+
+
+function renderFoods(){
+
+  const recipes =
+  visibleRecipes();
+
+
+  if(
+    !recipes.length
+  ){
+
+    $("#foodArea")
+    .innerHTML =
+
+    '<div class="card empty">'
+    +
+    'এই meal/category-তে খাবার পাওয়া যায়নি।'
+    +
+    '</div>';
+
+
+    return;
+
+  }
+
+
+  $("#foodArea")
+  .innerHTML =
+
+  '<div class="food-grid">'
+
+  +
+
+  recipes.map(
+
+    recipe=>{
+
+      const nutrition =
+      recipeNutrition(
+        recipe
+      )
+      .nutrients;
+
+
+      return (
+
+        '<button'
+
+        +
+
+        ' class="food-card"'
+
+        +
+
+        ' data-recipe="'
+        +
+        recipe.id
+        +
+        '">'
+
+        +
+
+        '<div class="food-image">'
+
+        +
+
+        visual(recipe)
+
+        +
+
+        '<span class="food-tag">'
+
+        +
+
+        (
+          CATEGORIES[
+            recipe.category
+          ]
+          ?
+          CATEGORIES[
+            recipe.category
+          ][0]
+          :
+          ""
+        )
+
+        +
+
+        '</span>'
+
+        +
+
+        '</div>'
+
+        +
+
+        '<div class="food-body">'
+
+        +
+
+        '<div class="food-name">'
+
+        +
+
+        safe(
+          recipe.name
+        )
+
+        +
+
+        '</div>'
+
+        +
+
+        '<div class="food-meta">'
+
+        +
+
+        Math.round(
+          value(
+            nutrition.energy_kcal
+          )
+        )
+
+        +
+
+        ' kcal / '
+
+        +
+
+        safe(
+          recipe.servingText
+        )
+
+        +
+
+        '<br>Protein '
+
+        +
+
+        value(
+          nutrition.protein_g
+        )
+        .toFixed(1)
+
+        +
+
+        'g • Carb '
+
+        +
+
+        value(
+          nutrition.carb_g
+        )
+        .toFixed(1)
+
+        +
+
+        'g'
+
+        +
+
+        '</div>'
+
+        +
+
+        '<div class="food-add">'
+
+        +
+
+        '+ যোগ করুন'
+
+        +
+
+        '</div>'
+
+        +
+
+        '</div>'
+
+        +
+
+        '</button>'
+
+      );
+
+    }
+
+  )
+  .join("")
+
+  +
+
+  '</div>';
+
+}
+
+
+/* ==================================
+   LOG
+================================== */
+
+function logHTML(
+  list
+){
+
+  if(
+    !list.length
+  ){
+
+    return (
+
+      '<div class="empty">'
+      +
+      'এখনো কোনো খাবার যোগ করা হয়নি।'
+      +
+      '</div>'
+
+    );
+
+  }
+
+
+  return list.map(
+
+    item=>
+
+    '<div class="log-item">'
+
+    +
+
+    '<div>'
+
+    +
+
+    '<b>'
+
+    +
+
+    safe(
+      MEALS[
+        item.meal
+      ]
+      ?.label
+      ||
+      ""
+    )
+
+    +
+
+    ' • '
+
+    +
+
+    safe(
+      item.name
+    )
+
+    +
+
+    '</b>'
+
+    +
+
+    '<small>'
+
+    +
+
+    item.grams
+
+    +
+
+    'g • '
+
+    +
+
+    Math.round(
+      value(
+        item.energy_kcal
+      )
+    )
+
+    +
+
+    ' kcal • P '
+
+    +
+
+    value(
+      item.protein_g
+    )
+    .toFixed(1)
+
+    +
+
+    'g'
+
+    +
+
+    '</small>'
+
+    +
+
+    '</div>'
+
+    +
+
+    '<button'
+
+    +
+
+    ' class="delete-btn"'
+
+    +
+
+    ' data-delete="'
+    +
+    item.id
+    +
+    '">'
+
+    +
+
+    '✕'
+
+    +
+
+    '</button>'
+
+    +
+
+    '</div>'
+
+  )
+  .join("");
+
+}
+
+
+/* ==================================
+   HOME
+================================== */
+
+function renderHome(){
+
+  const profile =
+  profileCalculation();
+
+
+  const total =
+  totals();
+
+
+  const calories =
+  Math.round(
+    total.energy_kcal
+  );
+
+
+  const difference =
+  profile.target
+  -
+  calories;
+
+
+  const percent =
+  Math.max(
+
+    0,
+
+    Math.round(
+
+      calories
+
+      /
+
+      Math.max(
+        1,
+        profile.target
+      )
+
+      *
+
+      100
+
+    )
+
+  );
+
+
+  $("#heroGreeting")
+  .textContent =
+
+  (
+    state.profile.name
+    ||
+    "ব্যবহারকারী"
+  )
+
+  +
+
+  ", আজকের অগ্রগতি";
+
+
+  $("#remaining")
+  .textContent =
+
+  difference >= 0
+
+  ?
+
+  difference
+  +
+  " kcal বাকি"
+
+  :
+
+  Math.abs(
+    difference
+  )
+  +
+  " kcal বেশি";
+
+
+  $("#goalText")
+  .textContent =
+
+  state.profile.goal ===
+  "loss"
+
+  ?
+
+  "Fat-loss energy target"
+
+  :
+
+  state.profile.goal ===
+  "gain"
+
+  ?
+
+  "Muscle-gain energy target"
+
+  :
+
+  "Maintenance energy target";
+
+
+  $("#heroIntake")
+  .textContent =
+  calories;
+
+
+  $("#heroTarget")
+  .textContent =
+  profile.target;
+
+
+  $("#heroProtein")
+  .textContent =
+
+  Math.round(
+    total.protein_g
+  )
+
+  +
+
+  "g";
+
+
+  $("#heroWater")
+  .textContent =
+
+  profile.water
+
+  +
+
+  "L";
+
+
+  $("#ringPct")
+  .textContent =
+
+  percent
+
+  +
+
+  "%";
+
+
+  $("#calRing")
+  .style
+  .setProperty(
+
+    "--ring",
+
+    Math.min(
+      360,
+      percent*3.6
+    )
+
+    +
+
+    "deg"
+
+  );
+
+
+  $("#todayDate")
+  .textContent =
+
+  new Date()
+  .toLocaleDateString(
+
+    "bn-BD",
+
+    {
+      day:"numeric",
+      month:"short",
+      year:"numeric"
+    }
+
+  );
+
+
+  $("#macroHome")
+  .innerHTML =
+
+  macroBars(
+    total,
+    profile
+  );
+
+
+  $("#todayLog")
+  .innerHTML =
+
+  logHTML(
+
+    state.log
+    .slice()
+    .reverse()
+    .slice(
+      0,
+      6
+    )
+
+  );
+
+
+  const proteinGap =
+  profile.protein
+  -
+  Math.round(
+    total.protein_g
+  );
+
+
+  let text = "";
+
+
+  if(
+    proteinGap > 0
+  ){
+
+    text +=
+
+    "প্রোটিন লক্ষ্য থেকে <b>"
+
+    +
+
+    proteinGap
+
+    +
+
+    "g কম</b>। ";
+
+  }
+
+  else{
+
+    text +=
+
+    "প্রোটিন লক্ষ্য <b>পূরণ হয়েছে</b>। ";
+
+  }
+
+
+  if(
+    difference > 0
+  ){
+
+    text +=
+
+    "এখনও <b>"
+
+    +
+
+    difference
+
+    +
+
+    " kcal</b> বাকি। ";
+
+  }
+
+  else if(
+    difference < 0
+  ){
+
+    text +=
+
+    "লক্ষ্যের চেয়ে <b>"
+
+    +
+
+    Math.abs(
+      difference
+    )
+
+    +
+
+    " kcal</b> বেশি। ";
+
+  }
+
+
+  if(
+    total.fibre_g >=
+    15
+  ){
+
+    text +=
+
+    "ফাইবার intake <b>ভালো</b>।";
+
+  }
+
+  else{
+
+    text +=
+
+    "ফাইবার intake <b>আরও বাড়ানো ভালো</b>।";
+
+  }
+
+
+  $("#insight")
+  .innerHTML =
+
+  '<div class="metrics">'
+
+  +
+
+  [
+    "breakfast",
+    "lunch",
+    "snacks",
+    "dinner"
+  ]
+  .map(
+
+    meal=>
+
+    '<div class="metric">'
+
+    +
+
+    '<small>'
+
+    +
+
+    MEALS[
+      meal
+    ]
+    .label
+
+    +
+
+    '</small>'
+
+    +
+
+    '<b>'
+
+    +
+
+    state.log
+    .filter(
+      x=>x.meal===meal
+    )
+    .length
+
+    +
+
+    '</b>'
+
+    +
+
+    '</div>'
+
+  )
+  .join("")
+
+  +
+
+  '</div>'
+
+  +
+
+  '<p class="note" style="margin-top:10px">'
+
+  +
+
+  text
+
+  +
+
+  '</p>';
+
+}
+
+
+/* ==================================
+   DIARY
+================================== */
+
+function renderDiary(){
+
+  renderMealTabs();
+
+  renderCategories();
+
+  renderFoods();
+
+
+  const items =
+  state.log.filter(
+
+    x=>
+    x.meal ===
+    state.meal
+
+  );
+
+
+  const total =
+  totals(items);
+
+
+  $("#mealCalories")
+  .textContent =
+
+  Math.round(
+    total.energy_kcal
+  )
+
+  +
+
+  " kcal";
+
+
+  $("#mealCount")
+  .textContent =
+
+  items.length
+
+  +
+
+  " item";
+
+
+  $("#mealLog")
+  .innerHTML =
+
+  logHTML(items);
+
+}
+
+
+/* ==================================
+   PROFILE
+================================== */
+
+function renderProfile(){
+
+  const profile =
+  profileCalculation();
+
+
+  $("#bmr")
+  .textContent =
+
+  profile.bmr
+
+  +
+
+  " kcal";
+
+
+  $("#tdee")
+  .textContent =
+
+  profile.tdee
+
+  +
+
+  " kcal";
+
+
+  $("#targetMetric")
+  .textContent =
+
+  profile.target
+
+  +
+
+  " kcal";
+
+
+  $("#proteinTarget")
+  .textContent =
+
+  profile.protein
+
+  +
+
+  "g";
+
+}
+
+
+/* ==================================
+   REPORT
+================================== */
+
+function renderReport(){
+
+  const profile =
+  profileCalculation();
+
+
+  const total =
+  totals();
+
+
+  const difference =
+
+  profile.target
+
+  -
+
+  Math.round(
+    total.energy_kcal
+  );
+
+
+  $("#reportSummary")
+  .innerHTML =
+
+  '<div class="metrics">'
+
+  +
+
+  '<div class="metric">'
+
+  +
+
+  '<small>ক্যালোরি লক্ষ্য</small>'
+
+  +
+
+  '<b>'
+  +
+  profile.target
+  +
+  '</b>'
+
+  +
+
+  '</div>'
+
+  +
+
+  '<div class="metric">'
+
+  +
+
+  '<small>আজ খেয়েছেন</small>'
+
+  +
+
+  '<b>'
+
+  +
+
+  Math.round(
+    total.energy_kcal
+  )
+
+  +
+
+  '</b>'
+
+  +
+
+  '</div>'
+
+  +
+
+  '<div class="metric">'
+
+  +
+
+  '<small>'
+
+  +
+
+  (
+    difference >= 0
+    ?
+    "বাকি"
+    :
+    "অতিরিক্ত"
+  )
+
+  +
+
+  '</small>'
+
+  +
+
+  '<b>'
+
+  +
+
+  Math.abs(
+    difference
+  )
+
+  +
+
+  '</b>'
+
+  +
+
+  '</div>'
+
+  +
+
+  '<div class="metric">'
+
+  +
+
+  '<small>মোট খাবার</small>'
+
+  +
+
+  '<b>'
+
+  +
+
+  state.log.length
+
+  +
+
+  '</b>'
+
+  +
+
+  '</div>'
+
+  +
+
+  '</div>';
+
+
+  $("#reportMacros")
+  .innerHTML =
+
+  macroBars(
+    total,
+    profile
+  );
+
+
+  const micro = [
+
+    [
+      "ফাইবার",
+      total.fibre_g,
+      "g"
+    ],
+
+    [
+      "ক্যালসিয়াম",
+      total.calcium_mg,
+      "mg"
+    ],
+
+    [
+      "আয়রন",
+      total.iron_mg,
+      "mg"
+    ],
+
+    [
+      "পটাশিয়াম",
+      total.potassium_mg,
+      "mg"
+    ],
+
+    [
+      "ম্যাগনেসিয়াম",
+      total.magnesium_mg,
+      "mg"
+    ],
+
+    [
+      "জিঙ্ক",
+      total.zinc_mg,
+      "mg"
+    ],
+
+    [
+      "ফোলেট",
+      total.folate_mcg,
+      "µg"
+    ],
+
+    [
+      "ভিটামিন C",
+      total.vitamin_c_mg,
+      "mg"
+    ]
+
+  ];
+
+
+  $("#microGrid")
+  .innerHTML =
+
+  micro.map(
+
+    item=>
+
+    '<div class="micro">'
+
+    +
+
+    '<small>'
+
+    +
+
+    item[0]
+
+    +
+
+    '</small>'
+
+    +
+
+    '<b>'
+
+    +
+
+    value(
+      item[1]
+    )
+    .toFixed(1)
+
+    +
+
+    ' '
+
+    +
+
+    item[2]
+
+    +
+
+    '</b>'
+
+    +
+
+    '</div>'
+
+  )
+  .join("");
+
+
+  $("#mealJourney")
+  .innerHTML =
+
+  [
+    "breakfast",
+    "lunch",
+    "snacks",
+    "dinner"
+  ]
+  .map(
+
+    meal=>{
+
+      const items =
+      state.log.filter(
+        x=>x.meal===meal
+      );
+
+
+      const kcal =
+      Math.round(
+
+        items.reduce(
+
+          (
+            sum,
+            x
+          )=>
+
+          sum
+
+          +
+
+          value(
+            x.energy_kcal
+          ),
+
+          0
+
+        )
+
+      );
+
+
+      const names =
+      items.length
+
+      ?
+
+      items
+      .map(
+        x=>x.name
+      )
+      .join(", ")
+
+      :
+
+      "কোনো খাবার যোগ করা হয়নি";
+
+
+      return (
+
+        '<div class="timeline-row">'
+
+        +
+
+        '<div class="timeline-icon">'
+
+        +
+
+        MEALS[
+          meal
+        ]
+        .icon
+
+        +
+
+        '</div>'
+
+        +
+
+        '<div class="timeline-content">'
+
+        +
+
+        '<b>'
+
+        +
+
+        MEALS[
+          meal
+        ]
+        .label
+
+        +
+
+        ' • '
+
+        +
+
+        kcal
+
+        +
+
+        ' kcal'
+
+        +
+
+        '</b>'
+
+        +
+
+        '<small>'
+
+        +
+
+        safe(names)
+
+        +
+
+        '</small>'
+
+        +
+
+        '</div>'
+
+        +
+
+        '</div>'
+
+      );
+
+    }
+
+  )
+  .join("");
+
+
+  if(
+    document.fonts
+    &&
+    document.fonts.ready
+  ){
+
+    document.fonts
+    .ready
+    .then(
+      drawShareCard
+    );
+
+  }
+
+  else{
+
+    drawShareCard();
+
+  }
+
+}
+
+
+/* ==================================
+   MASTER
+================================== */
+
+function renderAll(){
+
+  renderHome();
+
+  renderDiary();
+
+  renderProfile();
+
+  renderReport();
+
+  save();
+
+}
+
+
+/* ==================================
+   OPEN FOOD
+================================== */
+
+function openFood(
+  id
+){
+
+  selectedRecipe =
+  RECIPES.find(
+    x=>x.id===id
+  );
+
+
+  if(
+    !selectedRecipe
+  ){
+
+    return;
+
+  }
+
+
+  const nutrition =
+  recipeNutrition(
+    selectedRecipe
+  );
+
+
+  $("#sheetName")
+  .textContent =
+  selectedRecipe.name;
+
+
+  $("#sheetDescription")
+  .textContent =
+
+  selectedRecipe.description
+
+  +
+
+  " • "
+
+  +
+
+  nutrition.mode;
+
+
+  $("#sheetServing")
+  .textContent =
+  selectedRecipe.servingText;
+
+
+  $("#foodSource")
+  .href =
+  nutrition.source
+  ||
+  "../";
+
+
+  $("#portionPresets")
+  .innerHTML =
+
+  selectedRecipe.portions
+
+  .map(
+
+    p=>
+
+    '<button class="chip" data-portion="'
+
+    +
+
+    p[1]
+
+    +
+
+    '">'
+
+    +
+
+    p[0]
+
+    +
+
+    '</button>'
+
+  )
+  .join("");
+
+
+  if(
+    selectedRecipe.photo
+  ){
+
+    $("#sheetPhoto")
+    .innerHTML =
+
+    '<img src="'
+
+    +
+
+    safe(
+      selectedRecipe.photo
+    )
+
+    +
+
+    '" alt="'
+
+    +
+
+    safe(
+      selectedRecipe.name
+    )
+
+    +
+
+    '" onerror="this.parentElement.innerHTML='
+
+    +
+
+    "'<span class=&quot;fallback&quot;>"
+
+    +
+
+    safe(
+      selectedRecipe.icon
+    )
+
+    +
+
+    "</span>'"
+
+    +
+
+    '">';
+
+  }
+
+  else{
+
+    $("#sheetPhoto")
+    .innerHTML =
+
+    '<span class="fallback">'
+
+    +
+
+    safe(
+      selectedRecipe.icon
+    )
+
+    +
+
+    '</span>';
+
+  }
+
+
+  if(
+    selectedRecipe.customMix
+  ){
+
+    $("#customMix")
+    .classList
+    .add(
+      "show"
+    );
+
+
+    $("#mixGrid")
+    .innerHTML =
+
+    MIX_VEGETABLES.map(
+
+      item=>
+
+      '<label class="mix-item">'
+
+      +
+
+      '<input'
+
+      +
+
+      ' type="checkbox"'
+
+      +
+
+      ' data-mix="'
+      +
+      item.code
+      +
+      '"'
+
+      +
+
+      (
+        selectedMixedVegetables.includes(
+          item.code
+        )
+        ?
+        ' checked'
+        :
+        ''
+      )
+
+      +
+
+      '>'
+
+      +
+
+      item.icon
+
+      +
+
+      ' '
+
+      +
+
+      item.name
+
+      +
+
+      '</label>'
+
+    )
+    .join("");
+
+  }
+
+  else{
+
+    $("#customMix")
+    .classList
+    .remove(
+      "show"
+    );
+
+  }
+
+
+  $("#grams")
+  .value =
+  selectedRecipe.serving;
+
+
+  updateFoodCalculation();
+
+
+  $("#foodSheet")
+  .classList
+  .add(
+    "open"
+  );
+
+}
+
+
+/* ==================================
+   FOOD CALCULATION
+================================== */
+
+function updateFoodCalculation(){
+
+  if(
+    !selectedRecipe
+  ){
+
+    return;
+
+  }
+
+
+  const grams =
+  Math.min(
+
+    2000,
+
+    Math.max(
+
+      1,
+
+      +$("#grams").value
+      ||
+      selectedRecipe.serving
+
+    )
+
+  );
+
+
+  const base =
+  recipeNutrition(
+    selectedRecipe
+  )
+  .nutrients;
+
+
+  const nutrition =
+  multiplyNutrients(
+
+    base,
+
+    grams
+    /
+    selectedRecipe.serving
+
+  );
+
+
+  $("#foodCalculation")
+  .innerHTML =
+
+  '<b>'
+
+  +
+
+  Math.round(
+    value(
+      nutrition.energy_kcal
+    )
+  )
+
+  +
+
+  ' kcal'
+
+  +
+
+  '</b>'
+
+  +
+
+  '<div class="note" style="margin-top:4px">'
+
+  +
+
+  'প্রোটিন '
+
+  +
+
+  value(
+    nutrition.protein_g
+  )
+  .toFixed(1)
+
+  +
+
+  'g • কার্ব '
+
+  +
+
+  value(
+    nutrition.carb_g
+  )
+  .toFixed(1)
+
+  +
+
+  'g • ফ্যাট '
+
+  +
+
+  value(
+    nutrition.fat_g
+  )
+  .toFixed(1)
+
+  +
+
+  'g • ফাইবার '
+
+  +
+
+  value(
+    nutrition.fibre_g
+  )
+  .toFixed(1)
+
+  +
+
+  'g'
+
+  +
+
+  '</div>';
+
+}
+
+
+/* ==================================
+   ADD FOOD
+================================== */
+
+function addFood(){
+
+  if(
+    !selectedRecipe
+  ){
+
+    return;
+
+  }
+
+
+  const grams =
+  Math.min(
+
+    2000,
+
+    Math.max(
+
+      1,
+
+      +$("#grams").value
+      ||
+      selectedRecipe.serving
+
+    )
+
+  );
+
+
+  const base =
+  recipeNutrition(
+    selectedRecipe
+  )
+  .nutrients;
+
+
+  const nutrients =
+  multiplyNutrients(
+
+    base,
+
+    grams
+    /
+    selectedRecipe.serving
+
+  );
+
+
+  const item = {
+
+    id:
+    Date.now(),
+
+    meal:
+    state.meal,
+
+    recipe:
+    selectedRecipe.id,
+
+    name:
+    selectedRecipe.name,
+
+    grams
+
+  };
+
+
+  NUTRIENTS.forEach(
+
+    key=>
+
+    item[key] =
+    nutrients[key]
+
+  );
+
+
+  state.log.push(
+    item
+  );
+
+
+  $("#foodSheet")
+  .classList
+  .remove(
+    "open"
+  );
+
+
+  showToast(
+    "খাবার যোগ হয়েছে ✓"
+  );
+
+
+  renderAll();
+
+}
+
+
+/* ==================================
+   DELETE
+================================== */
+
+function deleteFood(
+  id
+){
+
+  state.log =
+  state.log.filter(
+
+    x=>
+
+    String(
+      x.id
+    )
+
+    !==
+
+    String(id)
+
+  );
+
+
+  renderAll();
+
+}
+
+
+/* ==================================
+   SCREEN
+================================== */
+
+function showScreen(
+  screen
+){
+
+  $$(".screen")
+  .forEach(
+
+    el=>
+
+    el.classList
+    .toggle(
+
+      "active",
+
+      el.id === screen
+
+    )
+
+  );
+
+
+  $$(".nav-btn")
+  .forEach(
+
+    el=>
+
+    el.classList
+    .toggle(
+
+      "active",
+
+      el.dataset.nav ===
+      screen
+
+    )
+
+  );
+
+
+  if(
+    screen ===
+    "report"
+  ){
+
+    renderReport();
+
+  }
+
+
+  window.scrollTo({
+
+    top:0,
+
+    behavior:
+    "smooth"
+
+  });
+
+}
+
+
+/* ==================================
+   TOAST
+================================== */
+
+function showToast(
+  message
+){
+
+  const toast =
+  $("#toast");
+
+
+  toast.textContent =
+  message;
+
+
+  toast.classList
+  .add(
+    "show"
+  );
+
+
+  setTimeout(
+
+    ()=>{
+
+      toast.classList
+      .remove(
+        "show"
+      );
+
+    },
+
+    1600
+
+  );
+
+}
+
+
+/* ==================================
+   CANVAS
+================================== */
+
+function roundRect(
+  ctx,
+  x,y,w,h,r
+){
+
+  ctx.beginPath();
+
+  ctx.moveTo(
+    x+r,
+    y
+  );
+
+  ctx.arcTo(
+    x+w,y,
+    x+w,y+h,
+    r
+  );
+
+  ctx.arcTo(
+    x+w,y+h,
+    x,y+h,
+    r
+  );
+
+  ctx.arcTo(
+    x,y+h,
+    x,y,
+    r
+  );
+
+  ctx.arcTo(
+    x,y,
+    x+w,y,
+    r
+  );
+
+  ctx.closePath();
+
+  ctx.fill();
+
+}
+
+
+function drawShareCard(){
+
+  const canvas =
+  $("#shareCanvas");
+
+
+  const ctx =
+  canvas.getContext(
+    "2d"
+  );
+
+
+  const profile =
+  profileCalculation();
+
+
+  const total =
+  totals();
+
+
+  const calories =
+  Math.round(
+    total.energy_kcal
+  );
+
+
+  const difference =
+  profile.target
+  -
+  calories;
+
+
+  const percent =
+  Math.min(
+
+    100,
+
+    Math.max(
+
+      0,
+
+      Math.round(
+
+        calories
+
+        /
+
+        Math.max(
+          1,
+          profile.target
+        )
+
+        *
+
+        100
+
+      )
+
+    )
+
+  );
+
+
+  ctx.clearRect(
+    0,0,
+    1080,1350
+  );
+
+
+  ctx.fillStyle =
+  "#f7f4ec";
+
+
+  ctx.fillRect(
+    0,0,
+    1080,1350
+  );
+
+
+  ctx.fillStyle =
+  "#707b75";
+
+
+  ctx.font =
+  '600 27px "Hind Siliguri"';
+
+
+  ctx.fillText(
+    "ব্যক্তিগত দৈনিক পুষ্টি রিপোর্ট",
+    70,
+    72
+  );
+
+
+  ctx.fillStyle =
+  "#10211b";
+
+
+  ctx.font =
+  '800 55px "Hind Siliguri"';
+
+
+  ctx.fillText(
+    "আজকের Nutrition Story",
+    70,
+    142
+  );
+
+
+  ctx.font =
+  '700 30px "Hind Siliguri"';
+
+
+  ctx.fillText(
+
+    (
+      state.profile.name
+      ||
+      "ব্যবহারকারী"
+    )
+
+    +
+
+    " • "
+
+    +
+
+    new Date()
+    .toLocaleDateString(
+      "bn-BD"
+    ),
+
+    70,
+    190
+
+  );
+
+
+  ctx.fillStyle =
+  "#fff";
+
+
+  roundRect(
+    ctx,
+    55,225,
+    970,250,
+    28
+  );
+
+
+  ctx.fillStyle =
+  "#0a8f63";
+
+
+  ctx.font =
+  '800 55px "Outfit"';
+
+
+  ctx.fillText(
+    String(calories),
+    90,
+    315
+  );
+
+
+  ctx.fillStyle =
+  "#10211b";
+
+
+  ctx.font =
+  '800 46px "Hind Siliguri"';
+
+
+  ctx.fillText(
+    "kcal",
+    250,
+    315
+  );
+
+
+  ctx.fillStyle =
+  "#66766f";
+
+
+  ctx.font =
+  '500 23px "Hind Siliguri"';
+
+
+  ctx.fillText(
+    "আজ খেয়েছেন",
+    90,
+    352
+  );
+
+
+  ctx.fillText(
+    "লক্ষ্য: "
+    +
+    profile.target
+    +
+    " kcal",
+    90,
+    392
+  );
+
+
+  ctx.fillStyle =
+
+  difference >= 0
+
+  ?
+
+  "#0a8f63"
+
+  :
+
+  "#dc2626";
+
+
+  ctx.font =
+  '800 36px "Hind Siliguri"';
+
+
+  ctx.fillText(
+
+    difference >= 0
+
+    ?
+
+    "আরও "
+    +
+    difference
+    +
+    " kcal বাকি"
+
+    :
+
+    "লক্ষ্যের চেয়ে "
+    +
+    Math.abs(
+      difference
+    )
+    +
+    " kcal বেশি",
+
+    90,
+    442
+
+  );
+
+
+  const cx =
+  835;
+
+  const cy =
+  350;
+
+  const radius =
+  88;
+
+
+  ctx.lineWidth =
+  18;
+
+
+  ctx.strokeStyle =
+  "#e2ebe6";
+
+
+  ctx.beginPath();
+
+  ctx.arc(
+    cx,cy,radius,
+    0,
+    Math.PI*2
+  );
+
+  ctx.stroke();
+
+
+  ctx.strokeStyle =
+  "#0a8f63";
+
+
+  ctx.beginPath();
+
+  ctx.arc(
+
+    cx,cy,radius,
+
+    -Math.PI/2,
+
+    -Math.PI/2
+
+    +
+
+    Math.PI*2
+    *
+    percent
+    /
+    100
+
+  );
+
+  ctx.stroke();
+
+
+  ctx.fillStyle =
+  "#10211b";
+
+
+  ctx.textAlign =
+  "center";
+
+
+  ctx.font =
+  '800 46px "Outfit"';
+
+
+  ctx.fillText(
+    percent+"%",
+    cx,
+    cy+10
+  );
+
+
+  ctx.font =
+  '500 18px "Hind Siliguri"';
+
+
+  ctx.fillStyle =
+  "#66766f";
+
+
+  ctx.fillText(
+    "লক্ষ্য পূরণ",
+    cx,
+    cy+38
+  );
+
+
+  ctx.textAlign =
+  "left";
+
+
+  const macros = [
+
+    [
+      "প্রোটিন",
+      Math.round(
+        total.protein_g
+      )
+      +
+      "g",
+      profile.protein
+      +
+      "g",
+      "#0a8f63"
+    ],
+
+    [
+      "কার্ব",
+      Math.round(
+        total.carb_g
+      )
+      +
+      "g",
+      profile.carb
+      +
+      "g",
+      "#0284c7"
+    ],
+
+    [
+      "ফ্যাট",
+      Math.round(
+        total.fat_g
+      )
+      +
+      "g",
+      profile.fat
+      +
+      "g",
+      "#f59e0b"
+    ]
+
+  ];
+
+
+  macros.forEach(
+
+    (
+      macro,
+      index
+    )=>{
+
+      const x =
+      55
+      +
+      index*323;
+
+
+      ctx.fillStyle =
+      "#fff";
+
+
+      roundRect(
+        ctx,
+        x,505,
+        300,145,
+        22
+      );
+
+
+      ctx.fillStyle =
+      macro[3];
+
+
+      ctx.fillRect(
+        x+18,
+        524,
+        7,
+        105
+      );
+
+
+      ctx.fillStyle =
+      "#66766f";
+
+
+      ctx.font =
+      '500 20px "Hind Siliguri"';
+
+
+      ctx.fillText(
+        macro[0],
+        x+38,
+        550
+      );
+
+
+      ctx.fillStyle =
+      "#10211b";
+
+
+      ctx.font =
+      '800 38px "Outfit"';
+
+
+      ctx.fillText(
+        macro[1],
+        x+38,
+        595
+      );
+
+
+      ctx.fillStyle =
+      "#66766f";
+
+
+      ctx.font =
+      '500 17px "Hind Siliguri"';
+
+
+      ctx.fillText(
+        "লক্ষ্য: "
+        +
+        macro[2],
+        x+38,
+        625
+      );
+
+    }
+
+  );
+
+
+  ctx.fillStyle =
+  "#10211b";
+
+
+  ctx.font =
+  '800 32px "Hind Siliguri"';
+
+
+  ctx.fillText(
+    "সারাদিনের Meal Journey",
+    70,
+    715
+  );
+
+
+  [
+    "breakfast",
+    "lunch",
+    "snacks",
+    "dinner"
+  ]
+  .forEach(
+
+    (
+      meal,
+      index
+    )=>{
+
+      const items =
+      state.log.filter(
+        x=>x.meal===meal
+      );
+
+
+      const kcal =
+      Math.round(
+
+        items.reduce(
+
+          (
+            sum,
+            item
+          )=>
+
+          sum
+          +
+          value(
+            item.energy_kcal
+          ),
+
+          0
+
+        )
+
+      );
+
+
+      let names =
+      items.length
+
+      ?
+
+      items.map(
+        x=>x.name
+      )
+      .join(", ")
+
+      :
+
+      "কোনো খাবার নেই";
+
+
+      if(
+        names.length >
+        78
+      ){
+
+        names =
+        names.slice(
+          0,
+          75
+        )
+
+        +
+
+        "…";
+
+      }
+
+
+      const y =
+      748
+      +
+      index*105;
+
+
+      ctx.fillStyle =
+      "#fff";
+
+
+      roundRect(
+        ctx,
+        55,y,
+        970,85,
+        20
+      );
+
+
+      ctx.fillStyle =
+      "#eaf8f1";
+
+
+      roundRect(
+        ctx,
+        75,
+        y+15,
+        125,55,
+        16
+      );
+
+
+      ctx.fillStyle =
+      "#056447";
+
+
+      ctx.font =
+      '700 22px "Hind Siliguri"';
+
+
+      ctx.fillText(
+        MEALS[
+          meal
+        ]
+        .label,
+        88,
+        y+50
+      );
+
+
+      ctx.fillStyle =
+      "#10211b";
+
+
+      ctx.font =
+      '700 22px "Hind Siliguri"';
+
+
+      ctx.fillText(
+        kcal
+        +
+        " kcal",
+        225,
+        y+35
+      );
+
+
+      ctx.fillStyle =
+      "#66766f";
+
+
+      ctx.font =
+      '500 17px "Hind Siliguri"';
+
+
+      ctx.fillText(
+        names,
+        225,
+        y+62
+      );
+
+    }
+
+  );
+
+
+  ctx.fillStyle =
+  "#10211b";
+
+
+  ctx.font =
+  '800 28px "Hind Siliguri"';
+
+
+  ctx.fillText(
+    "Nutrition Snapshot",
+    70,
+    1200
+  );
+
+
+  ctx.fillStyle =
+  "#0a8f63";
+
+
+  ctx.font =
+  '700 19px "Hind Siliguri"';
+
+
+  ctx.fillText(
+
+    "Fiber "
+    +
+    value(
+      total.fibre_g
+    )
+    .toFixed(1)
+    +
+    "g • Calcium "
+    +
+    value(
+      total.calcium_mg
+    )
+    .toFixed(0)
+    +
+    "mg • Iron "
+    +
+    value(
+      total.iron_mg
+    )
+    .toFixed(1)
+    +
+    "mg • Vitamin C "
+    +
+    value(
+      total.vitamin_c_mg
+    )
+    .toFixed(1)
+    +
+    "mg",
+
+    70,
+    1240
+
+  );
+
+
+  ctx.fillStyle =
+  "#66766f";
+
+
+  ctx.font =
+  '500 17px "Hind Siliguri"';
+
+
+  ctx.fillText(
+
+    "SHUDDHO Nutrition Tracker • Bangladesh Food Composition + Cooked Food Report",
+
+    70,
+    1300
+
+  );
+
+}
+
+
+/* ==================================
+   EVENT HANDLING
+================================== */
+
+document
+.addEventListener(
+
+  "click",
+
+  event=>{
+
+    const nav =
+    event.target
+    .closest(
+      "[data-nav]"
+    );
+
+
+    if(nav){
+
+      showScreen(
+        nav.dataset.nav
+      );
+
+      return;
+
+    }
+
+
+    const go =
+    event.target
+    .closest(
+      "[data-go]"
+    );
+
+
+    if(go){
+
+      showScreen(
+        go.dataset.go
+      );
+
+      return;
+
+    }
+
+
+    const meal =
+    event.target
+    .closest(
+      "[data-meal]"
+    );
+
+
+    if(meal){
+
+      state.meal =
+      meal.dataset.meal;
+
+
+      renderDiary();
+
+      save();
+
+      return;
+
+    }
+
+
+    const category =
+    event.target
+    .closest(
+      "[data-category]"
+    );
+
+
+    if(category){
+
+      state.category =
+      category.dataset.category;
+
+
+      renderDiary();
+
+      save();
+
+      return;
+
+    }
+
+
+    const food =
+    event.target
+    .closest(
+      "[data-recipe]"
+    );
+
+
+    if(food){
+
+      openFood(
+        food.dataset.recipe
+      );
+
+      return;
+
+    }
+
+
+    const del =
+    event.target
+    .closest(
+      "[data-delete]"
+    );
+
+
+    if(del){
+
+      deleteFood(
+        del.dataset.delete
+      );
+
+      return;
+
+    }
+
+
+    const portion =
+    event.target
+    .closest(
+      "[data-portion]"
+    );
+
+
+    if(portion){
+
+      $("#grams").value =
+      portion.dataset.portion;
+
+
+      updateFoodCalculation();
+
+      return;
+
+    }
+
+
+    const mix =
+    event.target
+    .closest(
+      "[data-mix]"
+    );
+
+
+    if(mix){
+
+      const code =
+      mix.dataset.mix;
+
+
+      if(
+        mix.checked
+      ){
+
+        if(
+          !selectedMixedVegetables
+          .includes(code)
+        ){
+
+          selectedMixedVegetables
+          .push(code);
+
+        }
+
+      }
+
+      else{
+
+        selectedMixedVegetables =
+
+        selectedMixedVegetables
+        .filter(
+          x=>x!==code
+        );
+
+
+        if(
+          !selectedMixedVegetables
+          .length
+        ){
+
+          selectedMixedVegetables =
+          [code];
+
+
+          mix.checked =
+          true;
+
+        }
+
+      }
+
+
+      updateFoodCalculation();
+
+    }
+
+  }
+
+);
+
+
+$("#foodSearch")
+.value =
+state.search || "";
+
+
+$("#foodSearch")
+.addEventListener(
+
+  "input",
+
+  event=>{
+
+    state.search =
+    event.target.value;
+
+
+    renderFoods();
+
+    save();
+
+  }
+
+);
+
+
+$("#foodSheet")
+.addEventListener(
+
+  "click",
+
+  event=>{
+
+    if(
+      event.target ===
+      $("#foodSheet")
+    ){
+
+      $("#foodSheet")
+      .classList
+      .remove(
+        "open"
+      );
+
+    }
+
+  }
+
+);
+
+
+$("#minus")
+.addEventListener(
+
+  "click",
+
+  ()=>{
+
+    $("#grams").value =
+
+    Math.max(
+
+      1,
+
+      (
+        +$("#grams").value
+        ||
+        0
+      )
+
+      -
+
+      10
+
+    );
+
+
+    updateFoodCalculation();
+
+  }
+
+);
+
+
+$("#plus")
+.addEventListener(
+
+  "click",
+
+  ()=>{
+
+    $("#grams").value =
+
+    Math.min(
+
+      2000,
+
+      (
+        +$("#grams").value
+        ||
+        0
+      )
+
+      +
+
+      10
+
+    );
+
+
+    updateFoodCalculation();
+
+  }
+
+);
+
+
+$("#grams")
+.addEventListener(
+  "input",
+  updateFoodCalculation
+);
+
+
+$("#addFood")
+.addEventListener(
+  "click",
+  addFood
+);
+
+
+/* PROFILE BINDING */
+
+const PROFILE_FIELDS = {
+
+  name:"name",
+
+  age:"age",
+
+  sex:"sex",
+
+  weight:"weight",
+
+  height:"height",
+
+  activity:"activity",
+
+  goal:"goal"
+
+};
+
+
+Object.entries(
+  PROFILE_FIELDS
+)
+.forEach(
+
+  ([id,key])=>{
+
+    const field =
+    $("#"+id);
+
+
+    field.value =
+    state.profile[key];
+
+
+    field
+    .addEventListener(
+
+      "input",
+
+      ()=>{
+
+        const v =
+
+        field.type ===
+        "number"
+
+        ?
+
+        +field.value
+
+        :
+
+        field.value;
+
+
+        if(
+          field.type ===
+          "number"
+        ){
+
+          if(
+            v < +field.min
+            ||
+            v > +field.max
+          ){
+
+            return;
+
+          }
+
+        }
+
+
+        state.profile[key] =
+        v;
+
+
+        renderAll();
+
+      }
+
+    );
+
+  }
+
+);
+
+
+/* THEME */
+
+document.body
+.classList
+.toggle(
+
+  "dark",
+
+  state.theme ===
+  "dark"
+
+);
+
+
+$("#themeBtn")
+.textContent =
+
+state.theme ===
+"dark"
+
+?
+
+"☀️"
+
+:
+
+"🌙";
+
+
+$("#themeBtn")
+.addEventListener(
+
+  "click",
+
+  ()=>{
+
+    state.theme =
+
+    state.theme ===
+    "dark"
+
+    ?
+
+    "light"
+
+    :
+
+    "dark";
+
+
+    document.body
+    .classList
+    .toggle(
+
+      "dark",
+
+      state.theme ===
+      "dark"
+
+    );
+
+
+    $("#themeBtn")
+    .textContent =
+
+    state.theme ===
+    "dark"
+
+    ?
+
+    "☀️"
+
+    :
+
+    "🌙";
+
+
+    save();
+
+  }
+
+);
+
+
+/* CARD DOWNLOAD */
+
+$("#downloadCard")
+.addEventListener(
+
+  "click",
+
+  async()=>{
+
+    if(
+      document.fonts
+      &&
+      document.fonts.ready
+    ){
+
+      await document.fonts.ready;
+
+    }
+
+
+    drawShareCard();
+
+
+    const link =
+    document.createElement(
+      "a"
+    );
+
+
+    const filename =
+
+    (
+      state.profile.name
+      ||
+      "report"
+    )
+
+    .replace(
+      /[^\w\u0980-\u09FF]+/g,
+      "_"
+    );
+
+
+    link.download =
+
+    "nutrition_story_"
+
+    +
+
+    filename
+
+    +
+
+    ".png";
+
+
+    link.href =
+
+    $("#shareCanvas")
+    .toDataURL(
+      "image/png"
+    );
+
+
+    link.click();
+
+
+    showToast(
+      "কার্ড ডাউনলোড হয়েছে ✓"
+    );
+
+  }
+
+);
+
+
+renderAll();
+
+loadDatabase();
+
+})();
+</script>
+
+</body>
+</html>
