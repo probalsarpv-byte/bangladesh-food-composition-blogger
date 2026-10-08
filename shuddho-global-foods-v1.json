@@ -1,0 +1,2025 @@
+{
+  "meta": {
+    "name": "SHUDDHO Global Foods Database",
+    "version": "1.0.0",
+    "created_for": "SHUDDHO Nutrition Tracker",
+    "record_count": 88,
+    "basis": "All nutrient values are per 100 g unless stated otherwise.",
+    "nutrient_scope": [
+      "energy_kcal",
+      "protein_g",
+      "carb_g",
+      "fat_g",
+      "fibre_g"
+    ],
+    "micronutrient_policy": "Micronutrients are null in this V1 file rather than estimated or fabricated.",
+    "primary_source": "USDA FoodData Central",
+    "source_home": "https://fdc.nal.usda.gov/",
+    "provenance_note": "Records preserve USDA FoodData Central FDC IDs and descriptions. This curated layer is intended as a static, API-free supplement to the Bangladesh food-composition database.",
+    "integration_priority": [
+      "bangladesh_fct",
+      "global_foods",
+      "my_foods_manual"
+    ]
+  },
+  "foods": [
+    {
+      "id": "GF_170567_almonds",
+      "name_en": "Almonds",
+      "name_bn": "আমন্ড",
+      "aliases": [
+        "almond",
+        "badam"
+      ],
+      "category": "nuts_seeds",
+      "basis": "per_100g",
+      "default_unit": "cup",
+      "energy_kcal": 579,
+      "protein_g": 21.15,
+      "carb_g": 21.55,
+      "fat_g": 49.93,
+      "fibre_g": 12.5,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 170567,
+        "description": "Nuts, almonds"
+      }
+    },
+    {
+      "id": "GF_168588_almond-butter",
+      "name_en": "Almond Butter",
+      "name_bn": "আমন্ড বাটার",
+      "aliases": [
+        "almond butter"
+      ],
+      "category": "nuts_seeds",
+      "basis": "per_100g",
+      "default_unit": "tbsp",
+      "energy_kcal": 614,
+      "protein_g": 20.96,
+      "carb_g": 18.82,
+      "fat_g": 55.5,
+      "fibre_g": 10.3,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 168588,
+        "description": "Nuts, almond butter, plain, without salt added"
+      }
+    },
+    {
+      "id": "GF_174832_almond-milk-unsweetened",
+      "name_en": "Almond Milk, unsweetened",
+      "name_bn": "আমন্ড মিল্ক",
+      "aliases": [
+        "almond milk"
+      ],
+      "category": "plant_milk",
+      "basis": "per_100g",
+      "default_unit": "cup",
+      "energy_kcal": 15,
+      "protein_g": 0.4,
+      "carb_g": 1.31,
+      "fat_g": 0.96,
+      "fibre_g": 0.2,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 174832,
+        "description": "Beverages, almond milk, unsweetened, shelf stable"
+      }
+    },
+    {
+      "id": "GF_171705_avocado",
+      "name_en": "Avocado",
+      "name_bn": "অ্যাভোকাডো",
+      "aliases": [
+        "avocado"
+      ],
+      "category": "fruit",
+      "basis": "per_100g",
+      "default_unit": "piece",
+      "energy_kcal": 160,
+      "protein_g": 2.0,
+      "carb_g": 8.53,
+      "fat_g": 14.66,
+      "fibre_g": 6.7,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 171705,
+        "description": "Avocados, raw, all commercial varieties"
+      }
+    },
+    {
+      "id": "GF_171711_blueberries",
+      "name_en": "Blueberries",
+      "name_bn": "ব্লুবেরি",
+      "aliases": [
+        "blueberry",
+        "berries"
+      ],
+      "category": "fruit",
+      "basis": "per_100g",
+      "default_unit": "cup",
+      "energy_kcal": 57,
+      "protein_g": 0.74,
+      "carb_g": 14.49,
+      "fat_g": 0.33,
+      "fibre_g": 2.4,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 171711,
+        "description": "Blueberries, raw"
+      }
+    },
+    {
+      "id": "GF_170569_brazil-nuts",
+      "name_en": "Brazil Nuts",
+      "name_bn": "ব্রাজিল নাট",
+      "aliases": [
+        "brazil nut",
+        "brazil nuts"
+      ],
+      "category": "nuts_seeds",
+      "basis": "per_100g",
+      "default_unit": "piece",
+      "energy_kcal": 659,
+      "protein_g": 14.32,
+      "carb_g": 11.74,
+      "fat_g": 67.1,
+      "fibre_g": 7.5,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 170569,
+        "description": "Nuts, brazilnuts, dried, unblanched"
+      }
+    },
+    {
+      "id": "GF_170162_cashews-raw",
+      "name_en": "Cashews, raw",
+      "name_bn": "কাজুবাদাম",
+      "aliases": [
+        "cashew",
+        "cashews",
+        "kaju"
+      ],
+      "category": "nuts_seeds",
+      "basis": "per_100g",
+      "default_unit": "cup",
+      "energy_kcal": 553,
+      "protein_g": 18.22,
+      "carb_g": 30.19,
+      "fat_g": 43.85,
+      "fibre_g": 3.3,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 170162,
+        "description": "Nuts, cashew nuts, raw"
+      }
+    },
+    {
+      "id": "GF_170554_chia-seeds",
+      "name_en": "Chia Seeds",
+      "name_bn": "চিয়া সিড",
+      "aliases": [
+        "chia",
+        "chia seed"
+      ],
+      "category": "nuts_seeds",
+      "basis": "per_100g",
+      "default_unit": "tbsp",
+      "energy_kcal": 486,
+      "protein_g": 16.54,
+      "carb_g": 42.12,
+      "fat_g": 30.74,
+      "fibre_g": 34.4,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 170554,
+        "description": "Seeds, chia seeds, dried"
+      }
+    },
+    {
+      "id": "GF_169414_flaxseed",
+      "name_en": "Flaxseed",
+      "name_bn": "তিসি/ফ্ল্যাক্স সিড",
+      "aliases": [
+        "flaxseed",
+        "flax seed",
+        "linseed"
+      ],
+      "category": "nuts_seeds",
+      "basis": "per_100g",
+      "default_unit": "tbsp",
+      "energy_kcal": 534,
+      "protein_g": 18.29,
+      "carb_g": 28.88,
+      "fat_g": 42.16,
+      "fibre_g": 27.3,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 169414,
+        "description": "Seeds, flaxseed"
+      }
+    },
+    {
+      "id": "GF_170581_hazelnuts",
+      "name_en": "Hazelnuts",
+      "name_bn": "হ্যাজেলনাট",
+      "aliases": [
+        "hazelnut",
+        "filbert"
+      ],
+      "category": "nuts_seeds",
+      "basis": "per_100g",
+      "default_unit": "cup",
+      "energy_kcal": 628,
+      "protein_g": 14.95,
+      "carb_g": 16.7,
+      "fat_g": 60.75,
+      "fibre_g": 9.7,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 170581,
+        "description": "Nuts, hazelnuts or filberts"
+      }
+    },
+    {
+      "id": "GF_170148_hemp-seeds-hulled",
+      "name_en": "Hemp Seeds, hulled",
+      "name_bn": "",
+      "aliases": [
+        "hemp seed",
+        "hemp hearts"
+      ],
+      "category": "nuts_seeds",
+      "basis": "per_100g",
+      "default_unit": "tbsp",
+      "energy_kcal": 553,
+      "protein_g": 31.56,
+      "carb_g": 8.67,
+      "fat_g": 48.75,
+      "fibre_g": 4.0,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 170148,
+        "description": "Seeds, hemp seed, hulled"
+      }
+    },
+    {
+      "id": "GF_172430_peanuts-raw",
+      "name_en": "Peanuts, raw",
+      "name_bn": "চিনাবাদাম",
+      "aliases": [
+        "peanut",
+        "groundnut"
+      ],
+      "category": "nuts_seeds",
+      "basis": "per_100g",
+      "default_unit": "tbsp",
+      "energy_kcal": 567,
+      "protein_g": 25.8,
+      "carb_g": 16.13,
+      "fat_g": 49.24,
+      "fibre_g": 8.5,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 172430,
+        "description": "Peanuts, all types, raw"
+      }
+    },
+    {
+      "id": "GF_324860_peanut-butter",
+      "name_en": "Peanut Butter",
+      "name_bn": "পিনাট বাটার",
+      "aliases": [
+        "peanut butter"
+      ],
+      "category": "nuts_seeds",
+      "basis": "per_100g",
+      "default_unit": "tbsp",
+      "energy_kcal": 597,
+      "protein_g": 22.5,
+      "carb_g": 22.3,
+      "fat_g": 51.1,
+      "fibre_g": 4.8,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 324860,
+        "description": "Peanut butter, smooth style, with salt"
+      }
+    },
+    {
+      "id": "GF_170182_pecans",
+      "name_en": "Pecans",
+      "name_bn": "",
+      "aliases": [
+        "pecan",
+        "pecans"
+      ],
+      "category": "nuts_seeds",
+      "basis": "per_100g",
+      "default_unit": "cup",
+      "energy_kcal": 691,
+      "protein_g": 9.17,
+      "carb_g": 13.86,
+      "fat_g": 71.97,
+      "fibre_g": 9.6,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 170182,
+        "description": "Nuts, pecans"
+      }
+    },
+    {
+      "id": "GF_170591_pine-nuts",
+      "name_en": "Pine Nuts",
+      "name_bn": "",
+      "aliases": [
+        "pine nut",
+        "pine nuts"
+      ],
+      "category": "nuts_seeds",
+      "basis": "per_100g",
+      "default_unit": "tbsp",
+      "energy_kcal": 673,
+      "protein_g": 13.69,
+      "carb_g": 13.08,
+      "fat_g": 68.37,
+      "fibre_g": 3.7,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 170591,
+        "description": "Nuts, pine nuts, dried"
+      }
+    },
+    {
+      "id": "GF_170184_pistachios-raw",
+      "name_en": "Pistachios, raw",
+      "name_bn": "পেস্তা",
+      "aliases": [
+        "pistachio",
+        "pistachios"
+      ],
+      "category": "nuts_seeds",
+      "basis": "per_100g",
+      "default_unit": "tbsp",
+      "energy_kcal": 560,
+      "protein_g": 20.16,
+      "carb_g": 27.17,
+      "fat_g": 45.32,
+      "fibre_g": 10.6,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 170184,
+        "description": "Nuts, pistachio nuts, raw"
+      }
+    },
+    {
+      "id": "GF_170556_pumpkin-seeds",
+      "name_en": "Pumpkin Seeds",
+      "name_bn": "কুমড়ার বীজ",
+      "aliases": [
+        "pumpkin seed",
+        "pepitas"
+      ],
+      "category": "nuts_seeds",
+      "basis": "per_100g",
+      "default_unit": "tbsp",
+      "energy_kcal": 559,
+      "protein_g": 30.23,
+      "carb_g": 10.71,
+      "fat_g": 49.05,
+      "fibre_g": 6.0,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 170556,
+        "description": "Seeds, pumpkin and squash seed kernels, dried"
+      }
+    },
+    {
+      "id": "GF_170150_sesame-seeds",
+      "name_en": "Sesame Seeds",
+      "name_bn": "তিল",
+      "aliases": [
+        "sesame seed",
+        "til"
+      ],
+      "category": "nuts_seeds",
+      "basis": "per_100g",
+      "default_unit": "tbsp",
+      "energy_kcal": 573,
+      "protein_g": 17.73,
+      "carb_g": 23.45,
+      "fat_g": 49.67,
+      "fibre_g": 11.8,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 170150,
+        "description": "Seeds, sesame seeds, whole, dried"
+      }
+    },
+    {
+      "id": "GF_170562_sunflower-seeds",
+      "name_en": "Sunflower Seeds",
+      "name_bn": "সূর্যমুখীর বীজ",
+      "aliases": [
+        "sunflower seed"
+      ],
+      "category": "nuts_seeds",
+      "basis": "per_100g",
+      "default_unit": "tbsp",
+      "energy_kcal": 584,
+      "protein_g": 20.78,
+      "carb_g": 20.0,
+      "fat_g": 51.46,
+      "fibre_g": 8.6,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 170562,
+        "description": "Seeds, sunflower seed kernels, dried"
+      }
+    },
+    {
+      "id": "GF_170189_tahini",
+      "name_en": "Tahini",
+      "name_bn": "",
+      "aliases": [
+        "tahini",
+        "sesame butter"
+      ],
+      "category": "nuts_seeds",
+      "basis": "per_100g",
+      "default_unit": "tbsp",
+      "energy_kcal": 595,
+      "protein_g": 17.0,
+      "carb_g": 21.19,
+      "fat_g": 53.76,
+      "fibre_g": 9.3,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 170189,
+        "description": "Seeds, sesame butter, tahini, from roasted and toasted kernels (most common type)"
+      }
+    },
+    {
+      "id": "GF_170187_walnuts",
+      "name_en": "Walnuts",
+      "name_bn": "আখরোট",
+      "aliases": [
+        "walnut",
+        "walnuts"
+      ],
+      "category": "nuts_seeds",
+      "basis": "per_100g",
+      "default_unit": "cup",
+      "energy_kcal": 654,
+      "protein_g": 15.23,
+      "carb_g": 13.71,
+      "fat_g": 65.21,
+      "fibre_g": 6.7,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 170187,
+        "description": "Nuts, walnuts, english"
+      }
+    },
+    {
+      "id": "GF_168874_quinoa-uncooked",
+      "name_en": "Quinoa, uncooked",
+      "name_bn": "কিনোয়া, কাঁচা",
+      "aliases": [
+        "quinoa",
+        "raw quinoa"
+      ],
+      "category": "grains",
+      "basis": "per_100g",
+      "default_unit": "cup",
+      "energy_kcal": 368,
+      "protein_g": 14.12,
+      "carb_g": 64.16,
+      "fat_g": 6.07,
+      "fibre_g": 7.0,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 168874,
+        "description": "Quinoa, uncooked"
+      }
+    },
+    {
+      "id": "GF_168917_quinoa-cooked",
+      "name_en": "Quinoa, cooked",
+      "name_bn": "কিনোয়া, রান্না করা",
+      "aliases": [
+        "cooked quinoa",
+        "quinoa cooked"
+      ],
+      "category": "grains",
+      "basis": "per_100g",
+      "default_unit": "cup",
+      "energy_kcal": 120,
+      "protein_g": 4.4,
+      "carb_g": 21.3,
+      "fat_g": 1.92,
+      "fibre_g": 2.8,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 168917,
+        "description": "Quinoa, cooked"
+      }
+    },
+    {
+      "id": "GF_170286_buckwheat",
+      "name_en": "Buckwheat",
+      "name_bn": "বাকহুইট",
+      "aliases": [
+        "buckwheat"
+      ],
+      "category": "grains",
+      "basis": "per_100g",
+      "default_unit": "cup",
+      "energy_kcal": 343,
+      "protein_g": 13.25,
+      "carb_g": 71.5,
+      "fat_g": 3.4,
+      "fibre_g": 10.0,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 170286,
+        "description": "Buckwheat"
+      }
+    },
+    {
+      "id": "GF_170688_bulgur-dry",
+      "name_en": "Bulgur, dry",
+      "name_bn": "বুলগুর",
+      "aliases": [
+        "bulgur",
+        "bulgur wheat"
+      ],
+      "category": "grains",
+      "basis": "per_100g",
+      "default_unit": "cup",
+      "energy_kcal": 342,
+      "protein_g": 12.29,
+      "carb_g": 75.87,
+      "fat_g": 1.33,
+      "fibre_g": 12.5,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 170688,
+        "description": "Bulgur, dry"
+      }
+    },
+    {
+      "id": "GF_169704_brown-rice-cooked",
+      "name_en": "Brown Rice, cooked",
+      "name_bn": "",
+      "aliases": [
+        "cooked brown rice",
+        "brown rice"
+      ],
+      "category": "grains",
+      "basis": "per_100g",
+      "default_unit": "cup",
+      "energy_kcal": 123,
+      "protein_g": 2.74,
+      "carb_g": 25.58,
+      "fat_g": 0.97,
+      "fibre_g": 1.6,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 169704,
+        "description": "Rice, brown, long-grain, cooked (Includes foods for USDA's Food Distribution Program)"
+      }
+    },
+    {
+      "id": "GF_169726_wild-rice-raw",
+      "name_en": "Wild Rice, raw",
+      "name_bn": "",
+      "aliases": [
+        "wild rice"
+      ],
+      "category": "grains",
+      "basis": "per_100g",
+      "default_unit": "cup",
+      "energy_kcal": 357,
+      "protein_g": 14.73,
+      "carb_g": 74.9,
+      "fat_g": 1.08,
+      "fibre_g": 6.2,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 169726,
+        "description": "Wild rice, raw"
+      }
+    },
+    {
+      "id": "GF_169705_rolled-oats-dry",
+      "name_en": "Rolled Oats, dry",
+      "name_bn": "রোলড ওটস",
+      "aliases": [
+        "rolled oats",
+        "oats",
+        "oatmeal dry"
+      ],
+      "category": "grains",
+      "basis": "per_100g",
+      "default_unit": "cup",
+      "energy_kcal": 389,
+      "protein_g": 16.89,
+      "carb_g": 66.27,
+      "fat_g": 6.9,
+      "fibre_g": 10.6,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 169705,
+        "description": "Oats (Includes foods for USDA's Food Distribution Program)"
+      }
+    },
+    {
+      "id": "GF_169705_steel-cut-oats-dry",
+      "name_en": "Steel-Cut Oats, dry",
+      "name_bn": "স্টিল-কাট ওটস",
+      "aliases": [
+        "steel cut oats",
+        "oats"
+      ],
+      "category": "grains",
+      "basis": "per_100g",
+      "default_unit": "cup",
+      "energy_kcal": 389,
+      "protein_g": 16.89,
+      "carb_g": 66.27,
+      "fat_g": 6.9,
+      "fibre_g": 10.6,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 169705,
+        "description": "Oats (Includes foods for USDA's Food Distribution Program)"
+      }
+    },
+    {
+      "id": "GF_175036_corn-tortilla",
+      "name_en": "Corn Tortilla",
+      "name_bn": "",
+      "aliases": [
+        "corn tortilla",
+        "tortilla"
+      ],
+      "category": "grains",
+      "basis": "per_100g",
+      "default_unit": "piece",
+      "energy_kcal": 218,
+      "protein_g": 5.7,
+      "carb_g": 44.64,
+      "fat_g": 2.85,
+      "fibre_g": 6.3,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 175036,
+        "description": "Tortillas, ready-to-bake or -fry, corn"
+      }
+    },
+    {
+      "id": "GF_167535_flour-tortilla",
+      "name_en": "Flour Tortilla",
+      "name_bn": "",
+      "aliases": [
+        "flour tortilla",
+        "tortilla"
+      ],
+      "category": "grains",
+      "basis": "per_100g",
+      "default_unit": "piece",
+      "energy_kcal": 297,
+      "protein_g": 8.01,
+      "carb_g": 49.27,
+      "fat_g": 7.58,
+      "fibre_g": 2.4,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 167535,
+        "description": "Tortillas, ready-to-bake or -fry, flour, shelf stable"
+      }
+    },
+    {
+      "id": "GF_335240_whole-wheat-bread",
+      "name_en": "Whole Wheat Bread",
+      "name_bn": "",
+      "aliases": [
+        "whole wheat bread",
+        "wholemeal bread"
+      ],
+      "category": "grains",
+      "basis": "per_100g",
+      "default_unit": "piece",
+      "energy_kcal": 254,
+      "protein_g": 12.3,
+      "carb_g": 43.1,
+      "fat_g": 3.55,
+      "fibre_g": 6.0,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 335240,
+        "description": "Bread, whole-wheat, commercially prepared"
+      }
+    },
+    {
+      "id": "GF_168013_multigrain-bread",
+      "name_en": "Multigrain Bread",
+      "name_bn": "",
+      "aliases": [
+        "multigrain bread"
+      ],
+      "category": "grains",
+      "basis": "per_100g",
+      "default_unit": "piece",
+      "energy_kcal": 265,
+      "protein_g": 13.36,
+      "carb_g": 43.34,
+      "fat_g": 4.23,
+      "fibre_g": 7.4,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 168013,
+        "description": "Bread, multi-grain (includes whole-grain)"
+      }
+    },
+    {
+      "id": "GF_172761_english-muffin-wheat",
+      "name_en": "English Muffin, wheat",
+      "name_bn": "",
+      "aliases": [
+        "english muffin"
+      ],
+      "category": "grains",
+      "basis": "per_100g",
+      "default_unit": "piece",
+      "energy_kcal": 223,
+      "protein_g": 8.7,
+      "carb_g": 44.8,
+      "fat_g": 2.0,
+      "fibre_g": 4.6,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 172761,
+        "description": "Muffins, English, wheat"
+      }
+    },
+    {
+      "id": "GF_169737_pasta-cooked",
+      "name_en": "Pasta, cooked",
+      "name_bn": "",
+      "aliases": [
+        "cooked pasta",
+        "pasta"
+      ],
+      "category": "grains",
+      "basis": "per_100g",
+      "default_unit": "cup",
+      "energy_kcal": 158,
+      "protein_g": 5.8,
+      "carb_g": 30.86,
+      "fat_g": 0.93,
+      "fibre_g": 1.8,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 169737,
+        "description": "Pasta, cooked, enriched, without added salt"
+      }
+    },
+    {
+      "id": "GF_169736_pasta-dry",
+      "name_en": "Pasta, dry",
+      "name_bn": "",
+      "aliases": [
+        "pasta dry",
+        "spaghetti dry"
+      ],
+      "category": "grains",
+      "basis": "per_100g",
+      "default_unit": "g",
+      "energy_kcal": 371,
+      "protein_g": 13.04,
+      "carb_g": 74.67,
+      "fat_g": 1.51,
+      "fibre_g": 3.2,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 169736,
+        "description": "Pasta, dry, enriched"
+      }
+    },
+    {
+      "id": "GF_173734_black-beans-dry",
+      "name_en": "Black Beans, dry",
+      "name_bn": "",
+      "aliases": [
+        "black bean",
+        "black beans"
+      ],
+      "category": "legumes",
+      "basis": "per_100g",
+      "default_unit": "cup",
+      "energy_kcal": 341,
+      "protein_g": 21.6,
+      "carb_g": 62.36,
+      "fat_g": 1.42,
+      "fibre_g": 15.5,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 173734,
+        "description": "Beans, black, mature seeds, raw"
+      }
+    },
+    {
+      "id": "GF_173758_black-eyed-peas-dry",
+      "name_en": "Black-Eyed Peas, dry",
+      "name_bn": "",
+      "aliases": [
+        "black eyed pea",
+        "cowpea"
+      ],
+      "category": "legumes",
+      "basis": "per_100g",
+      "default_unit": "cup",
+      "energy_kcal": 336,
+      "protein_g": 23.52,
+      "carb_g": 60.03,
+      "fat_g": 1.26,
+      "fibre_g": 10.6,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 173758,
+        "description": "Cowpeas, common (blackeyes, crowder, southern), mature seeds, raw"
+      }
+    },
+    {
+      "id": "GF_175202_cannellini-beans-dry",
+      "name_en": "Cannellini Beans, dry",
+      "name_bn": "",
+      "aliases": [
+        "cannellini bean",
+        "white bean"
+      ],
+      "category": "legumes",
+      "basis": "per_100g",
+      "default_unit": "cup",
+      "energy_kcal": 333,
+      "protein_g": 23.36,
+      "carb_g": 60.27,
+      "fat_g": 0.85,
+      "fibre_g": 15.2,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 175202,
+        "description": "Beans, white, mature seeds, raw"
+      }
+    },
+    {
+      "id": "GF_173756_chickpeas-dry",
+      "name_en": "Chickpeas, dry",
+      "name_bn": "",
+      "aliases": [
+        "chickpea",
+        "garbanzo",
+        "chana"
+      ],
+      "category": "legumes",
+      "basis": "per_100g",
+      "default_unit": "cup",
+      "energy_kcal": 378,
+      "protein_g": 20.47,
+      "carb_g": 62.95,
+      "fat_g": 6.04,
+      "fibre_g": 12.2,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 173756,
+        "description": "Chickpeas (garbanzo beans, bengal gram), mature seeds, raw"
+      }
+    },
+    {
+      "id": "GF_173800_chickpeas-canned-drained",
+      "name_en": "Chickpeas, canned drained",
+      "name_bn": "",
+      "aliases": [
+        "canned chickpea",
+        "garbanzo canned"
+      ],
+      "category": "legumes",
+      "basis": "per_100g",
+      "default_unit": "oz",
+      "energy_kcal": 139,
+      "protein_g": 7.05,
+      "carb_g": 22.53,
+      "fat_g": 2.77,
+      "fibre_g": 6.4,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 173800,
+        "description": "Chickpeas (garbanzo beans, bengal gram), mature seeds, canned, drained solids"
+      }
+    },
+    {
+      "id": "GF_172421_lentils-cooked",
+      "name_en": "Lentils, cooked",
+      "name_bn": "",
+      "aliases": [
+        "cooked lentils",
+        "lentil cooked"
+      ],
+      "category": "legumes",
+      "basis": "per_100g",
+      "default_unit": "cup",
+      "energy_kcal": 116,
+      "protein_g": 9.02,
+      "carb_g": 20.13,
+      "fat_g": 0.38,
+      "fibre_g": 7.9,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 172421,
+        "description": "Lentils, mature seeds, cooked, boiled, without salt"
+      }
+    },
+    {
+      "id": "GF_172420_lentils-dry",
+      "name_en": "Lentils, dry",
+      "name_bn": "",
+      "aliases": [
+        "lentil",
+        "dry lentils"
+      ],
+      "category": "legumes",
+      "basis": "per_100g",
+      "default_unit": "cup",
+      "energy_kcal": 352,
+      "protein_g": 24.63,
+      "carb_g": 63.35,
+      "fat_g": 1.06,
+      "fibre_g": 10.7,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 172420,
+        "description": "Lentils, raw"
+      }
+    },
+    {
+      "id": "GF_174256_mung-beans-dry",
+      "name_en": "Mung Beans, dry",
+      "name_bn": "",
+      "aliases": [
+        "mung bean",
+        "moong bean"
+      ],
+      "category": "legumes",
+      "basis": "per_100g",
+      "default_unit": "cup",
+      "energy_kcal": 347,
+      "protein_g": 23.86,
+      "carb_g": 62.62,
+      "fat_g": 1.15,
+      "fibre_g": 16.3,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 174256,
+        "description": "Mung beans, mature seeds, raw"
+      }
+    },
+    {
+      "id": "GF_168411_edamame-cooked",
+      "name_en": "Edamame, cooked",
+      "name_bn": "",
+      "aliases": [
+        "edamame",
+        "soy beans green"
+      ],
+      "category": "legumes",
+      "basis": "per_100g",
+      "default_unit": "cup",
+      "energy_kcal": 121,
+      "protein_g": 11.91,
+      "carb_g": 8.91,
+      "fat_g": 5.2,
+      "fibre_g": 5.2,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 168411,
+        "description": "Edamame, frozen, prepared"
+      }
+    },
+    {
+      "id": "GF_174285_kidney-beans-canned-drained",
+      "name_en": "Kidney Beans, canned drained",
+      "name_bn": "",
+      "aliases": [
+        "kidney bean",
+        "red kidney bean"
+      ],
+      "category": "legumes",
+      "basis": "per_100g",
+      "default_unit": "oz",
+      "energy_kcal": 124,
+      "protein_g": 7.98,
+      "carb_g": 21.49,
+      "fat_g": 1.05,
+      "fibre_g": 5.5,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 174285,
+        "description": "Beans, kidney, red, mature seeds, canned, drained solids"
+      }
+    },
+    {
+      "id": "GF_174286_pinto-beans-canned-drained",
+      "name_en": "Pinto Beans, canned drained",
+      "name_bn": "",
+      "aliases": [
+        "pinto bean"
+      ],
+      "category": "legumes",
+      "basis": "per_100g",
+      "default_unit": "oz",
+      "energy_kcal": 114,
+      "protein_g": 6.99,
+      "carb_g": 20.22,
+      "fat_g": 0.9,
+      "fibre_g": 5.5,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 174286,
+        "description": "Beans, pinto, canned, drained solids"
+      }
+    },
+    {
+      "id": "GF_174290_tofu-extra-firm",
+      "name_en": "Tofu, extra firm",
+      "name_bn": "টোফু",
+      "aliases": [
+        "tofu",
+        "extra firm tofu"
+      ],
+      "category": "plant_protein",
+      "basis": "per_100g",
+      "default_unit": "oz",
+      "energy_kcal": 83,
+      "protein_g": 9.98,
+      "carb_g": 1.18,
+      "fat_g": 5.26,
+      "fibre_g": 1.0,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 174290,
+        "description": "Tofu, extra firm, prepared with nigari"
+      }
+    },
+    {
+      "id": "GF_174292_tofu-silken-soft",
+      "name_en": "Tofu, silken soft",
+      "name_bn": "সিল্কেন টোফু",
+      "aliases": [
+        "silken tofu",
+        "soft tofu"
+      ],
+      "category": "plant_protein",
+      "basis": "per_100g",
+      "default_unit": "g",
+      "energy_kcal": 55,
+      "protein_g": 4.8,
+      "carb_g": 2.9,
+      "fat_g": 2.7,
+      "fibre_g": 0.1,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 174292,
+        "description": "MORI-NU, Tofu, silken, soft"
+      }
+    },
+    {
+      "id": "GF_174272_tempeh",
+      "name_en": "Tempeh",
+      "name_bn": "টেম্পে",
+      "aliases": [
+        "tempeh"
+      ],
+      "category": "plant_protein",
+      "basis": "per_100g",
+      "default_unit": "oz",
+      "energy_kcal": 192,
+      "protein_g": 20.29,
+      "carb_g": 7.64,
+      "fat_g": 10.8,
+      "fibre_g": 3.7,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 174272,
+        "description": "Tempeh"
+      }
+    },
+    {
+      "id": "GF_173768_soy-milk-unsweetened-light",
+      "name_en": "Soy Milk, unsweetened light",
+      "name_bn": "সয়া মিল্ক",
+      "aliases": [
+        "soy milk",
+        "soymilk"
+      ],
+      "category": "plant_milk",
+      "basis": "per_100g",
+      "default_unit": "cup",
+      "energy_kcal": 34,
+      "protein_g": 2.62,
+      "carb_g": 3.85,
+      "fat_g": 0.85,
+      "fibre_g": 0.6,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 173768,
+        "description": "Soymilk, original and vanilla, light, unsweetened, with added calcium, vitamins A and D"
+      }
+    },
+    {
+      "id": "GF_171688_apple-raw-with-skin",
+      "name_en": "Apple, raw with skin",
+      "name_bn": "আপেল",
+      "aliases": [
+        "apple"
+      ],
+      "category": "fruit",
+      "basis": "per_100g",
+      "default_unit": "piece",
+      "energy_kcal": 52,
+      "protein_g": 0.26,
+      "carb_g": 13.81,
+      "fat_g": 0.17,
+      "fibre_g": 2.4,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 171688,
+        "description": "Apples, raw, with skin (Includes foods for USDA's Food Distribution Program)"
+      }
+    },
+    {
+      "id": "GF_171697_apricot-raw",
+      "name_en": "Apricot, raw",
+      "name_bn": "",
+      "aliases": [
+        "apricot"
+      ],
+      "category": "fruit",
+      "basis": "per_100g",
+      "default_unit": "piece",
+      "energy_kcal": 48,
+      "protein_g": 1.4,
+      "carb_g": 11.12,
+      "fat_g": 0.39,
+      "fibre_g": 2.0,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 171697,
+        "description": "Apricots, raw"
+      }
+    },
+    {
+      "id": "GF_169092_cantaloupe-raw",
+      "name_en": "Cantaloupe, raw",
+      "name_bn": "",
+      "aliases": [
+        "cantaloupe",
+        "melon"
+      ],
+      "category": "fruit",
+      "basis": "per_100g",
+      "default_unit": "cup",
+      "energy_kcal": 34,
+      "protein_g": 0.84,
+      "carb_g": 8.16,
+      "fat_g": 0.19,
+      "fibre_g": 0.9,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 169092,
+        "description": "Melons, cantaloupe, raw"
+      }
+    },
+    {
+      "id": "GF_171719_cherries-sweet-raw",
+      "name_en": "Cherries, sweet raw",
+      "name_bn": "",
+      "aliases": [
+        "cherry",
+        "cherries"
+      ],
+      "category": "fruit",
+      "basis": "per_100g",
+      "default_unit": "cup",
+      "energy_kcal": 63,
+      "protein_g": 1.06,
+      "carb_g": 16.01,
+      "fat_g": 0.2,
+      "fibre_g": 2.1,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 171719,
+        "description": "Cherries, sweet, raw"
+      }
+    },
+    {
+      "id": "GF_171723_cranberries-dried-sweetened",
+      "name_en": "Cranberries, dried sweetened",
+      "name_bn": "",
+      "aliases": [
+        "dried cranberry",
+        "cranberries"
+      ],
+      "category": "fruit",
+      "basis": "per_100g",
+      "default_unit": "cup",
+      "energy_kcal": 308,
+      "protein_g": 0.17,
+      "carb_g": 82.8,
+      "fat_g": 1.09,
+      "fibre_g": 5.3,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 171723,
+        "description": "Cranberries, dried, sweetened (Includes foods for USDA's Food Distribution Program)"
+      }
+    },
+    {
+      "id": "GF_171724_currants-dried",
+      "name_en": "Currants, dried",
+      "name_bn": "",
+      "aliases": [
+        "dried currants",
+        "currants"
+      ],
+      "category": "fruit",
+      "basis": "per_100g",
+      "default_unit": "cup",
+      "energy_kcal": 290,
+      "protein_g": 3.43,
+      "carb_g": 76.98,
+      "fat_g": 0.22,
+      "fibre_g": 4.4,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 171724,
+        "description": "Currants, zante, dried"
+      }
+    },
+    {
+      "id": "GF_168191_dates-medjool",
+      "name_en": "Dates, Medjool",
+      "name_bn": "মেডজুল খেজুর",
+      "aliases": [
+        "date",
+        "medjool date"
+      ],
+      "category": "fruit",
+      "basis": "per_100g",
+      "default_unit": "piece",
+      "energy_kcal": 277,
+      "protein_g": 1.81,
+      "carb_g": 74.97,
+      "fat_g": 0.15,
+      "fibre_g": 6.7,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 168191,
+        "description": "Dates, medjool"
+      }
+    },
+    {
+      "id": "GF_326905_figs-dried",
+      "name_en": "Figs, dried",
+      "name_bn": "",
+      "aliases": [
+        "dried fig",
+        "fig"
+      ],
+      "category": "fruit",
+      "basis": "per_100g",
+      "default_unit": "piece",
+      "energy_kcal": 249,
+      "protein_g": 3.3,
+      "carb_g": 63.9,
+      "fat_g": 0.92,
+      "fibre_g": 9.8,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 326905,
+        "description": "Figs, dried, uncooked"
+      }
+    },
+    {
+      "id": "GF_174673_grapefruit-pink-red-raw",
+      "name_en": "Grapefruit, pink/red raw",
+      "name_bn": "",
+      "aliases": [
+        "grapefruit"
+      ],
+      "category": "fruit",
+      "basis": "per_100g",
+      "default_unit": "piece",
+      "energy_kcal": 42,
+      "protein_g": 0.77,
+      "carb_g": 10.66,
+      "fat_g": 0.14,
+      "fibre_g": 1.6,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 174673,
+        "description": "Grapefruit, raw, pink and red, all areas"
+      }
+    },
+    {
+      "id": "GF_168153_kiwi-green-raw",
+      "name_en": "Kiwi, green raw",
+      "name_bn": "কিউই",
+      "aliases": [
+        "kiwi",
+        "kiwifruit"
+      ],
+      "category": "fruit",
+      "basis": "per_100g",
+      "default_unit": "piece",
+      "energy_kcal": 61,
+      "protein_g": 1.14,
+      "carb_g": 14.66,
+      "fat_g": 0.52,
+      "fibre_g": 3.0,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 168153,
+        "description": "Kiwifruit, green, raw"
+      }
+    },
+    {
+      "id": "GF_169910_mango-raw",
+      "name_en": "Mango, raw",
+      "name_bn": "আম",
+      "aliases": [
+        "mango"
+      ],
+      "category": "fruit",
+      "basis": "per_100g",
+      "default_unit": "piece",
+      "energy_kcal": 60,
+      "protein_g": 0.82,
+      "carb_g": 14.98,
+      "fat_g": 0.38,
+      "fibre_g": 1.6,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 169910,
+        "description": "Mangos, raw"
+      }
+    },
+    {
+      "id": "GF_327357_nectarine-raw",
+      "name_en": "Nectarine, raw",
+      "name_bn": "",
+      "aliases": [
+        "nectarine"
+      ],
+      "category": "fruit",
+      "basis": "per_100g",
+      "default_unit": "piece",
+      "energy_kcal": 39,
+      "protein_g": 1.06,
+      "carb_g": 9.18,
+      "fat_g": 0.28,
+      "fibre_g": 1.5,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 327357,
+        "description": "Nectarines, raw"
+      }
+    },
+    {
+      "id": "GF_746771_orange-raw",
+      "name_en": "Orange, raw",
+      "name_bn": "",
+      "aliases": [
+        "orange",
+        "navel orange"
+      ],
+      "category": "fruit",
+      "basis": "per_100g",
+      "default_unit": "piece",
+      "energy_kcal": 47,
+      "protein_g": 0.91,
+      "carb_g": 11.8,
+      "fat_g": 0.15,
+      "fibre_g": 2.0,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 746771,
+        "description": "Oranges, raw, navels"
+      }
+    },
+    {
+      "id": "GF_169928_peach-raw",
+      "name_en": "Peach, raw",
+      "name_bn": "",
+      "aliases": [
+        "peach"
+      ],
+      "category": "fruit",
+      "basis": "per_100g",
+      "default_unit": "piece",
+      "energy_kcal": 39,
+      "protein_g": 0.91,
+      "carb_g": 9.54,
+      "fat_g": 0.25,
+      "fibre_g": 1.5,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 169928,
+        "description": "Peaches, yellow, raw"
+      }
+    },
+    {
+      "id": "GF_169124_pineapple-raw",
+      "name_en": "Pineapple, raw",
+      "name_bn": "",
+      "aliases": [
+        "pineapple"
+      ],
+      "category": "fruit",
+      "basis": "per_100g",
+      "default_unit": "cup",
+      "energy_kcal": 50,
+      "protein_g": 0.54,
+      "carb_g": 13.12,
+      "fat_g": 0.12,
+      "fibre_g": 1.4,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 169124,
+        "description": "Pineapple, raw, all varieties"
+      }
+    },
+    {
+      "id": "GF_168215_plantain-green-raw",
+      "name_en": "Plantain, green raw",
+      "name_bn": "",
+      "aliases": [
+        "plantain",
+        "green plantain"
+      ],
+      "category": "fruit",
+      "basis": "per_100g",
+      "default_unit": "piece",
+      "energy_kcal": 152,
+      "protein_g": 1.25,
+      "carb_g": 36.66,
+      "fat_g": 0.07,
+      "fibre_g": 2.2,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 168215,
+        "description": "Plantains, green, raw"
+      }
+    },
+    {
+      "id": "GF_168166_raisins",
+      "name_en": "Raisins",
+      "name_bn": "",
+      "aliases": [
+        "raisin",
+        "raisins"
+      ],
+      "category": "fruit",
+      "basis": "per_100g",
+      "default_unit": "cup",
+      "energy_kcal": 296,
+      "protein_g": 2.52,
+      "carb_g": 78.47,
+      "fat_g": 0.54,
+      "fibre_g": 6.8,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 168166,
+        "description": "Raisins, seeded"
+      }
+    },
+    {
+      "id": "GF_167755_raspberries-raw",
+      "name_en": "Raspberries, raw",
+      "name_bn": "রাস্পবেরি",
+      "aliases": [
+        "raspberry",
+        "berries"
+      ],
+      "category": "fruit",
+      "basis": "per_100g",
+      "default_unit": "cup",
+      "energy_kcal": 52,
+      "protein_g": 1.2,
+      "carb_g": 11.94,
+      "fat_g": 0.65,
+      "fibre_g": 6.5,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 167755,
+        "description": "Raspberries, raw"
+      }
+    },
+    {
+      "id": "GF_167762_strawberries-raw",
+      "name_en": "Strawberries, raw",
+      "name_bn": "স্ট্রবেরি",
+      "aliases": [
+        "strawberry",
+        "berries"
+      ],
+      "category": "fruit",
+      "basis": "per_100g",
+      "default_unit": "cup",
+      "energy_kcal": 32,
+      "protein_g": 0.67,
+      "carb_g": 7.68,
+      "fat_g": 0.3,
+      "fibre_g": 2.0,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 167762,
+        "description": "Strawberries, raw"
+      }
+    },
+    {
+      "id": "GF_167765_watermelon-raw",
+      "name_en": "Watermelon, raw",
+      "name_bn": "তরমুজ",
+      "aliases": [
+        "watermelon"
+      ],
+      "category": "fruit",
+      "basis": "per_100g",
+      "default_unit": "cup",
+      "energy_kcal": 30,
+      "protein_g": 0.61,
+      "carb_g": 7.55,
+      "fat_g": 0.15,
+      "fibre_g": 0.4,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 167765,
+        "description": "Watermelon, raw"
+      }
+    },
+    {
+      "id": "GF_169387_arugula-raw",
+      "name_en": "Arugula, raw",
+      "name_bn": "",
+      "aliases": [
+        "arugula",
+        "rocket"
+      ],
+      "category": "vegetable",
+      "basis": "per_100g",
+      "default_unit": "cup",
+      "energy_kcal": 25,
+      "protein_g": 2.58,
+      "carb_g": 3.65,
+      "fat_g": 0.66,
+      "fibre_g": 1.6,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 169387,
+        "description": "Arugula, raw"
+      }
+    },
+    {
+      "id": "GF_168389_asparagus-raw",
+      "name_en": "Asparagus, raw",
+      "name_bn": "অ্যাসপারাগাস",
+      "aliases": [
+        "asparagus"
+      ],
+      "category": "vegetable",
+      "basis": "per_100g",
+      "default_unit": "piece",
+      "energy_kcal": 20,
+      "protein_g": 2.2,
+      "carb_g": 3.88,
+      "fat_g": 0.12,
+      "fibre_g": 2.1,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 168389,
+        "description": "Asparagus, raw"
+      }
+    },
+    {
+      "id": "GF_170379_broccoli-raw",
+      "name_en": "Broccoli, raw",
+      "name_bn": "ব্রকলি",
+      "aliases": [
+        "broccoli"
+      ],
+      "category": "vegetable",
+      "basis": "per_100g",
+      "default_unit": "cup",
+      "energy_kcal": 34,
+      "protein_g": 2.82,
+      "carb_g": 6.64,
+      "fat_g": 0.37,
+      "fibre_g": 2.6,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 170379,
+        "description": "Broccoli, raw"
+      }
+    },
+    {
+      "id": "GF_170383_brussels-sprouts-raw",
+      "name_en": "Brussels Sprouts, raw",
+      "name_bn": "",
+      "aliases": [
+        "brussels sprout"
+      ],
+      "category": "vegetable",
+      "basis": "per_100g",
+      "default_unit": "cup",
+      "energy_kcal": 43,
+      "protein_g": 3.38,
+      "carb_g": 8.95,
+      "fat_g": 0.3,
+      "fibre_g": 3.8,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 170383,
+        "description": "Brussels sprouts, raw"
+      }
+    },
+    {
+      "id": "GF_169295_butternut-squash-raw",
+      "name_en": "Butternut Squash, raw",
+      "name_bn": "",
+      "aliases": [
+        "butternut squash"
+      ],
+      "category": "vegetable",
+      "basis": "per_100g",
+      "default_unit": "cup",
+      "energy_kcal": 45,
+      "protein_g": 1.0,
+      "carb_g": 11.69,
+      "fat_g": 0.1,
+      "fibre_g": 2.0,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 169295,
+        "description": "Squash, winter, butternut, raw"
+      }
+    },
+    {
+      "id": "GF_170406_collard-greens-raw",
+      "name_en": "Collard Greens, raw",
+      "name_bn": "",
+      "aliases": [
+        "collard greens"
+      ],
+      "category": "vegetable",
+      "basis": "per_100g",
+      "default_unit": "cup",
+      "energy_kcal": 32,
+      "protein_g": 3.02,
+      "carb_g": 5.42,
+      "fat_g": 0.61,
+      "fibre_g": 4.0,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 170406,
+        "description": "Collards, raw"
+      }
+    },
+    {
+      "id": "GF_168434_cremini-mushroom-raw",
+      "name_en": "Cremini Mushroom, raw",
+      "name_bn": "",
+      "aliases": [
+        "cremini mushroom",
+        "brown mushroom"
+      ],
+      "category": "vegetable",
+      "basis": "per_100g",
+      "default_unit": "oz",
+      "energy_kcal": 22,
+      "protein_g": 2.5,
+      "carb_g": 4.3,
+      "fat_g": 0.1,
+      "fibre_g": 0.6,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 168434,
+        "description": "Mushrooms, brown, italian, or crimini, raw"
+      }
+    },
+    {
+      "id": "GF_169382_enoki-mushroom-raw",
+      "name_en": "Enoki Mushroom, raw",
+      "name_bn": "",
+      "aliases": [
+        "enoki mushroom"
+      ],
+      "category": "vegetable",
+      "basis": "per_100g",
+      "default_unit": "oz",
+      "energy_kcal": 37,
+      "protein_g": 2.66,
+      "carb_g": 7.81,
+      "fat_g": 0.29,
+      "fibre_g": 2.7,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 169382,
+        "description": "Mushrooms, enoki, raw"
+      }
+    },
+    {
+      "id": "GF_168421_kale-raw",
+      "name_en": "Kale, raw",
+      "name_bn": "কেইল",
+      "aliases": [
+        "kale"
+      ],
+      "category": "vegetable",
+      "basis": "per_100g",
+      "default_unit": "cup",
+      "energy_kcal": 35,
+      "protein_g": 2.92,
+      "carb_g": 4.42,
+      "fat_g": 1.49,
+      "fibre_g": 4.1,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 168421,
+        "description": "Kale, raw"
+      }
+    },
+    {
+      "id": "GF_168580_king-oyster-mushroom-raw",
+      "name_en": "King Oyster Mushroom, raw",
+      "name_bn": "",
+      "aliases": [
+        "king oyster mushroom",
+        "oyster mushroom"
+      ],
+      "category": "vegetable",
+      "basis": "per_100g",
+      "default_unit": "oz",
+      "energy_kcal": 33,
+      "protein_g": 3.31,
+      "carb_g": 6.09,
+      "fat_g": 0.41,
+      "fibre_g": 2.3,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 168580,
+        "description": "Mushrooms, oyster, raw"
+      }
+    },
+    {
+      "id": "GF_1750344_lion-s-mane-mushroom",
+      "name_en": "Lion's Mane Mushroom",
+      "name_bn": "",
+      "aliases": [
+        "lion's mane mushroom",
+        "lions mane"
+      ],
+      "category": "vegetable",
+      "basis": "per_100g",
+      "default_unit": "oz",
+      "energy_kcal": 35,
+      "protein_g": 2.5,
+      "carb_g": 7.5897,
+      "fat_g": 0.2563,
+      "fibre_g": 4.4,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 1750344,
+        "description": "Mushroom, lion's mane"
+      }
+    },
+    {
+      "id": "GF_169403_maitake-mushroom-raw",
+      "name_en": "Maitake Mushroom, raw",
+      "name_bn": "",
+      "aliases": [
+        "maitake mushroom"
+      ],
+      "category": "vegetable",
+      "basis": "per_100g",
+      "default_unit": "oz",
+      "energy_kcal": 31,
+      "protein_g": 1.94,
+      "carb_g": 6.97,
+      "fat_g": 0.19,
+      "fibre_g": 2.7,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 169403,
+        "description": "Mushrooms, maitake, raw"
+      }
+    },
+    {
+      "id": "GF_169255_portobello-mushroom-raw",
+      "name_en": "Portobello Mushroom, raw",
+      "name_bn": "",
+      "aliases": [
+        "portobello mushroom"
+      ],
+      "category": "vegetable",
+      "basis": "per_100g",
+      "default_unit": "piece",
+      "energy_kcal": 22,
+      "protein_g": 2.11,
+      "carb_g": 3.87,
+      "fat_g": 0.35,
+      "fibre_g": 1.3,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 169255,
+        "description": "Mushrooms, portabella, raw"
+      }
+    },
+    {
+      "id": "GF_169242_shiitake-mushroom-raw",
+      "name_en": "Shiitake Mushroom, raw",
+      "name_bn": "",
+      "aliases": [
+        "shiitake mushroom"
+      ],
+      "category": "vegetable",
+      "basis": "per_100g",
+      "default_unit": "oz",
+      "energy_kcal": 34,
+      "protein_g": 2.24,
+      "carb_g": 6.79,
+      "fat_g": 0.49,
+      "fibre_g": 2.5,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 169242,
+        "description": "Mushrooms, shiitake, raw"
+      }
+    },
+    {
+      "id": "GF_168462_spinach-raw",
+      "name_en": "Spinach, raw",
+      "name_bn": "পালং শাক",
+      "aliases": [
+        "spinach"
+      ],
+      "category": "vegetable",
+      "basis": "per_100g",
+      "default_unit": "cup",
+      "energy_kcal": 23,
+      "protein_g": 2.86,
+      "carb_g": 3.63,
+      "fat_g": 0.39,
+      "fibre_g": 2.2,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 168462,
+        "description": "Spinach, raw"
+      }
+    },
+    {
+      "id": "GF_168482_sweet-potato-raw",
+      "name_en": "Sweet Potato, raw",
+      "name_bn": "মিষ্টি আলু",
+      "aliases": [
+        "sweet potato"
+      ],
+      "category": "vegetable",
+      "basis": "per_100g",
+      "default_unit": "piece",
+      "energy_kcal": 86,
+      "protein_g": 1.57,
+      "carb_g": 20.12,
+      "fat_g": 0.05,
+      "fibre_g": 3.0,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 168482,
+        "description": "Sweet potato, raw, unprepared (Includes foods for USDA's Food Distribution Program)"
+      }
+    },
+    {
+      "id": "GF_168464_zucchini-summer-squash-raw",
+      "name_en": "Zucchini / Summer Squash, raw",
+      "name_bn": "",
+      "aliases": [
+        "zucchini",
+        "summer squash",
+        "yellow squash"
+      ],
+      "category": "vegetable",
+      "basis": "per_100g",
+      "default_unit": "piece",
+      "energy_kcal": 19,
+      "protein_g": 1.01,
+      "carb_g": 3.88,
+      "fat_g": 0.27,
+      "fibre_g": 1.0,
+      "micronutrients": null,
+      "source": {
+        "database": "USDA FoodData Central",
+        "fdc_id": 168464,
+        "description": "Squash, summer, crookneck and straightneck, raw"
+      }
+    }
+  ]
+}
